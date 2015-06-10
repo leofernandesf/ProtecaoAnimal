@@ -28,11 +28,9 @@
 		A7160E4B1B27103C00CE2FE6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4A1B27103C00CE2FE6 /* libsqlite3.dylib */; };
 		A7160E4D1B27106100CE2FE6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4C1B27106100CE2FE6 /* Accounts.framework */; };
 		A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4E1B27106B00CE2FE6 /* Social.framework */; };
-		CD7273441B286C1B00821E52 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7273421B286C1B00821E52 /* Bolts.framework */; };
-		CD7273451B286C1B00821E52 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7273431B286C1B00821E52 /* Parse.framework */; };
-		CD7273481B287E7000821E52 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273471B287E7000821E52 /* MapViewController.m */; };
-		CD72734A1B28804300821E52 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7273491B28804300821E52 /* MapKit.framework */; };
-		CD7273501B28818200821E52 /* DenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD72734F1B28818200821E52 /* DenunciaViewController.m */; };
+		CAB685431B287C1000F3914A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685411B287C1000F3914A /* Bolts.framework */; };
+		CAB685441B287C1000F3914A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685421B287C1000F3914A /* Parse.framework */; };
+		CAB685471B28825400F3914A /* CadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB685461B28825400F3914A /* CadastroViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +72,10 @@
 		A7160E4C1B27106100CE2FE6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		A7160E4E1B27106B00CE2FE6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A7160E541B2710F600CE2FE6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CAB685411B287C1000F3914A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
+		CAB685421B287C1000F3914A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
+		CAB685451B28825400F3914A /* CadastroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastroViewController.h; sourceTree = "<group>"; };
+		CAB685461B28825400F3914A /* CadastroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CadastroViewController.m; sourceTree = "<group>"; };
 		CD7273421B286C1B00821E52 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../../Downloads/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
 		CD7273431B286C1B00821E52 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
 		CD7273461B287E7000821E52 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -88,9 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD72734A1B28804300821E52 /* MapKit.framework in Frameworks */,
-				CD7273441B286C1B00821E52 /* Bolts.framework in Frameworks */,
-				CD7273451B286C1B00821E52 /* Parse.framework in Frameworks */,
+				CAB685431B287C1000F3914A /* Bolts.framework in Frameworks */,
+				CAB685441B287C1000F3914A /* Parse.framework in Frameworks */,
 				A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */,
 				A7160E4D1B27106100CE2FE6 /* Accounts.framework in Frameworks */,
 				A7160E4B1B27103C00CE2FE6 /* libsqlite3.dylib in Frameworks */,
@@ -120,7 +121,8 @@
 		A7160E011B270EEF00CE2FE6 = {
 			isa = PBXGroup;
 			children = (
-				CD7273491B28804300821E52 /* MapKit.framework */,
+				CAB685411B287C1000F3914A /* Bolts.framework */,
+				CAB685421B287C1000F3914A /* Parse.framework */,
 				CD7273421B286C1B00821E52 /* Bolts.framework */,
 				CD7273431B286C1B00821E52 /* Parse.framework */,
 				A7160E4E1B27106B00CE2FE6 /* Social.framework */,
@@ -161,6 +163,8 @@
 				A7160E121B270EEF00CE2FE6 /* AppDelegate.m */,
 				A7160E171B270EEF00CE2FE6 /* ViewController.h */,
 				A7160E181B270EEF00CE2FE6 /* ViewController.m */,
+				CAB685451B28825400F3914A /* CadastroViewController.h */,
+				CAB685461B28825400F3914A /* CadastroViewController.m */,
 				A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */,
 				A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */,
 				A7160E1F1B270EEF00CE2FE6 /* LaunchScreen.xib */,
@@ -328,6 +332,7 @@
 				CD7273481B287E7000821E52 /* MapViewController.m in Sources */,
 				A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */,
 				A7160E161B270EEF00CE2FE6 /* Animal.xcdatamodeld in Sources */,
+				CAB685471B28825400F3914A /* CadastroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +462,7 @@
 					"$(inherited)",
 					"/Users/leonardo/Downloads/parse-library-1.7.4",
 					"/Users/pedroberbel/Downloads/parse-library-1",
+					"/Users/tiago_cahu/Downloads/parse-library-1",
 				);
 				GCC_PREFIX_HEADER = Animal/PrefixHeader.pch;
 				INFOPLIST_FILE = Animal/Info.plist;
@@ -473,6 +479,7 @@
 					"$(inherited)",
 					"/Users/leonardo/Downloads/parse-library-1.7.4",
 					"/Users/pedroberbel/Downloads/parse-library-1",
+					"/Users/tiago_cahu/Downloads/parse-library-1",
 				);
 				GCC_PREFIX_HEADER = Animal/PrefixHeader.pch;
 				INFOPLIST_FILE = Animal/Info.plist;
