@@ -154,7 +154,7 @@
         <!--Mapa-->
         <scene sceneID="jbk-5W-hv4">
             <objects>
-                <viewController id="pgm-j3-oCc" sceneMemberID="viewController">
+                <viewController id="pgm-j3-oCc" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dlt-5f-HW7"/>
                         <viewControllerLayoutGuide type="bottom" id="51K-Jj-Cp3"/>
@@ -171,6 +171,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa" id="cdc-G4-xvX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mapView" destination="lal-Ia-KA5" id="9b3-bc-R07"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BeX-Fi-0g8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,7 +182,7 @@
         <!--Denúncia-->
         <scene sceneID="Tsb-z8-boc">
             <objects>
-                <viewController id="hpB-vc-oDh" sceneMemberID="viewController">
+                <viewController id="hpB-vc-oDh" customClass="DenunciaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OJy-eg-RWw"/>
                         <viewControllerLayoutGuide type="bottom" id="No0-04-qxr"/>
@@ -187,10 +190,36 @@
                     <view key="view" contentMode="scaleToFill" id="SlI-nI-5QC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-Jn-VIU">
+                                <rect key="frame" x="67" y="81" width="241" height="180"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo de Agressão" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Py-dQ-5Sq">
+                                <rect key="frame" x="120" y="269" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="oi" translatesAutoresizingMaskIntoConstraints="NO" id="Unr-jk-AYp">
+                                <rect key="frame" x="68" y="298" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-3I-L0j">
+                                <rect key="frame" x="122" y="527" width="131" height="30"/>
+                                <state key="normal" title="Registrar Denúncia">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Denúncia" id="lHu-Jb-4xD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="fotoDenuncia" destination="Ayz-Jn-VIU" id="jFb-Oo-VXT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7B-Rk-zxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
