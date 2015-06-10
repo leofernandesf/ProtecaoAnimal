@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -47,7 +47,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YxR-1q-wPy" kind="show" id="Alo-b6-Yqy"/>
+                                    <segue destination="YxR-1q-wPy" kind="showDetail" id="TS8-oq-6yU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,12 +61,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51.5" y="401.5"/>
+            <point key="canvasLocation" x="-98.5" y="401.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Cadastro View Controller-->
         <scene sceneID="OcT-9J-eAe">
             <objects>
-                <viewController id="YxR-1q-wPy" sceneMemberID="viewController">
+                <viewController id="YxR-1q-wPy" customClass="CadastroViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GcH-bK-SNm"/>
                         <viewControllerLayoutGuide type="bottom" id="gzc-Gu-uaB"/>
@@ -109,16 +109,25 @@
                                 <state key="normal" title="Cadastrar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="cadastrar:" destination="YxR-1q-wPy" eventType="touchUpInside" id="u4S-MW-dld"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="gFf-Df-Xzf"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="email" destination="nZL-Hh-nr6" id="Mf4-pu-Rdt"/>
+                        <outlet property="primeiroNome" destination="lW5-sq-dUh" id="bnK-he-6zG"/>
+                        <outlet property="segundoNome" destination="hGn-rx-fvU" id="T6I-68-CKB"/>
+                        <outlet property="senha" destination="7Xy-te-0Fr" id="dpo-2h-ulb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Mj-1H-Bt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="454.5" y="401.5"/>
+            <point key="canvasLocation" x="650.5" y="375.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gZu-rO-umI">
