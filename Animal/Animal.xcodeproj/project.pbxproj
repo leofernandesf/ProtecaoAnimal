@@ -30,6 +30,8 @@
 		A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4E1B27106B00CE2FE6 /* Social.framework */; };
 		CD7273441B286C1B00821E52 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7273421B286C1B00821E52 /* Bolts.framework */; };
 		CD7273451B286C1B00821E52 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7273431B286C1B00821E52 /* Parse.framework */; };
+		CD7273481B287E7000821E52 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273471B287E7000821E52 /* MapViewController.m */; };
+		CD72734A1B28804300821E52 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7273491B28804300821E52 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,9 @@
 		A7160E541B2710F600CE2FE6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CD7273421B286C1B00821E52 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../../Downloads/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
 		CD7273431B286C1B00821E52 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
+		CD7273461B287E7000821E52 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		CD7273471B287E7000821E52 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		CD7273491B28804300821E52 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD72734A1B28804300821E52 /* MapKit.framework in Frameworks */,
 				CD7273441B286C1B00821E52 /* Bolts.framework in Frameworks */,
 				CD7273451B286C1B00821E52 /* Parse.framework in Frameworks */,
 				A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */,
@@ -111,6 +117,7 @@
 		A7160E011B270EEF00CE2FE6 = {
 			isa = PBXGroup;
 			children = (
+				CD7273491B28804300821E52 /* MapKit.framework */,
 				CD7273421B286C1B00821E52 /* Bolts.framework */,
 				CD7273431B286C1B00821E52 /* Parse.framework */,
 				A7160E4E1B27106B00CE2FE6 /* Social.framework */,
@@ -154,6 +161,8 @@
 				A7160E141B270EEF00CE2FE6 /* Animal.xcdatamodeld */,
 				A7160E0D1B270EEF00CE2FE6 /* Supporting Files */,
 				A7160E541B2710F600CE2FE6 /* PrefixHeader.pch */,
+				CD7273461B287E7000821E52 /* MapViewController.h */,
+				CD7273471B287E7000821E52 /* MapViewController.m */,
 			);
 			path = Animal;
 			sourceTree = "<group>";
@@ -286,6 +295,7 @@
 			files = (
 				A7160E131B270EEF00CE2FE6 /* AppDelegate.m in Sources */,
 				A7160E101B270EEF00CE2FE6 /* main.m in Sources */,
+				CD7273481B287E7000821E52 /* MapViewController.m in Sources */,
 				A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */,
 				A7160E161B270EEF00CE2FE6 /* Animal.xcdatamodeld in Sources */,
 			);
