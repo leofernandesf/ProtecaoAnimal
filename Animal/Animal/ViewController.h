@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *nome;
 
+@property (strong, nonatomic) IBOutlet UITextField *email;
+- (IBAction)Login:(id)sender;
 @end
 

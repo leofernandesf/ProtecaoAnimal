@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -59,4 +60,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)go:(id)sender {
+}
+- (IBAction)Login:(id)sender {
+}
 @end
