@@ -173,7 +173,7 @@
         <!--Denúncia-->
         <scene sceneID="Tsb-z8-boc">
             <objects>
-                <viewController id="hpB-vc-oDh" sceneMemberID="viewController">
+                <viewController id="hpB-vc-oDh" customClass="DenunciaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OJy-eg-RWw"/>
                         <viewControllerLayoutGuide type="bottom" id="No0-04-qxr"/>
@@ -197,11 +197,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-3I-L0j">
+                                <rect key="frame" x="122" y="527" width="131" height="30"/>
+                                <state key="normal" title="Registrar Denúncia">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Denúncia" id="lHu-Jb-4xD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="fotoDenuncia" destination="Ayz-Jn-VIU" id="jFb-Oo-VXT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7B-Rk-zxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
