@@ -11,7 +11,8 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UITextField *textFieldUsername;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;
 
 @end
 
@@ -41,18 +42,26 @@
 }
 
 - (IBAction)Login:(id)sender {
-    [PFUser logInWithUsernameInBackground:_nome.text password:_senha.text
-                                    block:^(PFUser *user, NSError *error) {
-                                        if (user) {
-                                            // Do stuff after successful login.
-                                            NSLog(@"Entrou abestado");
-                                        } else {
-                                            NSLog(@"Nao Entrou abestado");
-                                            
-                                            // The login failed. Check error to see why.
-                                        }
-                                    }];
+//    [PFUser logInWithUsernameInBackground:_nome.text password:_senha.text
+//                                    block:^(PFUser *user, NSError *error) {
+//                                        if (user) {
+//                                            // Do stuff after successful login.
+//                                            NSLog(@"Entrou abestado");
+//                                        } else {
+//                                            NSLog(@"Nao Entrou abestado");
+//                                            
+//                                            // The login failed. Check error to see why.
+//                                        }
+//                                    }];
 
+}
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([PFUser logInWithUsername:self.textFieldUsername.text password:self.textFieldPassword.text]){
+        NSLog(@"%@", [PFUser currentUser]);
+        return YES;
+    }
+    return NO;
 }
 
 
