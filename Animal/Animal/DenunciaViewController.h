@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DenunciaViewController : UIViewController
+@interface DenunciaViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+
 @property (strong, nonatomic) IBOutlet UIImageView *fotoDenuncia;
 
+@property (strong, nonatomic) IBOutlet UIPickerView *picker;
 @end

@@ -37,7 +37,7 @@
 }
 
 - (IBAction)Login:(id)sender {
-    [PFUser logInWithUsernameInBackground:_nome.text password:_email.text
+    [PFUser logInWithUsernameInBackground:_nome.text password:_senha.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             // Do stuff after successful login.
