@@ -31,6 +31,7 @@
 		CAB685431B287C1000F3914A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685411B287C1000F3914A /* Bolts.framework */; };
 		CAB685441B287C1000F3914A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685421B287C1000F3914A /* Parse.framework */; };
 		CAB685471B28825400F3914A /* CadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB685461B28825400F3914A /* CadastroViewController.m */; };
+		CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +81,10 @@
 		CD7273431B286C1B00821E52 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
 		CD7273461B287E7000821E52 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		CD7273471B287E7000821E52 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		CD7273491B28804300821E52 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CD72734E1B28818200821E52 /* DenunciaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DenunciaViewController.h; sourceTree = "<group>"; };
 		CD72734F1B28818200821E52 /* DenunciaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DenunciaViewController.m; sourceTree = "<group>"; };
+		CD7273B31B29BD4200821E52 /* MapDenunciaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDenunciaViewController.h; sourceTree = "<group>"; };
+		CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDenunciaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,8 @@
 			children = (
 				CD7273461B287E7000821E52 /* MapViewController.h */,
 				CD7273471B287E7000821E52 /* MapViewController.m */,
+				CD7273B31B29BD4200821E52 /* MapDenunciaViewController.h */,
+				CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */,
 			);
 			name = mapa;
 			sourceTree = "<group>";
@@ -327,11 +331,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7160E131B270EEF00CE2FE6 /* AppDelegate.m in Sources */,
-				CD7273501B28818200821E52 /* DenunciaViewController.m in Sources */,
 				A7160E101B270EEF00CE2FE6 /* main.m in Sources */,
-				CD7273481B287E7000821E52 /* MapViewController.m in Sources */,
 				A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */,
 				A7160E161B270EEF00CE2FE6 /* Animal.xcdatamodeld in Sources */,
+				CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */,
 				CAB685471B28825400F3914A /* CadastroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
