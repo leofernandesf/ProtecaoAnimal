@@ -65,4 +65,6 @@
 }
 
 
+- (IBAction)cadastrar:(id)sender {
+}
 @end

@@ -37,6 +37,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="cadastrar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cFr-Us-uvq"/>
                                     <segue destination="YxR-1q-wPy" kind="showDetail" id="TS8-oq-6yU"/>
                                 </connections>
                             </button>

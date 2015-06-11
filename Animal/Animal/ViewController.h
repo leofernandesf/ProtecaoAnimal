@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *nome;
 @property (strong, nonatomic) IBOutlet UITextField *senha;
+- (IBAction)cadastrar:(id)sender;
 
 //@property (strong, nonatomic) IBOutlet UITextField *senha;
 - (IBAction)Login:(id)sender;
