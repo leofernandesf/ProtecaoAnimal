@@ -5,24 +5,6 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="6H6-Bq-iHB">
-            <objects>
-                <viewController id="Ivr-Yl-sv4" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KYO-1a-jmK"/>
-                        <viewControllerLayoutGuide type="bottom" id="9JS-0z-Jgb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="09f-Og-3Qd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S4k-Q9-UsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-795" y="582"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -46,7 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ny6-mu-QHE"/>
-                                    <segue destination="Ivr-Yl-sv4" kind="show" id="eFl-3h-ZVI"/>
+                                    <segue destination="0Ch-B5-vyk" kind="show" id="03Z-Vq-NJq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xx-L2-vW8">
@@ -168,7 +150,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ai-WM-0Ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98.5" y="1371.5"/>
+            <point key="canvasLocation" x="-98.5" y="1147.5"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="jbk-5W-hv4">
@@ -319,6 +301,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ehw-E1-5q0"/>
+        <segue reference="mTa-Gx-iGM"/>
     </inferredMetricsTieBreakers>
 </document>
