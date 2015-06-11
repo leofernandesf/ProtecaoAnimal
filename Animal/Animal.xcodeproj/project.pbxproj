@@ -28,6 +28,7 @@
 		A7160E4B1B27103C00CE2FE6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4A1B27103C00CE2FE6 /* libsqlite3.dylib */; };
 		A7160E4D1B27106100CE2FE6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4C1B27106100CE2FE6 /* Accounts.framework */; };
 		A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4E1B27106B00CE2FE6 /* Social.framework */; };
+		CA611A861B29D0700047DA9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA611A851B29D0700047DA9B /* MapKit.framework */; };
 		CAB685431B287C1000F3914A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685411B287C1000F3914A /* Bolts.framework */; };
 		CAB685441B287C1000F3914A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685421B287C1000F3914A /* Parse.framework */; };
 		CAB685471B28825400F3914A /* CadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB685461B28825400F3914A /* CadastroViewController.m */; };
@@ -72,6 +73,7 @@
 		A7160E4C1B27106100CE2FE6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		A7160E4E1B27106B00CE2FE6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A7160E541B2710F600CE2FE6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CA611A851B29D0700047DA9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CAB685411B287C1000F3914A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
 		CAB685421B287C1000F3914A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
 		CAB685451B28825400F3914A /* CadastroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastroViewController.h; sourceTree = "<group>"; };
@@ -80,7 +82,6 @@
 		CD7273431B286C1B00821E52 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
 		CD7273461B287E7000821E52 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		CD7273471B287E7000821E52 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		CD7273491B28804300821E52 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CD72734E1B28818200821E52 /* DenunciaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DenunciaViewController.h; sourceTree = "<group>"; };
 		CD72734F1B28818200821E52 /* DenunciaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DenunciaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA611A861B29D0700047DA9B /* MapKit.framework in Frameworks */,
 				CAB685431B287C1000F3914A /* Bolts.framework in Frameworks */,
 				CAB685441B287C1000F3914A /* Parse.framework in Frameworks */,
 				A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */,
@@ -121,6 +123,7 @@
 		A7160E011B270EEF00CE2FE6 = {
 			isa = PBXGroup;
 			children = (
+				CA611A851B29D0700047DA9B /* MapKit.framework */,
 				CAB685411B287C1000F3914A /* Bolts.framework */,
 				CAB685421B287C1000F3914A /* Parse.framework */,
 				CD7273421B286C1B00821E52 /* Bolts.framework */,
@@ -327,9 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7160E131B270EEF00CE2FE6 /* AppDelegate.m in Sources */,
-				CD7273501B28818200821E52 /* DenunciaViewController.m in Sources */,
 				A7160E101B270EEF00CE2FE6 /* main.m in Sources */,
-				CD7273481B287E7000821E52 /* MapViewController.m in Sources */,
 				A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */,
 				A7160E161B270EEF00CE2FE6 /* Animal.xcdatamodeld in Sources */,
 				CAB685471B28825400F3914A /* CadastroViewController.m in Sources */,

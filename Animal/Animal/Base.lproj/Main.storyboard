@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -28,6 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ny6-mu-QHE"/>
+                                    <segue destination="0Ch-B5-vyk" kind="show" identifier="login" id="btP-Rv-cNc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JT-Zl-s9y">
@@ -57,6 +58,8 @@
                     <connections>
                         <outlet property="nome" destination="Iqv-6I-RPf" id="alf-3s-XBz"/>
                         <outlet property="senha" destination="QM7-wa-Dpx" id="dhg-ST-okR"/>
+                        <outlet property="textFieldPassword" destination="QM7-wa-Dpx" id="FS3-mO-YKk"/>
+                        <outlet property="textFieldUsername" destination="Iqv-6I-RPf" id="5zm-tL-Zcl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -182,7 +185,7 @@
         <!--Denúncia-->
         <scene sceneID="Tsb-z8-boc">
             <objects>
-                <viewController id="hpB-vc-oDh" customClass="DenunciaViewController" sceneMemberID="viewController">
+                <viewController id="hpB-vc-oDh" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OJy-eg-RWw"/>
                         <viewControllerLayoutGuide type="bottom" id="No0-04-qxr"/>
