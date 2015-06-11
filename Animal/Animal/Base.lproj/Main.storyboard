@@ -210,6 +210,9 @@
                                 <state key="normal" title="Registrar Denúncia">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="SQ2-IC-6bM" kind="show" id="wbl-fA-CfO"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="97" placeholderIntrinsicHeight="80" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descrição" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wq0-0p-I3o">
                                 <rect key="frame" x="67" y="319" width="241" height="60"/>
@@ -237,9 +240,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Denúncia" id="lHu-Jb-4xD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="fotoDenuncia" destination="Ayz-Jn-VIU" id="jFb-Oo-VXT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7B-Rk-zxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -263,27 +263,31 @@
                                     <navigationItem title="Denúncia" id="W3n-IO-Xyq">
                                         <barButtonItem key="leftBarButtonItem" title="Voltar" id="Uaa-Oq-dHh">
                                             <connections>
-                                                <segue destination="hpB-vc-oDh" kind="show" id="5C0-A2-g25"/>
+                                                <segue destination="hpB-vc-oDh" kind="show" id="Ehw-E1-5q0"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="G7c-PP-s5S"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="G7c-PP-s5S"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JmQ-Z2-lfq">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="SQ2-IC-6bM" id="wly-L9-h0t"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="Save" destination="G7c-PP-s5S" id="DOJ-A1-SrF"/>
                         <outlet property="mapViewDenuncia" destination="JmQ-Z2-lfq" id="wB4-fs-KBQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOd-cf-gVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001.5" y="1259.5"/>
+            <point key="canvasLocation" x="1085.5" y="1243.5"/>
         </scene>
         <!--Info-->
         <scene sceneID="Zs3-Lz-d3t">
@@ -311,10 +315,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh7-fb-lLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="511.5" y="2715.5"/>
+            <point key="canvasLocation" x="511.5" y="2701.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5C0-A2-g25"/>
+        <segue reference="Ehw-E1-5q0"/>
     </inferredMetricsTieBreakers>
 </document>

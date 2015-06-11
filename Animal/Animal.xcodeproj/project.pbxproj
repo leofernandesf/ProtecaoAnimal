@@ -130,7 +130,7 @@
 		A7160E011B270EEF00CE2FE6 = {
 			isa = PBXGroup;
 			children = (
-				A7160EAC1B29C4C800CE2FE6 /* FrameWorks */,
+				CD7273B61B29C43700821E52 /* framework */,
 				A7160E0C1B270EEF00CE2FE6 /* Animal */,
 				A7160E291B270EEF00CE2FE6 /* AnimalTests */,
 				A7160E0B1B270EEF00CE2FE6 /* Products */,
@@ -244,6 +244,30 @@
 			children = (
 			);
 			name = informacoes;
+			sourceTree = "<group>";
+		};
+		CD7273B61B29C43700821E52 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				CAB685411B287C1000F3914A /* Bolts.framework */,
+				CAB685421B287C1000F3914A /* Parse.framework */,
+				CD7273421B286C1B00821E52 /* Bolts.framework */,
+				CD7273431B286C1B00821E52 /* Parse.framework */,
+				A7160E4E1B27106B00CE2FE6 /* Social.framework */,
+				A7160E4C1B27106100CE2FE6 /* Accounts.framework */,
+				A7160E4A1B27103C00CE2FE6 /* libsqlite3.dylib */,
+				A7160E481B27102D00CE2FE6 /* libz.dylib */,
+				A7160E461B27102100CE2FE6 /* SystemConfiguration.framework */,
+				A7160E441B27101400CE2FE6 /* StoreKit.framework */,
+				A7160E421B27100800CE2FE6 /* Security.framework */,
+				A7160E401B270FFC00CE2FE6 /* QuartzCore.framework */,
+				A7160E3E1B270FEF00CE2FE6 /* MobileCoreServices.framework */,
+				A7160E3C1B270FE200CE2FE6 /* CoreLocation.framework */,
+				A7160E3A1B270FD700CE2FE6 /* CoreGraphics.framework */,
+				A7160E381B270FCA00CE2FE6 /* CFNetwork.framework */,
+				A7160E361B270FBF00CE2FE6 /* AudioToolbox.framework */,
+			);
+			name = framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
