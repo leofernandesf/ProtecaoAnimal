@@ -9,6 +9,7 @@
 #import "MapDenunciaViewController.h"
 
 @interface MapDenunciaViewController ()
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *Save;
 
 @end
 
@@ -23,14 +24,57 @@
     self.coreLocation = [[CLLocationManager alloc] init];
     [self.coreLocation requestAlwaysAuthorization];
     
+   
+    
+    
+    self.navigationItem.hidesBackButton = YES;
+    UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithTitle:@"Save"
+                                                             style:UIBarButtonItemStyleBordered
+                                                            target:self
+                                                            action:@selector(Save:)];
+    
+    self.navigationItem.RightBarButtonItem = save;
+
 }
+
+-(void)Save:(UIBarButtonItem *)sender
+{
+    NSLog(@"oioioioii");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert"
+                                                    message:@"...Do you want to proceed?"
+                                                   delegate:self
+                                          cancelButtonTitle:@"No"
+                                          otherButtonTitles:@"Yes", nil];
+    [alert show];
+}
+
+
+
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch(buttonIndex) {
+        case 0: //"No" pressed
+            //do something?
+            break;
+        case 1: //"Yes" pressed
+            //here you pop the viewController
+            [self.navigationController popViewControllerAnimated:YES];
+            break;
+    }
+}
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+- (void) mapViewDenuncia:(MKMapView *)mapViewDenuncia didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     MKCoordinateRegion mc = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
     [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:mc] animated:YES];
