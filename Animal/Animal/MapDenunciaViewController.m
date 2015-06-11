@@ -1,25 +1,24 @@
 //
-//  MapViewController.m
+//  MapDenunciaViewController.m
 //  Animal
 //
-//  Created by Pedro Luis Berbel dos Santos on 10/06/15.
+//  Created by Pedro Luis Berbel dos Santos on 11/06/15.
 //  Copyright (c) 2015 leonardo fernandes farias. All rights reserved.
 //
 
-#import "MapViewController.h"
+#import "MapDenunciaViewController.h"
 
-@interface MapViewController ()
+@interface MapDenunciaViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation MapDenunciaViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    self.mapView.delegate = self;
-    self.mapView.showsUserLocation = YES;
+    self.mapViewDenuncia.delegate = self;
+    self.mapViewDenuncia.showsUserLocation = YES;
     
     self.coreLocation = [[CLLocationManager alloc] init];
     [self.coreLocation requestAlwaysAuthorization];
@@ -31,15 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-
-
 - (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     MKCoordinateRegion mc = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
-    [self.mapView setRegion:[self.mapView regionThatFits:mc] animated:YES];
+    [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:mc] animated:YES];
 }
 
 @end

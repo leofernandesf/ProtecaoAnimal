@@ -147,7 +147,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ai-WM-0Ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="523.5" y="-356.5"/>
+            <point key="canvasLocation" x="-98.5" y="1371.5"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="jbk-5W-hv4">
@@ -175,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BeX-Fi-0g8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="911.5" y="-356.5"/>
+            <point key="canvasLocation" x="511.5" y="1979.5"/>
         </scene>
         <!--Denúncia-->
         <scene sceneID="Tsb-z8-boc">
@@ -214,7 +214,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3t-Rb-2gB">
-                                <rect key="frame" x="164" y="247" width="47" height="30"/>
+                                <rect key="frame" x="164" y="238" width="47" height="30"/>
                                 <state key="normal" title="fotinha">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -230,7 +230,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7B-Rk-zxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304.5" y="-356.5"/>
+            <point key="canvasLocation" x="511.5" y="1259.5"/>
+        </scene>
+        <!--Map Denuncia View Controller-->
+        <scene sceneID="J86-E7-QNF">
+            <objects>
+                <viewController id="SQ2-IC-6bM" customClass="MapDenunciaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oUl-2d-oAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Iyl-MR-4Zj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bPF-pj-wg1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-pd-7ck">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Denúncia" id="W3n-IO-Xyq">
+                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="Uaa-Oq-dHh">
+                                            <connections>
+                                                <segue destination="hpB-vc-oDh" kind="show" id="5C0-A2-g25"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="G7c-PP-s5S"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JmQ-Z2-lfq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mapViewDenuncia" destination="JmQ-Z2-lfq" id="wB4-fs-KBQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOd-cf-gVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001.5" y="1259.5"/>
         </scene>
         <!--Info-->
         <scene sceneID="Zs3-Lz-d3t">
@@ -258,7 +298,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh7-fb-lLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694.5" y="-356.5"/>
+            <point key="canvasLocation" x="511.5" y="2715.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5C0-A2-g25"/>
+    </inferredMetricsTieBreakers>
 </document>
