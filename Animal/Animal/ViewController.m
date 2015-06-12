@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController ()
 
@@ -19,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     
     
     
@@ -51,6 +55,12 @@
 //                                        }
 //                                    }];
 
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([PFUser logInWithUsername:self.textFieldUsername.text password:self.textFieldPassword.text]){
+        NSLog(@"%@", [PFUser currentUser]);
+        return YES;
+    }
+    return NO;
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
@@ -64,4 +74,6 @@
 
 
 
+- (IBAction)cadastrar:(id)sender {
+}
 @end

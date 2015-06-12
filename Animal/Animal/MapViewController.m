@@ -21,8 +21,8 @@
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
     
-    self.coreLocation = [[CLLocationManager alloc] init];
-    [self.coreLocation requestAlwaysAuthorization];
+   // self.coreLocation = [[CLLocationManager alloc] init];
+    //[self.coreLocation requestAlwaysAuthorization];
     
 }
 
@@ -34,12 +34,7 @@
 /*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 - (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
