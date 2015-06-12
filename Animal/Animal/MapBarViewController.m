@@ -27,6 +27,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+    CLLocationCoordinate2D pinlocation;
+    
+    // Add an annotation
+    MKPointAnnotation *Pin = [[MKPointAnnotation alloc]init];
+    Pin.coordinate = pinlocation;
+    Pin.title = @"Annotation Title";
+    Pin.subtitle = @"Annotation Subtitle";
+    
+    [mapView addAnnotation:Pin];
+}
+
+
+
 /*
 #pragma mark - Navigation
 

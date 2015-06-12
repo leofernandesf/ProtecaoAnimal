@@ -18,4 +18,5 @@
 @property(nonatomic, strong) CLLocationManager *coreLocation;
 
 
+
 @end

@@ -13,5 +13,7 @@
 @interface MapBarViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate>
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapBarView;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+
 
 @end

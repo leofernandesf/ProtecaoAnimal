@@ -28,17 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ny6-mu-QHE"/>
-                                    <segue destination="0Ch-B5-vyk" kind="show" identifier="login" id="btP-Rv-cNc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xx-L2-vW8">
-                                <rect key="frame" x="153" y="371" width="68" height="30"/>
-                                <state key="normal" title="Cadastrar">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cadastrar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cFr-Us-uvq"/>
-                                    <segue destination="YxR-1q-wPy" kind="showDetail" id="TS8-oq-6yU"/>
+                                    <segue destination="0Ch-B5-vyk" kind="show" identifier="login" id="03Z-Vq-NJq"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QM7-wa-Dpx">
@@ -184,6 +174,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapBarView" destination="Tzt-bf-ZGZ" id="XkE-tI-WSk"/>
+                        <outlet property="mapView" destination="Tzt-bf-ZGZ" id="evs-IC-hWV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BeX-Fi-0g8" userLabel="First Responder" sceneMemberID="firstResponder"/>

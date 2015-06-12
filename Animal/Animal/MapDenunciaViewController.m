@@ -11,6 +11,7 @@
 @interface MapDenunciaViewController ()
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *Save;
 
+
 @end
 
 @implementation MapDenunciaViewController
@@ -34,8 +35,13 @@
                                                             action:@selector(Save:)];
     
     self.navigationItem.RightBarButtonItem = save;
-
+    
+    
+    
+    
 }
+
+
 
 -(void)Save:(UIBarButtonItem *)sender
 {
