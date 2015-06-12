@@ -50,6 +50,15 @@
                                 <rect key="frame" x="93" y="314" width="188" height="39"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdL-xQ-a14">
+                                <rect key="frame" x="149" y="381" width="68" height="30"/>
+                                <state key="normal" title="Cadastrar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YxR-1q-wPy" kind="show" identifier="cadastrar" id="Ckf-oN-f9d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -129,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Mj-1H-Bt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="650.5" y="375.5"/>
+            <point key="canvasLocation" x="427.5" y="451.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gZu-rO-umI">
