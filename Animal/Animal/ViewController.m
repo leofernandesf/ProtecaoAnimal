@@ -54,6 +54,8 @@
 //                                            // The login failed. Check error to see why.
 //                                        }
 //                                    }];
+}
+
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if ([PFUser logInWithUsername:self.textFieldUsername.text password:self.textFieldPassword.text]){
@@ -62,18 +64,6 @@
     }
     return NO;
 }
+    
 
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if ([PFUser logInWithUsername:self.textFieldUsername.text password:self.textFieldPassword.text]){
-        NSLog(@"%@", [PFUser currentUser]);
-        return YES;
-    }
-    return NO;
-}
-
-
-
-
-- (IBAction)cadastrar:(id)sender {
-}
 @end
