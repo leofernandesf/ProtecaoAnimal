@@ -25,14 +25,8 @@
     self.coreLocation = [[CLLocationManager alloc] init];
     [self.coreLocation requestAlwaysAuthorization];
     
-   
+  // MKCoordinateRegion region = {{0.0 , 0.0} , {0.0 , 0.0}};
     
-    
-    self.navigationItem.hidesBackButton = YES;
-    UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithTitle:@"Save"
-                                                             style:UIBarButtonItemStyleBordered
-                                                            target:self
-                                                            action:@selector(Save:)];
     
     self.navigationItem.RightBarButtonItem = save;
     
@@ -53,6 +47,17 @@
                                           otherButtonTitles:@"Yes", nil];
     [alert show];
 }
+
+//-(void)Save:(UIBarButtonItem *)sender
+//{
+//    NSLog(@"oioioioii");
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert"
+//                                                    message:@"...Do you want to proceed?"
+//                                                   delegate:self
+//                                          cancelButtonTitle:@"No"
+//                                          otherButtonTitles:@"Yes", nil];
+//    [alert show];
+//}
 
 
 
@@ -80,10 +85,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+//- (void) mapViewDenuncia:(MKMapView *)mapViewDenuncia didUpdateUserLocation:(MKUserLocation *)userLocation
+//{
+//    MKCoordinateRegion mc = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
+//    [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:mc] animated:YES];
+//}
 - (void) mapViewDenuncia:(MKMapView *)mapViewDenuncia didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    MKCoordinateRegion mc = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
-    [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:mc] animated:YES];
+   
+        
+        
+        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
+        [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:region] animated:YES];
+      
 }
-
 @end

@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 
+
 @interface MapDenunciaViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UIAlertViewDelegate>
 
 
