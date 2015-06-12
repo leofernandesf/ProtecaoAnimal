@@ -273,6 +273,7 @@
                     <connections>
                         <outlet property="Save" destination="G7c-PP-s5S" id="DOJ-A1-SrF"/>
                         <outlet property="mapViewDenuncia" destination="JmQ-Z2-lfq" id="wB4-fs-KBQ"/>
+                        <outlet property="save" destination="G7c-PP-s5S" id="ML2-SS-kb9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOd-cf-gVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -309,6 +310,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mTa-Gx-iGM"/>
+        <segue reference="Ehw-E1-5q0"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -11,11 +11,13 @@
 #import <CoreLocation/CoreLocation.h>
 
 
+
 @interface MapDenunciaViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UIAlertViewDelegate>
 
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapViewDenuncia;
 @property(nonatomic, strong) CLLocationManager *coreLocation;
 
-
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *save;
+//@property (nonatomic) NSInteger local;
 @end
