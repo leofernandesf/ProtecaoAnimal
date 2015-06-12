@@ -57,7 +57,7 @@
 
 }
 
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier Login:(id)sender {
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     if ([identifier isEqualToString:@"login"]&&[PFUser logInWithUsername:self.textFieldUsername.text password:self.textFieldPassword.text]){
         NSLog(@"%@", [PFUser currentUser]);
         return YES;
