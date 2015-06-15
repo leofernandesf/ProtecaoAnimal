@@ -25,11 +25,11 @@
     [self.coreLocation requestAlwaysAuthorization];
     
   // MKCoordinateRegion region = {{0.0 , 0.0} , {0.0 , 0.0}};
-    
-    
-
-
+   
 }
+
+
+
 
 //-(void)Save:(UIBarButtonItem *)sender
 //{
@@ -82,4 +82,6 @@
         [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:region] animated:YES];
       
 }
+
+
 @end
