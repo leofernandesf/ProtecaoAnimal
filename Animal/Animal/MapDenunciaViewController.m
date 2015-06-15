@@ -28,7 +28,7 @@
   // MKCoordinateRegion region = {{0.0 , 0.0} , {0.0 , 0.0}};
     
     
-    self.navigationItem.RightBarButtonItem = save;
+   // self.navigationItem.rightBarButtonItem = save;
     
     
     
