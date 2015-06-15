@@ -32,12 +32,12 @@
 		CAB685431B287C1000F3914A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685411B287C1000F3914A /* Bolts.framework */; };
 		CAB685441B287C1000F3914A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685421B287C1000F3914A /* Parse.framework */; };
 		CAB685471B28825400F3914A /* CadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB685461B28825400F3914A /* CadastroViewController.m */; };
+		CACA787C1B2F187E0028F90C /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CACA787B1B2F187E0028F90C /* Annotation.m */; };
 		CAD435F01B2B0C0000249D98 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD435EF1B2B0C0000249D98 /* FBSDKCoreKit.framework */; };
 		CAD435F21B2B0C1200249D98 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD435F11B2B0C1200249D98 /* FBSDKLoginKit.framework */; };
 		CAD435F41B2B0C2100249D98 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD435F31B2B0C2100249D98 /* FBSDKShareKit.framework */; };
 		CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */; };
 		CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */; };
-		CD7273D91B2B119C00821E52 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7273D81B2B119C00821E52 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +84,8 @@
 		CAB685421B287C1000F3914A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
 		CAB685451B28825400F3914A /* CadastroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CadastroViewController.h; sourceTree = "<group>"; };
 		CAB685461B28825400F3914A /* CadastroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CadastroViewController.m; sourceTree = "<group>"; };
+		CACA787A1B2F187E0028F90C /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		CACA787B1B2F187E0028F90C /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		CAD435EF1B2B0C0000249D98 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CAD435F11B2B0C1200249D98 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CAD435F31B2B0C2100249D98 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -95,7 +97,6 @@
 		CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDenunciaViewController.m; sourceTree = "<group>"; };
 		CD7273D51B2A2D2C00821E52 /* MapBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBarViewController.h; sourceTree = "<group>"; };
 		CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapBarViewController.m; sourceTree = "<group>"; };
-		CD7273D81B2B119C00821E52 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +230,8 @@
 				CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */,
 				CD7273D51B2A2D2C00821E52 /* MapBarViewController.h */,
 				CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */,
+				CACA787A1B2F187E0028F90C /* Annotation.h */,
+				CACA787B1B2F187E0028F90C /* Annotation.m */,
 			);
 			name = mapa;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			files = (
 				A7160E131B270EEF00CE2FE6 /* AppDelegate.m in Sources */,
 				A7160E101B270EEF00CE2FE6 /* main.m in Sources */,
+				CACA787C1B2F187E0028F90C /* Annotation.m in Sources */,
 				A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */,
 				A7160E161B270EEF00CE2FE6 /* Animal.xcdatamodeld in Sources */,
 				CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */,

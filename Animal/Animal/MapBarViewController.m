@@ -7,18 +7,71 @@
 //
 
 #import "MapBarViewController.h"
+#import "Annotation.h"
 
 @interface MapBarViewController ()
 
 @end
 
+//wimbledon
+#define WIMB_LATITUDE 51.434783;
+#define WIMB_LONGITUDE -0.213428;
+
+//Span
+#define THE_SPAN 0.01f;
+
+
+
+
+
 @implementation MapBarViewController
+@synthesize mapBarView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
     
-    self.mapBarView.delegate = self;
+    
+    
+    //create the region
+    MKCoordinateRegion myRegion;
+    
+    //center
+    CLLocationCoordinate2D center;
+    center.latitude = WIMB_LATITUDE;
+    center.longitude = WIMB_LONGITUDE;
+    
+    //Span
+    MKCoordinateSpan span;
+    span.latitudeDelta = THE_SPAN;
+    span.longitudeDelta = THE_SPAN;
+    
+    myRegion.center = center;
+    myRegion.span = span;
+    
+    [mapBarView setRegion:myRegion animated:YES];
+    
+    
+    //Annotation
+    
+
+   //1. Create a coordinate for use
+    CLLocationCoordinate2D wimbLocation;
+    wimbLocation.latitude = WIMB_LATITUDE;
+    wimbLocation.longitude = WIMB_LONGITUDE;
+    
+    Annotation *myAnnotation = [Annotation alloc];
+    myAnnotation.coordinate = wimbLocation;
+    myAnnotation.title = @"wimbledon";
+    myAnnotation.subtitle = @"home";
+    
+    [self.mapBarView addAnnotation:myAnnotation];
+    
+    
+    
+
+
+    
+   // self.mapBarView.delegate = self;
     
 }
 
@@ -34,16 +87,20 @@
     CLLocationCoordinate2D pinlocation;
     
     // Add an annotation
-    MKPointAnnotation *Pin = [[MKPointAnnotation alloc]init];
+     MKPointAnnotation *Pin = [[MKPointAnnotation alloc]init];
     Pin.coordinate = pinlocation;
     Pin.title = @"Annotation Title";
     Pin.subtitle = @"Annotation Subtitle";
     
-    [mapView addAnnotation:Pin];
-}
-
-
-
+    [mapView addAnnotation:Pin]; 
+    
+    
+    
+    
+        
+    
+    
+    
 /*
 #pragma mark - Navigation
 
@@ -54,4 +111,5 @@
 }
 */
 
+}
 @end
