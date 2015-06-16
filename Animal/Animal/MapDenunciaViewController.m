@@ -131,6 +131,10 @@ NSMutableArray *_cameras;
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
             [alert show];
+//            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//            MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+//            [self presentViewController:viewController animated:YES completion:nil];
+
         } else {
             NSLog(@"%@", error.userInfo);
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
@@ -142,8 +146,11 @@ NSMutableArray *_cameras;
         }
     }];
     
-    [self dismissViewControllerAnimated:YES completion:nil];
-    [self.navigationController popViewControllerAnimated: YES];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self.navigationController popViewControllerAnimated: YES];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+    [self presentViewController:viewController animated:YES completion:nil];
     
     }
 
@@ -210,10 +217,13 @@ NSMutableArray *_cameras;
             }
         }];
         
-        [self dismissViewControllerAnimated:YES completion:nil];
-        [self.navigationController popViewControllerAnimated: YES];
-        
-        
+        //[self dismissViewControllerAnimated:YES completion:nil];
+       //[self.navigationController popViewControllerAnimated: YES];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+    [self presentViewController:viewController animated:YES completion:nil];
+    
+    
         
     
 }
