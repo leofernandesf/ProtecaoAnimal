@@ -7,6 +7,7 @@
 //
 
 #import "MapBarViewController.h"
+#import "Annotation.h"
 
 @interface MapBarViewController ()
 
@@ -17,11 +18,22 @@
 
 @end
 
+//wimbledon
+#define WIMB_LATITUDE 51.434783;
+#define WIMB_LONGITUDE -0.213428;
+
+//Span
+#define THE_SPAN 0.01f;
+
+
+
+
+
 @implementation MapBarViewController
+@synthesize mapBarView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
     
     self.mapBarView.delegate = self;
     // ** Don't forget to add NSLocationWhenInUseUsageDescription in MyApp-Info.plist and give it a string
@@ -81,6 +93,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+    CLLocationCoordinate2D pinlocation;
+    
+    // Add an annotation
+     MKPointAnnotation *Pin = [[MKPointAnnotation alloc]init];
+    Pin.coordinate = pinlocation;
+    Pin.title = @"Annotation Title";
+    Pin.subtitle = @"Annotation Subtitle";
+    
+    [mapView addAnnotation:Pin]; 
+    
+    
+    
+    
+        
+    
+    
+    
 /*
 #pragma mark - Navigation
 
@@ -91,4 +124,5 @@
 }
 */
 
+}
 @end
