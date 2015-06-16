@@ -7,6 +7,9 @@
 //
 
 #import "MapDenunciaViewController.h"
+#import "Annotation.h"
+
+
 
 @interface MapDenunciaViewController ()
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *Save;
@@ -44,9 +47,21 @@ NSMutableArray *_cameras;
  
     
     
+//    UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
+//    [self.mapViewDenuncia addGestureRecognizer:longPressGesture];
+    
+    
+    
+    // setando os pinos
+    
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager requestAlwaysAuthorization];
+ // UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
     UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
     [self.mapViewDenuncia addGestureRecognizer:longPressGesture];
-    
     
 }
 
@@ -72,9 +87,6 @@ NSMutableArray *_cameras;
     // Dispose of any resources that can be recreated.
 }
 
-
-- (void)handleLongPressGesture:(UIGestureRecognizer*)sender {
-}
 
 - (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
@@ -217,4 +229,26 @@ NSMutableArray *_cameras;
         
     
 }
+
+
+
+//setando pinos
+- (void)handleLongPressGesture:(UIGestureRecognizer*)sender
+{
+    if(sender.state == UIGestureRecognizerStateBegan)
+    {
+        CGPoint point = [sender locationInView:self.mapViewDenuncia];
+        CLLocationCoordinate2D locCoord = [self.mapViewDenuncia convertPoint:point toCoordinateFromView:self.mapViewDenuncia];
+MKPointAnnotation *dropPin = [[MKPointAnnotation alloc] init];
+dropPin.coordinate = locCoord;
+[self.mapViewDenuncia addAnnotation:dropPin];
+CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longitude:locCoord.longitude];
+}
+}
+
+
+
+
 @end
+
+

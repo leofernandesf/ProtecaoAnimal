@@ -35,6 +35,10 @@
 //        // Do any additional setup after loading the view, typically from a nib.
     
     
+    // teclado some quando clicar na tela
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    tap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tap];
     
     
     }
@@ -70,9 +74,18 @@
     return NO;
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+
+//some teclado, verificar
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return YES;
+}
+
+
+- (void)dismissKeyboard {
+    [self.nome resignFirstResponder];
+    [self.senha resignFirstResponder];
+    
 }
 
 @end

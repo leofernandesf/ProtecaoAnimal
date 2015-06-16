@@ -15,7 +15,7 @@
 
 
 
-@interface MapDenunciaViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UIAlertViewDelegate>
+@interface MapDenunciaViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UIAlertViewDelegate, CLLocationManagerDelegate>
 - (IBAction)salvar:(id)sender;
 
 - (IBAction)testar:(id)sender;
@@ -23,6 +23,7 @@
 @property (strong, nonatomic) IBOutlet MKMapView *mapViewDenuncia;
 @property(nonatomic, strong) CLLocationManager *coreLocation;
 - (IBAction)salvaTeste:(id)sender;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 
 @end
