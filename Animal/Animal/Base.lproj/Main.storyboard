@@ -133,7 +133,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="gZu-rO-umI">
             <objects>
-                <tabBarController id="0Ch-B5-vyk" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MapaGlobal" id="0Ch-B5-vyk" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="AlW-re-DFg"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -155,7 +155,7 @@
         <!--Mapa-->
         <scene sceneID="jbk-5W-hv4">
             <objects>
-                <viewController id="pgm-j3-oCc" customClass="MapBarViewController" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="pgm-j3-oCc" customClass="MapBarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dlt-5f-HW7"/>
                         <viewControllerLayoutGuide type="bottom" id="51K-Jj-Cp3"/>
