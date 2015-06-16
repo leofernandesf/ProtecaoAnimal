@@ -17,7 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    // teclado some quando clicar na tela
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    tap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tap];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,5 +38,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+/*
+ ATIVAR ESTA PARTE QUANDO A TELA ESTIVER PRONTA!!!!
+ 
+//some teclado, verificar
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 
+
+- (void)dismissKeyboard {
+    [self. resignFirstResponder];
+    [self.segundoNome resignFirstResponder];
+    [self.email resignFirstResponder];
+    [self.senha resignFirstResponder];
+}
+*/
 @end

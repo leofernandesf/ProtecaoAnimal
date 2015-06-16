@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    // teclado some quando clicar na tela
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    tap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tap];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +60,20 @@
         } else {   NSString *errorString = [error userInfo][@"error"];   // Show the errorString somewhere and let the user try again.
         }
     }];
+}
+
+//some teclado, verificar
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
+- (void)dismissKeyboard {
+    [self.primeiroNome resignFirstResponder];
+    [self.segundoNome resignFirstResponder];
+    [self.email resignFirstResponder];
+    [self.senha resignFirstResponder];
 }
 
 
