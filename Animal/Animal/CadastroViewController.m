@@ -35,19 +35,23 @@
 */
 - (IBAction)cadastrar:(id)sender {
     PFUser *user = [PFUser user];
-        user.username = _primeiroNome.text;
-        user.password = _senha.text;
-        user.email = _email.text;
+    user.username = _primeiroNome.text;
+    user.password = _senha.text;
+    user.email = _email.text;
+    user[@"segundoNome"] = self.segundoNome.text;
     
-        // other fields can be set just like with PFObject
-       // user[@"Last Name"] = _segundoNome.text;
+    // other fields can be set just like with PFObject
+    // user[@"Last Name"] = _segundoNome.text;
     
-        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (!error) {   // Hooray! Let them use the app now.
-            } else {   NSString *errorString = [error userInfo][@"error"];   // Show the errorString somewhere and let the user try again.
-            }
-        }];
-
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            UIStoryboard *oi = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            ViewController *viewcontroller = (ViewController *) [oi instantiateViewControllerWithIdentifier:@"login"];
+            [self presentViewController:viewcontroller animated:YES completion:nil];
+            // Hooray! Let them use the app now.
+        } else {   NSString *errorString = [error userInfo][@"error"];   // Show the errorString somewhere and let the user try again.
+        }
+    }];
 }
 
 

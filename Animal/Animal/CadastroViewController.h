@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewCOntroller.h"
+
 
 @interface CadastroViewController : UIViewController
 

@@ -8,17 +8,21 @@
 
 #import <UIKit/UIKit.h>
 @import MapKit;
+#import <CoreGraphics/CoreGraphics.h>
 #import <CoreLocation/CoreLocation.h>
-#import "MapPin.h"
+#import <MapKit/MKFoundation.h>
+
 
 
 
 @interface MapDenunciaViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UIAlertViewDelegate>
+- (IBAction)salvar:(id)sender;
 
-
+- (IBAction)testar:(id)sender;
+@property (nonatomic) CLLocation *location;
 @property (strong, nonatomic) IBOutlet MKMapView *mapViewDenuncia;
 @property(nonatomic, strong) CLLocationManager *coreLocation;
+- (IBAction)salvaTeste:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *save;
-//@property (nonatomic) NSInteger local;
+
 @end

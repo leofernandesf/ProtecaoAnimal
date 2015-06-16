@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 
 
-@interface MapBarViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate>
+@interface MapBarViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapBarView;
 

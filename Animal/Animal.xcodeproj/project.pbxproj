@@ -37,7 +37,6 @@
 		CD7273D41B29E65B00821E52 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7273D31B29E65B00821E52 /* FBSDKShareKit.framework */; };
 		CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */; };
 		CD7273D91B2B119C00821E52 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7273D81B2B119C00821E52 /* MapKit.framework */; };
-		CD7273DC1B2B340F00821E52 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273DB1B2B340F00821E52 /* MapPin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +92,6 @@
 		CD7273D51B2A2D2C00821E52 /* MapBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBarViewController.h; sourceTree = "<group>"; };
 		CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapBarViewController.m; sourceTree = "<group>"; };
 		CD7273D81B2B119C00821E52 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		CD7273DA1B2B340F00821E52 /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
-		CD7273DB1B2B340F00821E52 /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,8 +209,6 @@
 				CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */,
 				CD7273D51B2A2D2C00821E52 /* MapBarViewController.h */,
 				CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */,
-				CD7273DA1B2B340F00821E52 /* MapPin.h */,
-				CD7273DB1B2B340F00821E52 /* MapPin.m */,
 			);
 			name = mapa;
 			sourceTree = "<group>";
@@ -354,7 +349,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7273DC1B2B340F00821E52 /* MapPin.m in Sources */,
 				A7160E131B270EEF00CE2FE6 /* AppDelegate.m in Sources */,
 				A7160E101B270EEF00CE2FE6 /* main.m in Sources */,
 				A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */,
