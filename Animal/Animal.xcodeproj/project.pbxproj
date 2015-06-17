@@ -36,6 +36,7 @@
 		CAD435F01B2B0C0000249D98 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD435EF1B2B0C0000249D98 /* FBSDKCoreKit.framework */; };
 		CAD435F21B2B0C1200249D98 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD435F11B2B0C1200249D98 /* FBSDKLoginKit.framework */; };
 		CAD435F41B2B0C2100249D98 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD435F31B2B0C2100249D98 /* FBSDKShareKit.framework */; };
+		CD5E675A1B31C58F0018D99F /* DenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E67591B31C58F0018D99F /* DenunciaViewController.m */; };
 		CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */; };
 		CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */; };
 /* End PBXBuildFile section */
@@ -89,10 +90,10 @@
 		CAD435EF1B2B0C0000249D98 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CAD435F11B2B0C1200249D98 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CAD435F31B2B0C2100249D98 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CD5E67581B31C58F0018D99F /* DenunciaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DenunciaViewController.h; sourceTree = "<group>"; };
+		CD5E67591B31C58F0018D99F /* DenunciaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DenunciaViewController.m; sourceTree = "<group>"; };
 		CD7273421B286C1B00821E52 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "/Downloads/parse-library-1/Bolts.framework"; sourceTree = "<absolute>"; };
 		CD7273431B286C1B00821E52 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "/Downloads/parse-library-1/Parse.framework"; sourceTree = "<absolute>"; };
-		CD72734E1B28818200821E52 /* DenunciaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DenunciaViewController.h; sourceTree = "<group>"; };
-		CD72734F1B28818200821E52 /* DenunciaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DenunciaViewController.m; sourceTree = "<group>"; };
 		CD7273B31B29BD4200821E52 /* MapDenunciaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDenunciaViewController.h; sourceTree = "<group>"; };
 		CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDenunciaViewController.m; sourceTree = "<group>"; };
 		CD7273D51B2A2D2C00821E52 /* MapBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBarViewController.h; sourceTree = "<group>"; };
@@ -247,8 +248,8 @@
 		CD72734C1B2880E700821E52 /* denuncia */ = {
 			isa = PBXGroup;
 			children = (
-				CD72734E1B28818200821E52 /* DenunciaViewController.h */,
-				CD72734F1B28818200821E52 /* DenunciaViewController.m */,
+				CD5E67581B31C58F0018D99F /* DenunciaViewController.h */,
+				CD5E67591B31C58F0018D99F /* DenunciaViewController.m */,
 			);
 			name = denuncia;
 			sourceTree = "<group>";
@@ -367,6 +368,7 @@
 				A7160E161B270EEF00CE2FE6 /* Animal.xcdatamodeld in Sources */,
 				CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */,
 				CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */,
+				CD5E675A1B31C58F0018D99F /* DenunciaViewController.m in Sources */,
 				CAB685471B28825400F3914A /* CadastroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
