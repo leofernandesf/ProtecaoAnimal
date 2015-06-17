@@ -26,5 +26,6 @@
 - (IBAction)salvaTeste:(id)sender;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
+- (IBAction)save:(id)sender;
 
 @end

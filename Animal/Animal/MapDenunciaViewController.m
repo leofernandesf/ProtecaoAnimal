@@ -253,6 +253,9 @@ CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude
 
 
 
+- (IBAction)save:(id)sender {
+    NSLog(@"clicou no botal do save");
+}
 @end
 
 

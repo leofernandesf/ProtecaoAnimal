@@ -290,7 +290,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="teste" id="SU4-fk-ThF">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="AFw-hc-LNT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="AFw-hc-LNT">
+                            <connections>
+                                <action selector="save:" destination="SQ2-IC-6bM" id="gOM-mR-fcB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
