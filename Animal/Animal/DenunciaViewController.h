@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DenunciaViewController : UIViewController <UITextFieldDelegate>
+@interface DenunciaViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *tipo;
 @property (strong, nonatomic) IBOutlet UITextField *descricao;
 @property (strong, nonatomic) IBOutlet UITextField *referencia;
-- (IBAction)foto:(id)sender;
 
+@property (nonatomic, retain) UIImage * image;
+
+@property (strong, nonatomic) IBOutlet UIImageView *foto;
+- (IBAction)foto:(id)sender;
 @end
