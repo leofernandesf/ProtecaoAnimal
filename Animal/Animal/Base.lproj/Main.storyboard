@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -249,7 +249,7 @@
             </objects>
             <point key="canvasLocation" x="1098.5" y="1259.5"/>
         </scene>
-        <!--Map Denuncia View Controller-->
+        <!--teste-->
         <scene sceneID="J86-E7-QNF">
             <objects>
                 <viewController id="SQ2-IC-6bM" customClass="MapDenunciaViewController" sceneMemberID="viewController">
@@ -261,19 +261,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-pd-7ck">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Denúncia" id="W3n-IO-Xyq">
-                                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="Uaa-Oq-dHh"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="QNE-GO-xtg">
-                                            <connections>
-                                                <action selector="salvar:" destination="SQ2-IC-6bM" id="gdb-Qd-XuB"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JmQ-Z2-lfq">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <connections>
@@ -301,9 +288,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="teste" id="SU4-fk-ThF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="AFw-hc-LNT"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="Save" destination="QNE-GO-xtg" id="eaP-eR-3CU"/>
                         <outlet property="mapViewDenuncia" destination="JmQ-Z2-lfq" id="wB4-fs-KBQ"/>
                     </connections>
                 </viewController>
