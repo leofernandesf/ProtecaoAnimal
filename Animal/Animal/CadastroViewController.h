@@ -10,7 +10,7 @@
 #import "ViewCOntroller.h"
 
 
-@interface CadastroViewController : UIViewController
+@interface CadastroViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *primeiroNome;
 

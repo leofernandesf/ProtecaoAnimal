@@ -25,6 +25,24 @@
     [self.view addGestureRecognizer:tap];
     
     
+    //pra subir os campos quando o teclado aparece:
+    self.primeiroNome.layer.borderColor=[[UIColor colorWithRed:0.137 green:0.804 blue:0.922 alpha:1]CGColor];
+    self.primeiroNome.layer.borderWidth=0;
+    self.primeiroNome.delegate = self;
+    
+    self.segundoNome.layer.borderColor=[[UIColor colorWithRed:0.137 green:0.804 blue:0.922 alpha:1]CGColor];
+    self.segundoNome.layer.borderWidth=0;
+    self.segundoNome.delegate = self;
+    
+    self.email.layer.borderColor=[[UIColor colorWithRed:0.137 green:0.804 blue:0.922 alpha:1]CGColor];
+    self.email.layer.borderWidth=0;
+    self.email.delegate = self;
+    
+    self.senha.layer.borderColor=[[UIColor colorWithRed:1 green:1 blue:1 alpha:1]CGColor];
+    self.senha.layer.borderWidth=0;
+    self.senha.delegate = self;
+    //fim
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,6 +92,35 @@
     [self.segundoNome resignFirstResponder];
     [self.email resignFirstResponder];
     [self.senha resignFirstResponder];
+}
+
+//pra subir os campos quando o teclado aparece:
+- (void)textViewDidBeginEditing:(UITextView *)textView{
+    [self animate:YES];
+}
+
+-(void)textViewDidEndEditing:(UITextView *)textView{
+    [self animate:NO];
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [self animate:YES];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self animate:NO];
+}
+
+- (void) animate: (BOOL)up {
+    const int movementDistance = 80; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+    
+    int movement = (up ? -movementDistance : movementDistance);
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+    [UIView commitAnimations];
 }
 
 
