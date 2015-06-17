@@ -26,15 +26,15 @@
     
     
     //pra subir os campos quando o teclado aparece:
-    self.primeiroNome.layer.borderColor=[[UIColor colorWithRed:0.137 green:0.804 blue:0.922 alpha:1]CGColor];
+    self.primeiroNome.layer.borderColor=[[UIColor colorWithRed:1 green:1 blue:1 alpha:1]CGColor];
     self.primeiroNome.layer.borderWidth=0;
     self.primeiroNome.delegate = self;
     
-    self.segundoNome.layer.borderColor=[[UIColor colorWithRed:0.137 green:0.804 blue:0.922 alpha:1]CGColor];
+    self.segundoNome.layer.borderColor=[[UIColor colorWithRed:1 green:1 blue:1 alpha:1]CGColor];
     self.segundoNome.layer.borderWidth=0;
     self.segundoNome.delegate = self;
     
-    self.email.layer.borderColor=[[UIColor colorWithRed:0.137 green:0.804 blue:0.922 alpha:1]CGColor];
+    self.email.layer.borderColor=[[UIColor colorWithRed:1 green:1 blue:1 alpha:1]CGColor];
     self.email.layer.borderWidth=0;
     self.email.delegate = self;
     
@@ -112,7 +112,7 @@
 }
 
 - (void) animate: (BOOL)up {
-    const int movementDistance = 80; // tweak as needed
+    const int movementDistance = 140; // tweak as needed
     const float movementDuration = 0.3f; // tweak as needed
     
     int movement = (up ? -movementDistance : movementDistance);
@@ -123,5 +123,11 @@
     [UIView commitAnimations];
 }
 
-
+//self.senha.layer.borderColor=[[UIColor colorWithRed:1 green:1 blue:1 alpha:1]CGColor];
+//self.senha.layer.borderWidth=0;
+//self.senha.delegate = self;
 @end
+
+
+
+
