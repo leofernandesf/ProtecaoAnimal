@@ -25,6 +25,8 @@
 @property(nonatomic, strong) CLLocationManager *coreLocation;
 - (IBAction)salvaTeste:(id)sender;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocation *pinLocation;
 
+- (IBAction)save:(id)sender;
 
 @end

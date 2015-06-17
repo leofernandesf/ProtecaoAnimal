@@ -246,13 +246,68 @@ NSMutableArray *_cameras;
 MKPointAnnotation *dropPin = [[MKPointAnnotation alloc] init];
 dropPin.coordinate = locCoord;
 [self.mapViewDenuncia addAnnotation:dropPin];
-CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longitude:locCoord.longitude];
+self.pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longitude:locCoord.longitude];
+        
 }
 }
 
 
 
 
+- (IBAction)save:(id)sender {
+    NSLog(@"clicou no botal do save");
+    NSLog(@"testando o localisacao dos pins setados %@",self.pinLocation);
+    
+    
+    
+    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
+        if (!error) {
+            NSLog(@"fez alguma coisa");
+            [[PFUser currentUser] setObject: geoPoint forKey: @"location"];
+            [[PFUser currentUser] saveInBackground];// do something with the new geoPoint
+        }
+    }];
+    
+    
+    
+    //    NSData *data = UIImageJPEGRepresentation(self.picture, 0.6);
+    //
+    //    PFFile *file = [PFFile fileWithName:@"myPicture.jpg" data:data];
+    PFObject *locais = [PFObject objectWithClassName:@"Locais"];
+    PFUser *user = [PFUser currentUser];
+    PFGeoPoint *point = [PFGeoPoint geoPointWithLocation:self.pinLocation];
+    NSLog(@"suposta mente pegou o local%@",point);
+    
+    //    photo[@"picture"] = file;
+    //    photo[@"description"] = self.textFieldDescription.text;
+    //    photo[@"isPrivate"] = @NO;
+    locais[@"geoLocalization"] = point;
+    locais[@"createdBy"] = user.username;
+    
+    [locais saveInBackgroundWithBlock:^(BOOL success, NSError *error) {
+        if (!error) {
+            NSLog(@"Upload done");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Done"
+                                                            message:@"Sent successfully"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        } else {
+            NSLog(@"%@", error.userInfo);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"Could not be sent. Check your internet connection"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+    }];
+
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
 @end
 
 
