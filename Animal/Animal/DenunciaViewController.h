@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DenunciaViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface DenunciaViewController : UIViewController <UITextViewDelegate,UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *tipo;
-@property (strong, nonatomic) IBOutlet UITextField *descricao;
 @property (strong, nonatomic) IBOutlet UITextField *referencia;
 
+@property (weak, nonatomic) IBOutlet UITextView *descricao;
 @property (nonatomic, retain) UIImage * image;
 
 @property (strong, nonatomic) IBOutlet UIImageView *foto;
