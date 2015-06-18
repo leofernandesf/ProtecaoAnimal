@@ -7,6 +7,7 @@
 //
 
 #import "SettingsViewController.h"
+#import "ViewController.h"
 
 @interface SettingsViewController ()
 
@@ -34,4 +35,12 @@
 }
 */
 
+- (IBAction)sair:(id)sender {
+    [PFUser logOut];
+    PFUser *currentUser = [PFUser currentUser];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
 @end

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "MapBarViewController.h"
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController ()
@@ -18,6 +19,17 @@
 @end
 
 @implementation ViewController
+- (void)viewDidAppear:(BOOL)animated
+{
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        // do stuff with the user
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+        [self presentViewController:viewController animated:YES completion:nil];
+        
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,6 +62,7 @@
     self.senha.layer.borderWidth=0;
     self.senha.delegate = self;
 //fim
+    
     }
 
 - (void)didReceiveMemoryWarning {
