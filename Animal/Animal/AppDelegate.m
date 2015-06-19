@@ -24,9 +24,6 @@
     [Parse setApplicationId:@"dwX3mTUYTlgdPL8O0Rbv4MKqdMkK38VVp6ihwasG"
                   clientKey:@"G5tWQ83heOnjmUb0cTb32JDeSiDhEnMJrBa3FGud"];
     
-    return [[FBSDKApplicationDelegate sharedInstance] application:application
-                                    didFinishLaunchingWithOptions:launchOptions];
-    
     
     // seta a cor de fundo da NavigationBar
 
