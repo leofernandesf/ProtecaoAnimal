@@ -13,7 +13,6 @@
 		A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7160E181B270EEF00CE2FE6 /* ViewController.m */; };
 		A7160E1C1B270EEF00CE2FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */; };
 		A7160E1E1B270EEF00CE2FE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */; };
-		A7160E211B270EEF00CE2FE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7160E1F1B270EEF00CE2FE6 /* LaunchScreen.xib */; };
 		A7160E2D1B270EEF00CE2FE6 /* AnimalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7160E2C1B270EEF00CE2FE6 /* AnimalTests.m */; };
 		A7160E371B270FBF00CE2FE6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E361B270FBF00CE2FE6 /* AudioToolbox.framework */; };
 		A7160E391B270FCA00CE2FE6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E381B270FCA00CE2FE6 /* CFNetwork.framework */; };
@@ -63,7 +62,6 @@
 		A7160E181B270EEF00CE2FE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A7160E1B1B270EEF00CE2FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A7160E201B270EEF00CE2FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A7160E261B270EEF00CE2FE6 /* AnimalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7160E2B1B270EEF00CE2FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7160E2C1B270EEF00CE2FE6 /* AnimalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalTests.m; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				CAB685461B28825400F3914A /* CadastroViewController.m */,
 				A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */,
 				A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */,
-				A7160E1F1B270EEF00CE2FE6 /* LaunchScreen.xib */,
 				A7160E141B270EEF00CE2FE6 /* Animal.xcdatamodeld */,
 				A7160E0D1B270EEF00CE2FE6 /* Supporting Files */,
 				A7160E541B2710F600CE2FE6 /* PrefixHeader.pch */,
@@ -355,7 +352,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7160E1C1B270EEF00CE2FE6 /* Main.storyboard in Resources */,
-				A7160E211B270EEF00CE2FE6 /* LaunchScreen.xib in Resources */,
 				A7160E1E1B270EEF00CE2FE6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,14 +408,6 @@
 				A7160E1B1B270EEF00CE2FE6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A7160E1F1B270EEF00CE2FE6 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7160E201B270EEF00CE2FE6 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
