@@ -109,6 +109,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2O-RR-RuR">
                                 <rect key="frame" x="137" y="567" width="203" height="39"/>
                                 <color key="backgroundColor" red="0.7803921568627451" green="0.15294117647058825" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Cadastrar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,6 +155,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.13333333333333333" green="0.16078431372549021" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="pgm-j3-oCc" kind="relationship" relationship="viewControllers" id="p3r-01-Bli"/>
@@ -166,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="-98.5" y="1205.5"/>
         </scene>
-        <!--Mapa-->
+        <!--Item-->
         <scene sceneID="jbk-5W-hv4">
             <objects>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="pgm-j3-oCc" customClass="MapBarViewController" sceneMemberID="viewController">
@@ -184,7 +186,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mapa" id="cdc-G4-xvX"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="teste_mapIcon" id="iCz-Uo-3gT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapBarView" destination="Tzt-bf-ZGZ" id="XkE-tI-WSk"/>
@@ -348,7 +350,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" id="04k-O8-gu6"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="teste_treeIcon" id="04k-O8-gu6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh7-fb-lLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -379,7 +381,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="8qJ-d2-Ixl"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="teste_marteloIcon" id="8qJ-d2-Ixl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMd-KO-ZxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -390,7 +392,7 @@
         <scene sceneID="0Rv-bH-zUo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FlN-R9-2k2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Denúncia" id="lHu-Jb-4xD"/>
+                    <tabBarItem key="tabBarItem" title="Denúncia" image="teste_snakeIcon" id="lHu-Jb-4xD"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z7Y-Ot-xzL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -413,5 +415,9 @@
         <image name="tela_1" width="960" height="1647"/>
         <image name="tela_2" width="960" height="1647"/>
         <image name="tela_denuncia_amarelo" width="960" height="1647"/>
+        <image name="teste_mapIcon" width="28" height="28"/>
+        <image name="teste_marteloIcon" width="16" height="28"/>
+        <image name="teste_snakeIcon" width="28" height="28"/>
+        <image name="teste_treeIcon" width="20" height="26"/>
     </resources>
 </document>
