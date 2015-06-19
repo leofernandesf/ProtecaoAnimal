@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController<UITabBarControllerDelegate, UITableViewDataSource>
 - (IBAction)sair:(id)sender;
 
 @end
