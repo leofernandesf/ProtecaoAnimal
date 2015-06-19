@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsViewController : UIViewController<UITabBarControllerDelegate, UITableViewDataSource>
-- (IBAction)sair:(id)sender;
+//- (IBAction)sair:(id)sender;
 
 @end

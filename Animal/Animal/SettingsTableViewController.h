@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface SettingsTableViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface SettingsTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+
+- (IBAction)sair:(id)sender;
 @end

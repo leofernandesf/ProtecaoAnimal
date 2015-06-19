@@ -14,6 +14,9 @@
 
 @implementation SettingsTableViewController
 
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -94,5 +97,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+// implementaçao do LogOut
+- (IBAction)sair:(id)sender {
+    [PFUser logOut];
+    PFUser *currentUser = [PFUser currentUser];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
 
 @end
