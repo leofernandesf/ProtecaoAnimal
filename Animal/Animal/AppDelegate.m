@@ -24,8 +24,21 @@
     [Parse setApplicationId:@"dwX3mTUYTlgdPL8O0Rbv4MKqdMkK38VVp6ihwasG"
                   clientKey:@"G5tWQ83heOnjmUb0cTb32JDeSiDhEnMJrBa3FGud"];
     
+    
+    // seta a cor de fundo da NavigationBar
+
+    UIColor *defaultBackgroundColor = [[UIColor alloc] initWithRed:0.184/255 green:0.345/255 blue:0.533/255 alpha:1];
+    
+    
+    // seta as cores
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
+    [[UINavigationBar appearance] setBarTintColor:defaultBackgroundColor];
+    
+    
+    
     return [[FBSDKApplicationDelegate sharedInstance] application:application
-                                    didFinishLaunchingWithOptions:launchOptions];
+                                    didFinishLaunchingWithOptions:launchOptions], YES;
+    //return YES;
     
 }
 

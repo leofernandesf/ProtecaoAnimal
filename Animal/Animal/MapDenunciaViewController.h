@@ -17,7 +17,7 @@
 
 
 @interface MapDenunciaViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UIAlertViewDelegate, CLLocationManagerDelegate>
-- (IBAction)salvar:(id)sender;
+
 
 - (IBAction)testar:(id)sender;
 @property (nonatomic) CLLocation *location;
