@@ -27,6 +27,22 @@
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
     
+    
+    // seta a cor de fundo da NavigationBar
+
+    UIColor *defaultBackgroundColor = [[UIColor alloc] initWithRed:0.184/255 green:0.345/255 blue:0.533/255 alpha:1];
+    
+    
+    // seta as cores
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
+    [[UINavigationBar appearance] setBarTintColor:defaultBackgroundColor];
+    
+    
+    
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                    didFinishLaunchingWithOptions:launchOptions], YES;
+    //return YES;
+    
 }
 
 - (BOOL)application:(UIApplication *)application
