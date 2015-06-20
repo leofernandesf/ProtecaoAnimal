@@ -296,24 +296,6 @@
                                     <outlet property="delegate" destination="SQ2-IC-6bM" id="wly-L9-h0t"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJi-2q-NU1">
-                                <rect key="frame" x="253" y="490" width="63" height="30"/>
-                                <state key="normal" title="Testando">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="testar:" destination="SQ2-IC-6bM" eventType="touchUpInside" id="ZnL-ZC-4zn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwm-Uq-Xuo">
-                                <rect key="frame" x="261" y="542" width="36" height="30"/>
-                                <state key="normal" title="salva">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="salvaTeste:" destination="SQ2-IC-6bM" eventType="touchUpInside" id="yJg-fQ-2Uk"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
