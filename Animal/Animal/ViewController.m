@@ -26,7 +26,7 @@
         // do stuff with the user
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
-        [self presentViewController:viewController animated:YES completion:nil];
+        [self presentViewController:viewController animated:NO completion:nil];
         
     }
 }

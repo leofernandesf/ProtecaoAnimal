@@ -76,6 +76,18 @@
             [self presentViewController:viewcontroller animated:YES completion:nil];
             // Hooray! Let them use the app now.
         } else {   NSString *errorString = [error userInfo][@"error"];   // Show the errorString somewhere and let the user try again.
+            
+            UIAlertView* finalCheck = [[UIAlertView alloc]
+                                                                      initWithTitle:@"Alerta"
+                                                                      message:errorString
+                                                                      delegate:self
+                                                                      cancelButtonTitle:@"OK"
+                                                                      otherButtonTitles:nil,nil];
+                                           
+                                           
+                                           
+                                           [finalCheck show];
+
         }
     }];
 }
