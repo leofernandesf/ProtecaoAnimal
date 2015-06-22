@@ -93,7 +93,6 @@
 		CAD435EF1B2B0C0000249D98 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CAD435F11B2B0C1200249D98 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CAD435F31B2B0C2100249D98 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
-		CAF134B91B385B8C00071CA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAF134BA1B385BBD00071CA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAF134BE1B385C1C00071CA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		CD5E67581B31C58F0018D99F /* DenunciaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DenunciaViewController.h; sourceTree = "<group>"; };
@@ -422,7 +421,6 @@
 		A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CAF134B91B385B8C00071CA1 /* en */,
 				CAF134BA1B385BBD00071CA1 /* Base */,
 			);
 			name = Main.storyboard;
