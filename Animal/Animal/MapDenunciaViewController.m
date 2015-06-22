@@ -22,11 +22,13 @@
 @implementation MapDenunciaViewController
 NSMutableArray *_cameras;
 
-
+BOOL userLocationShown;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    userLocationShown = NO;
+      NSLog(@"primeira vez: %d", userLocationShown);
     self.mapViewDenuncia.delegate = self;
     self.mapViewDenuncia.showsUserLocation = YES;
     
@@ -155,14 +157,16 @@ NSMutableArray *_cameras;
 
 - (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-   
+    if(userLocationShown) return;
+    
+    
 
         MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
         [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:region] animated:NO];
    
 
-    
-    
+    userLocationShown = YES;
+        NSLog(@"Entrou com zoom %d", userLocationShown);
 }
 
 
@@ -308,6 +312,20 @@ self.pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longit
     MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
     [self presentViewController:viewController animated:YES completion:nil];
 }
+- (IBAction)meuLocal:(id)sender {
+
+    
+    self.mapViewDenuncia.showsUserLocation = YES;
+
+    MKUserLocation *userLocation;
+    userLocationShown = YES;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 10000, 10000);;
+    self.mapViewDenuncia.showsUserLocation = YES;
+      [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:region] animated:YES];
+    
+}
+
+
 @end
 
 

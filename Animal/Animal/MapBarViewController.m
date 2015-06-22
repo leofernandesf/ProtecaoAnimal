@@ -11,7 +11,7 @@
 
 @interface MapBarViewController ()
 
-@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocationManager *locationManager2;
 @property (strong, nonatomic) CLLocation *currentLocation;
 @property (nonatomic) BOOL firstTime;
 @property (nonatomic) NSString *valor;
@@ -32,24 +32,39 @@
 @implementation MapBarViewController
 @synthesize mapBarView;
 
+//BOOL userLocationShown1;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    //adicionando zoom tela 1
+   
+    [self.coreLocation2 requestAlwaysAuthorization];
+
+  
+    
+    self.locationManager2.desiredAccuracy = kCLLocationAccuracyBest;
+//    [self.locationManager requestAlwaysAuthorization];
+    
     self.mapBarView.delegate = self;
     // ** Don't forget to add NSLocationWhenInUseUsageDescription in MyApp-Info.plist and give it a string
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self;
+    self.locationManager2 = [[CLLocationManager alloc] init];
+    self.locationManager2.delegate = self;
     
     // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
-    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
-        [self.locationManager requestWhenInUseAuthorization];
+    if ([self.locationManager2 respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.locationManager2 requestWhenInUseAuthorization];
     }
     
-    [self.locationManager startUpdatingLocation];
+    [self.locationManager2 startUpdatingLocation];
     [self loadAnnotationsInMap];
     
     
     self.mapBarView.delegate = self;
+    self.mapBarView.showsUserLocation = YES;
+    
+    
 }
 
 - (void)loadAnnotationsInMap
@@ -95,10 +110,12 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
-    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+    //if(userLocationShown1) return;
+    NSLog (@"zoooooom");
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 10000, 10000);
+    [self.mapBarView setRegion:[self.mapBarView regionThatFits:region] animated:YES];
     CLLocationCoordinate2D pinlocation;
-    
+   // userLocationShown1 = YES;
     // Add an annotation
      MKPointAnnotation *Pin = [[MKPointAnnotation alloc]init];
     Pin.coordinate = pinlocation;
@@ -109,6 +126,17 @@
     
     
     
+//    - (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+//    {
+//        
+//        
+//        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
+//        [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:region] animated:NO];
+//        
+//        
+//        
+//        
+//    }
     
         
     

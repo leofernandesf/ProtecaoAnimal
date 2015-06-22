@@ -18,6 +18,7 @@
 
 @interface MapDenunciaViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UIAlertViewDelegate, CLLocationManagerDelegate>
 
+- (IBAction)meuLocal:(id)sender;
 
 //- (IBAction)testar:(id)sender;
 @property (nonatomic) CLLocation *location;
@@ -30,3 +31,4 @@
 - (IBAction)save:(id)sender;
 
 @end
+

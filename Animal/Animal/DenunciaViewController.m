@@ -7,6 +7,9 @@
 //
 
 #import "DenunciaViewController.h"
+#import "MapDenunciaViewController.h"
+//manipular a imagem
+#import <QuartzCore/QuartzCore.h>
 
 @interface DenunciaViewController ()
 
@@ -14,10 +17,17 @@
 
 @implementation DenunciaViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+   BOOL userLocationShown = NO;
+    NSLog(@"%d", userLocationShown);
+    
      self.foto.image = self.image;
+    
+// gera pontas arredondadas na imageView
+    self.foto.layer.cornerRadius = 5;
+    self.foto.clipsToBounds = YES;
     
     // teclado some quando clicar na tela
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
