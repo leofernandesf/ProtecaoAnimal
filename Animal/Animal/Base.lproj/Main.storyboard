@@ -226,7 +226,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SQ2-IC-6bM" kind="show" id="wbl-fA-CfO"/>
+                                    <action selector="registrar:" destination="hpB-vc-oDh" eventType="touchUpInside" id="4mu-6f-zcl"/>
+                                    <segue destination="SQ2-IC-6bM" kind="show" identifier="registrardenuncia" id="wbl-fA-CfO"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
@@ -448,11 +449,11 @@
             </objects>
             <point key="canvasLocation" x="-155.5" y="2065.5"/>
         </scene>
-        <!--Mapa-->
+        <!--Navigation Controller-->
         <scene sceneID="aQ1-sJ-ng2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zdm-Uj-azg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mapa" image="teste_mapIcon" id="iCz-Uo-3gT"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_22" id="iCz-Uo-3gT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1HY-Me-rAo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -507,10 +508,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_22" width="22" height="22"/>
         <image name="tela_1" width="960" height="1647"/>
         <image name="tela_2" width="960" height="1647"/>
         <image name="tela_denuncia_patinha" width="960" height="1647"/>
-        <image name="teste_mapIcon" width="28" height="28"/>
         <image name="teste_marteloIcon" width="16" height="28"/>
         <image name="teste_snakeIcon" width="28" height="28"/>
         <image name="teste_treeIcon" width="20" height="26"/>

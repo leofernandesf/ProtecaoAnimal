@@ -12,7 +12,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MKFoundation.h>
 #import "MapBarViewController.h"
-
+#import "DenunciaViewController.h"
 
 
 
@@ -26,6 +26,11 @@
 //- (IBAction)salvaTeste:(id)sender;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *pinLocation;
+//@property (nonatomic) DenunciaViewController *denuncia;
+@property (nonatomic)  NSString *tipo;
+@property (nonatomic) NSString *referencia;
+
+@property (nonatomic) NSString *descricao;
 
 - (IBAction)save:(id)sender;
 

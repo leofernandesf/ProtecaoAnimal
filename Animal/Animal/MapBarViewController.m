@@ -16,6 +16,7 @@
 @property (nonatomic) BOOL firstTime;
 @property (nonatomic) NSString *valor;
 
+
 @end
 
 //wimbledon
