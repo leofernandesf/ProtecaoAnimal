@@ -1,0 +1,81 @@
+
+/* Class = "UITabBarItem"; title = "Info"; ObjectID = "04k-O8-gu6"; */
+"04k-O8-gu6.title" = "Info";
+
+/* Class = "UIButton"; normalTitle = "Voltar"; ObjectID = "0j3-KG-axz"; */
+"0j3-KG-axz.normalTitle" = "Voltar";
+
+/* Class = "UIButton"; normalTitle = "log out"; ObjectID = "2oo-gu-D3V"; */
+"2oo-gu-D3V.normalTitle" = "log out";
+
+/* Class = "UILabel"; text = "Sobre"; ObjectID = "3hg-eG-FQ2"; */
+"3hg-eG-FQ2.text" = "Sobre";
+
+/* Class = "UITextField"; placeholder = "Senha"; ObjectID = "7Xy-te-0Fr"; */
+"7Xy-te-0Fr.placeholder" = "Senha";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "8qJ-d2-Ixl"; */
+"8qJ-d2-Ixl.title" = "Settings";
+
+/* Class = "UILabel"; text = "Info:"; ObjectID = "CZL-6P-GdL"; */
+"CZL-6P-GdL.text" = "Info:";
+
+/* Class = "UIButton"; normalTitle = "Testando"; ObjectID = "DJi-2q-NU1"; */
+"DJi-2q-NU1.normalTitle" = "Testando";
+
+/* Class = "UIButton"; normalTitle = "Cadastrar"; ObjectID = "I2O-RR-RuR"; */
+"I2O-RR-RuR.normalTitle" = "Cadastrar";
+
+/* Class = "UITextField"; placeholder = "e-mail"; ObjectID = "Iqv-6I-RPf"; */
+"Iqv-6I-RPf.placeholder" = "e-mail";
+
+/* Class = "UITextField"; placeholder = "Senha"; ObjectID = "QM7-wa-Dpx"; */
+"QM7-wa-Dpx.placeholder" = "Senha";
+
+/* Class = "UINavigationItem"; title = "teste"; ObjectID = "SU4-fk-ThF"; */
+"SU4-fk-ThF.title" = "teste";
+
+/* Class = "UIButton"; normalTitle = "Criar Conta"; ObjectID = "TdL-xQ-a14"; */
+"TdL-xQ-a14.normalTitle" = "Criar Conta";
+
+/* Class = "UINavigationItem"; title = "Denúncia"; ObjectID = "TyH-Bf-vZA"; */
+"TyH-Bf-vZA.title" = "Denúncia";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "esT-Se-rJF"; */
+"esT-Se-rJF.normalTitle" = "Log In";
+
+/* Class = "UITextField"; placeholder = "Ponto de Referência"; ObjectID = "gsR-7s-K6W"; */
+"gsR-7s-K6W.placeholder" = "Ponto de Referência";
+
+/* Class = "UIButton"; normalTitle = "Registrar Denúncia"; ObjectID = "gtD-3I-L0j"; */
+"gtD-3I-L0j.normalTitle" = "Registrar Denúncia";
+
+/* Class = "UITextField"; placeholder = "Último Nome"; ObjectID = "hGn-rx-fvU"; */
+"hGn-rx-fvU.placeholder" = "Último Nome";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "iCz-Uo-3gT"; */
+"iCz-Uo-3gT.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "TIpo de Agressão"; ObjectID = "k9I-vY-7Eh"; */
+"k9I-vY-7Eh.placeholder" = "TIpo de Agressão";
+
+/* Class = "UITabBarItem"; title = "Denúncia"; ObjectID = "lHu-Jb-4xD"; */
+"lHu-Jb-4xD.title" = "Denúncia";
+
+/* Class = "UITextField"; placeholder = "Primeiro Nome"; ObjectID = "lW5-sq-dUh"; */
+"lW5-sq-dUh.placeholder" = "Primeiro Nome";
+
+/* Class = "UITextField"; placeholder = "E-Mail"; ObjectID = "nZL-Hh-nr6"; */
+"nZL-Hh-nr6.placeholder" = "E-Mail";
+
+/* Class = "UITextView"; text = "descricao"; ObjectID = "qV6-eG-Auk"; */
+"qV6-eG-Auk.text" = "descricao";
+
+/* Class = "UIButton"; normalTitle = "Tirar Foto"; ObjectID = "r3t-Rb-2gB"; */
+"r3t-Rb-2gB.normalTitle" = "Tirar Foto";
+
+/* Class = "UIButton"; normalTitle = "salva"; ObjectID = "rwm-Uq-Xuo"; */
+"rwm-Uq-Xuo.normalTitle" = "salva";
+
+/* Class = "UILabel"; text = "Mudar Senha"; ObjectID = "ue0-cM-FvF"; */
+"ue0-cM-FvF.text" = "Mudar Senha";

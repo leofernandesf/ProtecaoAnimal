@@ -36,6 +36,7 @@
 		CAD435F01B2B0C0000249D98 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD435EF1B2B0C0000249D98 /* FBSDKCoreKit.framework */; };
 		CAD435F21B2B0C1200249D98 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD435F11B2B0C1200249D98 /* FBSDKLoginKit.framework */; };
 		CAD435F41B2B0C2100249D98 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD435F31B2B0C2100249D98 /* FBSDKShareKit.framework */; };
+		CAF134BD1B385C1C00071CA1 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAF134BF1B385C1C00071CA1 /* Main.strings */; };
 		CD5E675A1B31C58F0018D99F /* DenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E67591B31C58F0018D99F /* DenunciaViewController.m */; };
 		CD5E675E1B32FE310018D99F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E675D1B32FE310018D99F /* SettingsViewController.m */; };
 		CD5E67611B34D8430018D99F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E67601B34D8430018D99F /* InfoViewController.m */; };
@@ -62,7 +63,6 @@
 		A7160E151B270EEF00CE2FE6 /* Animal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Animal.xcdatamodel; sourceTree = "<group>"; };
 		A7160E171B270EEF00CE2FE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A7160E181B270EEF00CE2FE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A7160E1B1B270EEF00CE2FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A7160E261B270EEF00CE2FE6 /* AnimalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7160E2B1B270EEF00CE2FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +93,9 @@
 		CAD435EF1B2B0C0000249D98 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CAD435F11B2B0C1200249D98 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CAD435F31B2B0C2100249D98 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CAF134B91B385B8C00071CA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAF134BA1B385BBD00071CA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAF134BE1B385C1C00071CA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		CD5E67581B31C58F0018D99F /* DenunciaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DenunciaViewController.h; sourceTree = "<group>"; };
 		CD5E67591B31C58F0018D99F /* DenunciaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DenunciaViewController.m; sourceTree = "<group>"; };
 		CD5E675C1B32FE310018D99F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -177,6 +180,7 @@
 				CAB685451B28825400F3914A /* CadastroViewController.h */,
 				CAB685461B28825400F3914A /* CadastroViewController.m */,
 				A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */,
+				CAF134BF1B385C1C00071CA1 /* Main.strings */,
 				A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */,
 				A7160E141B270EEF00CE2FE6 /* Animal.xcdatamodeld */,
 				A7160E0D1B270EEF00CE2FE6 /* Supporting Files */,
@@ -361,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF134BD1B385C1C00071CA1 /* Main.strings in Resources */,
 				A7160E1C1B270EEF00CE2FE6 /* Main.storyboard in Resources */,
 				A7160E1E1B270EEF00CE2FE6 /* Images.xcassets in Resources */,
 			);
@@ -417,9 +422,18 @@
 		A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A7160E1B1B270EEF00CE2FE6 /* Base */,
+				CAF134B91B385B8C00071CA1 /* en */,
+				CAF134BA1B385BBD00071CA1 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAF134BF1B385C1C00071CA1 /* Main.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAF134BE1B385C1C00071CA1 /* en */,
+			);
+			name = Main.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
