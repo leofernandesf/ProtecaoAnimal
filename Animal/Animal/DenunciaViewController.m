@@ -127,5 +127,18 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
+
 // fim recurso camera
+- (IBAction)registrar:(id)sender {
+   
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"registrardenuncia"]) {
+        MapDenunciaViewController *denuncia = segue.destinationViewController;
+        denuncia.descricao = self.descricao.text;
+        denuncia.referencia = self.referencia.text;
+        denuncia.tipo = self.tipo.text;
+    }
+}
 @end

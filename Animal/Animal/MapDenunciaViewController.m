@@ -43,9 +43,14 @@ BOOL userLocationShown;
                                cancelButtonTitle:@"Sim"
                                otherButtonTitles:@"Não",nil];
     
-    
-    
     [finalCheck show];
+    
+    ;
+    
+    NSLog(@"descricao %@", self.descricao);
+    
+    NSLog(@"tipo %@",self.tipo);
+    NSLog(@"referencia %@",self.referencia);
     
  
     
