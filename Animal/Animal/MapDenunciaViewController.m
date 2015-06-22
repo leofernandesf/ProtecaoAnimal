@@ -130,23 +130,23 @@ NSMutableArray *_cameras;
     }
 }
 
-- (IBAction)testar:(id)sender {
-    
-    UIAlertView* finalCheck = [[UIAlertView alloc]
-                               initWithTitle:@"Alerta"
-                               message:@"Deseja manter a Localização atual?"
-                               delegate:self
-                               cancelButtonTitle:@"Sim"
-                               otherButtonTitles:@"Não",nil];
-    
-    
-    
-    [finalCheck show];
-    
-    
-
-    
-}
+//- (IBAction)testar:(id)sender {
+//    
+//    UIAlertView* finalCheck = [[UIAlertView alloc]
+//                               initWithTitle:@"Alerta"
+//                               message:@"Deseja manter a Localização atual?"
+//                               delegate:self
+//                               cancelButtonTitle:@"Sim"
+//                               otherButtonTitles:@"Não",nil];
+//    
+//    
+//    
+//    [finalCheck show];
+//    
+//    
+//
+//    
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -171,7 +171,7 @@ NSMutableArray *_cameras;
 
 
 
-- (IBAction)salvaTeste:(id)sender  {
+//- (IBAction)salvaTeste:(id)sender  {
 //    self.location = (CLLocation *)self.mapViewDenuncia.userLocation;
 //    NSLog(@"testando %@",self.location);
 //    
@@ -229,7 +229,7 @@ NSMutableArray *_cameras;
 //    MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
 //    [self presentViewController:viewController animated:YES completion:nil];
 //    
-    }
+//    }
 
 
 // fim pop up alerta ------------
