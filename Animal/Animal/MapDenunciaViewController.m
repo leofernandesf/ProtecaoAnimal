@@ -102,6 +102,9 @@ BOOL userLocationShown;
 //        locais[@"description"] = self.textFieldDescription.text;
         locais[@"geoLocalization"] = point;
         locais[@"createdBy"] = user.username;
+        locais[@"tipoAgressao"] = self.tipo;
+        locais[@"descricao"] = self.descricao;
+        locais[@"pontoReferencia"] = self.referencia;
         
         [locais saveInBackgroundWithBlock:^(BOOL success, NSError *error) {
             if (!error) {
@@ -297,7 +300,9 @@ self.pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longit
     //        locais[@"description"] = self.textFieldDescription.text;
     locais[@"geoLocalization"] = point;
     locais[@"createdBy"] = user.username;
-    
+    locais[@"tipoAgressao"] = self.tipo;
+    locais[@"descricao"] = self.descricao;
+    locais[@"pontoReferencia"] = self.referencia;
     [locais saveInBackgroundWithBlock:^(BOOL success, NSError *error) {
         if (!error) {
             NSLog(@"Upload done");
