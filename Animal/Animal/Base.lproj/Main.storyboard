@@ -211,16 +211,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_den" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-bp-dX9">
                                 <rect key="frame" x="-1" y="-47" width="376" height="647"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tipo de Agressão" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9I-vY-7Eh">
-                                <rect key="frame" x="44" y="240" width="291" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="descricao" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-eG-Auk">
+                                <rect key="frame" x="40" y="310" width="296" height="94"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
-                                <rect key="frame" x="44" y="439" width="291" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9u-ht-oPS">
+                                <rect key="frame" x="95" y="17" width="181" height="181"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
+                                </accessibility>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-3I-L0j">
                                 <rect key="frame" x="85" y="500" width="203" height="39"/>
                                 <color key="backgroundColor" red="0.7803921568627451" green="0.15294117647058825" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -233,28 +235,26 @@
                                     <segue destination="SQ2-IC-6bM" kind="show" identifier="registrardenuncia" id="wbl-fA-CfO"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9u-ht-oPS">
-                                <rect key="frame" x="95" y="17" width="181" height="181"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
-                                </accessibility>
-                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
+                                <rect key="frame" x="44" y="439" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tipo de Agressão" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9I-vY-7Eh">
+                                <rect key="frame" x="44" y="240" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3t-Rb-2gB">
-                                <rect key="frame" x="167" y="199" width="38" height="40"/>
+                                <rect key="frame" x="170" y="202" width="30" height="30"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Tirar Foto">
+                                <state key="normal" title="Tirar Foto" image="icon_camera_selecionado">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="foto:" destination="hpB-vc-oDh" eventType="touchUpInside" id="V0t-aB-GaS"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="descricao" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-eG-Auk">
-                                <rect key="frame" x="40" y="310" width="296" height="94"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -716,6 +716,7 @@
     </scenes>
     <resources>
         <image name="icon_22-1" width="11" height="11"/>
+        <image name="icon_camera_selecionado" width="88" height="88"/>
         <image name="icon_maps" width="44" height="44"/>
         <image name="icon_settings" width="44" height="44"/>
         <image name="icon_siren" width="44" height="44"/>
