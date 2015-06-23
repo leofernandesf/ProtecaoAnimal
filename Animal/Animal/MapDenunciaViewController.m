@@ -182,6 +182,29 @@ BOOL userLocationShown;
 }
 }
 
+//SETANDO OS PINOS CUSTOMIZADOS
+
+-(MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:
+(id <MKAnnotation>)annotation {
+    MKPinAnnotationView *pinView = nil;
+    if(annotation != _mapViewDenuncia.userLocation)
+    {
+        static NSString *defaultPinID = @"com.invasivecode.pin";
+        pinView = (MKPinAnnotationView *)[_mapViewDenuncia dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
+        if ( pinView == nil ) pinView = [[MKPinAnnotationView alloc]
+                                         initWithAnnotation:annotation reuseIdentifier:defaultPinID];
+        
+        //    pinView.pinColor = MKPinAnnotationColorRed;
+        pinView.canShowCallout = YES;
+        pinView.animatesDrop = NO;
+        pinView.image = [UIImage imageNamed:@"pino-3.png"];    //as suggested by Squatch
+    }
+    else {
+        [_mapViewDenuncia.userLocation setTitle:@"To Aqui :)"];
+    }
+    return pinView;
+}
+
 
 
 

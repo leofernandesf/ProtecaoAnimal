@@ -103,7 +103,7 @@ BOOL userLocationShown1;
          }
      }];
 }
-//teste - mudando o pino
+//SETANDO OS PINOS CUSTOMIZADOS
 
 -(MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:
 (id <MKAnnotation>)annotation {
