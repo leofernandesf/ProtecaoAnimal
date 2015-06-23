@@ -10,7 +10,8 @@
 
 @interface ChangePasswordViewController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *senhaAtual;
-@property (strong, nonatomic) IBOutlet UITextField *novaSenha;
-@property (strong, nonatomic) IBOutlet UITextField *confirmaSenha;
+
+
+- (IBAction)enviar:(id)sender;
 
 @end

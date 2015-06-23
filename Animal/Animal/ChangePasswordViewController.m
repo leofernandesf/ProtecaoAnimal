@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    PFUser *user = [PFUser currentUser];
+    NSLog(@"senha do usuaro atual: %@", user[@"password"]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +36,16 @@
 }
 */
 
+- (IBAction)enviar:(id)sender {
+    PFUser *user = [PFUser currentUser];
+    NSLog(@"usuario atual: %@", user[@"username"]);
+    if([PFUser logInWithUsername:user[@"username"] password:self.senhaAtual.text]){
+        NSLog(@"foi");
+        [PFUser requestPasswordResetForEmailInBackground:user[@"email"]];
+        NSLog(@"um email foi mandado para o email: %@", user[@"email"]);
+    }else{
+        NSLog(@"nao");
+    }
+    
+}
 @end
