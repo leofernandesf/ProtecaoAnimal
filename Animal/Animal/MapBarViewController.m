@@ -118,7 +118,7 @@ BOOL userLocationShown1;
     //    pinView.pinColor = MKPinAnnotationColorRed;
         pinView.canShowCallout = YES;
         pinView.animatesDrop = NO;
-        pinView.image = [UIImage imageNamed:@"pino-2.png"];    //as suggested by Squatch
+        pinView.image = [UIImage imageNamed:@"pino-3.png"];    //as suggested by Squatch
     }
     else {
         [mapBarView.userLocation setTitle:@"To Aqui :)"];
