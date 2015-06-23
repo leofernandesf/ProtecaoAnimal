@@ -25,5 +25,10 @@
     return [UIColor colorWithRed:(float)61/255 green:(float)87/255 blue:(float)157/255 alpha:1];
 }
 
++ (UIColor *)amarelo
+{
+    return [UIColor colorWithRed:(float)255/255 green:(float)204/255 blue:(float)71/255 alpha:1];
+}
+
 
 @end

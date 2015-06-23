@@ -13,6 +13,7 @@
 + (UIColor *)vermelho;
 + (UIColor *)azulMarinho;
 + (UIColor *)azul;
++ (UIColor *)amarelo;
 
 
 @end

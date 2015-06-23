@@ -34,6 +34,7 @@
     [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
     [[UINavigationBar appearance] setBarTintColor:[Color azulMarinho]];
     [[UITabBar appearance] setBarTintColor:[Color azulMarinho]];
+    [[UITabBar appearance] setTintColor:[Color amarelo]];
     
     
     
