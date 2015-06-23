@@ -672,9 +672,7 @@
         <scene sceneID="Iye-Kf-ZRx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7cJ-jV-gfH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icon_info" id="04k-O8-gu6">
-                        <inset key="imageInsets" minX="4" minY="8" maxX="0.0" maxY="-4"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="icon_22-1" id="04k-O8-gu6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="smK-n7-EDb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -712,7 +710,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_info" width="44" height="44"/>
+        <image name="icon_22-1" width="11" height="11"/>
         <image name="icon_maps" width="44" height="44"/>
         <image name="icon_settings" width="44" height="44"/>
         <image name="icon_siren" width="44" height="44"/>
