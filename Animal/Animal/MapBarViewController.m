@@ -31,6 +31,7 @@
 
 
 @implementation MapBarViewController
+BOOL userLocationShown1;
 @synthesize mapBarView;
 
 //BOOL userLocationShown1;
@@ -38,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    userLocationShown1 = NO;
     //adicionando zoom tela 1
    
     [self.coreLocation2 requestAlwaysAuthorization];
@@ -112,11 +113,14 @@
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     //if(userLocationShown1) return;
+    if(userLocationShown1) return;
+    
+    
     NSLog (@"zoooooom");
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 10000, 10000);
     [self.mapBarView setRegion:[self.mapBarView regionThatFits:region] animated:YES];
     CLLocationCoordinate2D pinlocation;
-   // userLocationShown1 = YES;
+    userLocationShown1 = YES;
     // Add an annotation
      MKPointAnnotation *Pin = [[MKPointAnnotation alloc]init];
     Pin.coordinate = pinlocation;
