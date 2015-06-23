@@ -97,7 +97,7 @@ BOOL userLocationShown;
         PFUser *user = [PFUser currentUser];
         PFGeoPoint *point = [PFGeoPoint geoPointWithLocation:self.location];
         NSLog(@"suposta mente pegou o local%@",point);
-        
+                 
         locais[@"picture"] = file;
 //        locais[@"description"] = self.textFieldDescription.text;
         locais[@"geoLocalization"] = point;
