@@ -28,10 +28,11 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *pinLocation;
 //@property (nonatomic) DenunciaViewController *denuncia;
-@property (nonatomic)  NSString *tipo;
+@property (nonatomic) NSString *tipo;
 @property (nonatomic) NSString *referencia;
-
+@property (nonatomic) UIImage *imagem;
 @property (nonatomic) NSString *descricao;
+- (IBAction)cancel:(id)sender;
 
 - (IBAction)save:(id)sender;
 

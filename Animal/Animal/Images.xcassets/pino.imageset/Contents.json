@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "pino.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "icon_settings_selecionado.png"
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
