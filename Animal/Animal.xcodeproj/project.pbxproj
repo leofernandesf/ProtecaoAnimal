@@ -46,6 +46,7 @@
 		CD5E676A1B3926F20018D99F /* SelectedOngViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E67691B3926F20018D99F /* SelectedOngViewController.m */; };
 		CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */; };
 		CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */; };
+		CDF448301B39FABE00D4ECCC /* LeisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDenunciaViewController.m; sourceTree = "<group>"; };
 		CD7273D51B2A2D2C00821E52 /* MapBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBarViewController.h; sourceTree = "<group>"; };
 		CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapBarViewController.m; sourceTree = "<group>"; };
+		CDF4482E1B39FABE00D4ECCC /* LeisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeisViewController.h; sourceTree = "<group>"; };
+		CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +305,7 @@
 		CD72734D1B28810100821E52 /* informacoes */ = {
 			isa = PBXGroup;
 			children = (
+				CDF4482D1B39FAB000D4ECCC /* Leis */,
 				CD5E675F1B34D8430018D99F /* InfoViewController.h */,
 				CD5E67601B34D8430018D99F /* InfoViewController.m */,
 				CD5E67651B3923A40018D99F /* OngsViewController.h */,
@@ -310,6 +314,15 @@
 				CD5E67691B3926F20018D99F /* SelectedOngViewController.m */,
 			);
 			name = informacoes;
+			sourceTree = "<group>";
+		};
+		CDF4482D1B39FAB000D4ECCC /* Leis */ = {
+			isa = PBXGroup;
+			children = (
+				CDF4482E1B39FABE00D4ECCC /* LeisViewController.h */,
+				CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */,
+			);
+			name = Leis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +428,7 @@
 				A7160E131B270EEF00CE2FE6 /* AppDelegate.m in Sources */,
 				A7160E101B270EEF00CE2FE6 /* main.m in Sources */,
 				CD5E676A1B3926F20018D99F /* SelectedOngViewController.m in Sources */,
+				CDF448301B39FABE00D4ECCC /* LeisViewController.m in Sources */,
 				CD5E67611B34D8430018D99F /* InfoViewController.m in Sources */,
 				CACA787C1B2F187E0028F90C /* Annotation.m in Sources */,
 				A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */,
