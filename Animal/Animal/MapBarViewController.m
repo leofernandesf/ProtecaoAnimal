@@ -103,6 +103,33 @@ BOOL userLocationShown1;
          }
      }];
 }
+//teste - mudando o pino
+
+-(MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:
+(id <MKAnnotation>)annotation {
+    MKPinAnnotationView *pinView = nil;
+    if(annotation != mapBarView.userLocation)
+    {
+        static NSString *defaultPinID = @"com.invasivecode.pin";
+        pinView = (MKPinAnnotationView *)[mapBarView dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
+        if ( pinView == nil ) pinView = [[MKPinAnnotationView alloc]
+                                         initWithAnnotation:annotation reuseIdentifier:defaultPinID];
+        
+    //    pinView.pinColor = MKPinAnnotationColorRed;
+        pinView.canShowCallout = YES;
+        pinView.animatesDrop = NO;
+        pinView.image = [UIImage imageNamed:@"pino-2.png"];    //as suggested by Squatch
+    }
+    else {
+        [mapBarView.userLocation setTitle:@"To Aqui :)"];
+    }
+    return pinView;
+}
+
+
+//fim teste
+
+
 
          
 - (void)didReceiveMemoryWarning {
@@ -122,40 +149,34 @@ BOOL userLocationShown1;
     CLLocationCoordinate2D pinlocation;
     userLocationShown1 = YES;
     // Add an annotation
+    
      MKPointAnnotation *Pin = [[MKPointAnnotation alloc]init];
+    
+    
+    
     Pin.coordinate = pinlocation;
     Pin.title = @"Annotation Title";
     Pin.subtitle = @"Annotation Subtitle";
     
-    [mapView addAnnotation:Pin]; 
-    
-    
-    
-//    - (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-//    {
-//        
-//        
-//        MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
-//        [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:region] animated:NO];
-//        
-//        
-//        
-//        
-//    }
-    
+    [mapView addAnnotation:Pin];
         
-    
-    
-    
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 }
+
+
+
+
+//- (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+//{
+//    
+//    
+//    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 200, 200);
+//    [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:region] animated:NO];
+//    
+//    
+//    
+//    
+//}
+
 @end
