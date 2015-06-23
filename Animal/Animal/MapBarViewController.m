@@ -73,7 +73,7 @@ BOOL userLocationShown1;
 {
     //PFGeoPoint *point = [PFGeoPoint geoPointWithLocation:self.currentLocation];
     PFQuery *query = [PFQuery queryWithClassName:@"Locais"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+    [query  findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
      {
          if (!error)
          {

@@ -37,6 +37,7 @@
 */
 
 - (IBAction)enviar:(id)sender {
+
     PFUser *user = [PFUser currentUser];
     NSLog(@"usuario atual: %@", user[@"username"]);
     if([PFUser logInWithUsername:user[@"username"] password:self.senhaAtual.text]){

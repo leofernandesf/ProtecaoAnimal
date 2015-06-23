@@ -48,7 +48,7 @@ BOOL userLocationShown;
     ;
     
     NSLog(@"descricao %@", self.descricao);
-    
+    NSLog(@"tipo %@",self.imagem);
     NSLog(@"tipo %@",self.tipo);
     NSLog(@"referencia %@",self.referencia);
     
@@ -90,17 +90,16 @@ BOOL userLocationShown;
         
         
         
-        //    NSData *data = UIImageJPEGRepresentation(self.picture, 0.6);
-        //
-        //    PFFile *file = [PFFile fileWithName:@"myPicture.jpg" data:data];
+        NSData *data = UIImageJPEGRepresentation(self.imagem, 0.6);
+        
+        PFFile *file = [PFFile fileWithName:@"myPicture.jpg" data:data];
         PFObject *locais = [PFObject objectWithClassName:@"Locais"];
         PFUser *user = [PFUser currentUser];
         PFGeoPoint *point = [PFGeoPoint geoPointWithLocation:self.location];
         NSLog(@"suposta mente pegou o local%@",point);
         
-        //    photo[@"picture"] = file;
-        //    photo[@"description"] = self.textFieldDescription.text;
-        //    photo[@"isPrivate"] = @NO;
+        locais[@"picture"] = file;
+//        locais[@"description"] = self.textFieldDescription.text;
         locais[@"geoLocalization"] = point;
         locais[@"createdBy"] = user.username;
         
@@ -263,6 +262,14 @@ self.pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longit
 
 
 
+- (IBAction)cancel:(id)sender {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+    [self presentViewController:viewController animated:YES completion:nil];
+    
+}
+
 - (IBAction)save:(id)sender {
     NSLog(@"clicou no botal do save");
     NSLog(@"testando o localisacao dos pins setados %@",self.pinLocation);
@@ -278,18 +285,16 @@ self.pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longit
     }];
     
     
+    NSData *data = UIImageJPEGRepresentation(self.imagem, 0.6);
     
-    //    NSData *data = UIImageJPEGRepresentation(self.picture, 0.6);
-    //
-    //    PFFile *file = [PFFile fileWithName:@"myPicture.jpg" data:data];
+    PFFile *file = [PFFile fileWithName:@"myPicture.jpg" data:data];
     PFObject *locais = [PFObject objectWithClassName:@"Locais"];
     PFUser *user = [PFUser currentUser];
     PFGeoPoint *point = [PFGeoPoint geoPointWithLocation:self.pinLocation];
     NSLog(@"suposta mente pegou o local%@",point);
     
-    //    photo[@"picture"] = file;
-    //    photo[@"description"] = self.textFieldDescription.text;
-    //    photo[@"isPrivate"] = @NO;
+    locais[@"picture"] = file;
+    //        locais[@"description"] = self.textFieldDescription.text;
     locais[@"geoLocalization"] = point;
     locais[@"createdBy"] = user.username;
     
