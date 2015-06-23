@@ -211,8 +211,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_denuncia_patinha" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-bp-dX9">
                                 <rect key="frame" x="-1" y="-47" width="376" height="647"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Borda-Foto" translatesAutoresizingMaskIntoConstraints="NO" id="zC0-oz-I33">
+                                <rect key="frame" x="87" y="0.0" width="200" height="180"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tipo de Agressão" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9I-vY-7Eh">
+                                <rect key="frame" x="44" y="206" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
+                                <rect key="frame" x="44" y="444" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-3I-L0j">
-                                <rect key="frame" x="87" y="491" width="203" height="39"/>
+                                <rect key="frame" x="85" y="491" width="203" height="39"/>
                                 <color key="backgroundColor" red="0.7803921568627451" green="0.15294117647058825" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Registrar Denúncia">
@@ -223,39 +236,28 @@
                                     <segue destination="SQ2-IC-6bM" kind="show" identifier="registrardenuncia" id="wbl-fA-CfO"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
-                                <rect key="frame" x="44" y="444" width="291" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="descricao" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-eG-Auk">
-                                <rect key="frame" x="39" y="259" width="296" height="169"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9u-ht-oPS">
-                                <rect key="frame" x="89" y="-1" width="200" height="200"/>
+                                <rect key="frame" x="99" y="10" width="174" height="161"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                 </accessibility>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TIpo de Agressão" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9I-vY-7Eh">
-                                <rect key="frame" x="44" y="206" width="291" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3t-Rb-2gB">
-                                <rect key="frame" x="46" y="8" width="285" height="175"/>
+                                <rect key="frame" x="167" y="164" width="38" height="40"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Tirar Foto">
+                                <state key="normal" title="Tirar Foto" image="icon_camera_selecionado">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="foto:" destination="hpB-vc-oDh" eventType="touchUpInside" id="V0t-aB-GaS"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="descricao" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-eG-Auk">
+                                <rect key="frame" x="39" y="262" width="296" height="163"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -290,9 +292,9 @@
                                     <outlet property="delegate" destination="SQ2-IC-6bM" id="wly-L9-h0t"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-hf-Kbv">
-                                <rect key="frame" x="275" y="514" width="72" height="30"/>
-                                <state key="normal" title="Meu Local">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-hf-Kbv">
+                                <rect key="frame" x="11" y="452" width="40" height="40"/>
+                                <state key="normal" image="search2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -345,7 +347,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ONG's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LL1-ef-AiZ">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -363,7 +365,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="DEMA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tIz-JU-a3o">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -410,7 +412,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ONG 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Rl-oH-2Za">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -425,7 +427,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="ONG 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="veY-4I-2x0">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -461,25 +463,25 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome Ong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lJ-ZM-qtF">
                                 <rect key="frame" x="32" y="77" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35z-2O-rDU">
                                 <rect key="frame" x="32" y="113" width="64" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Site" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1U-wi-Mfh">
                                 <rect key="frame" x="32" y="147" width="30" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Endereço" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGs-sy-Qlf">
                                 <rect key="frame" x="32" y="183" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Descrição" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlx-1p-xzW">
@@ -595,36 +597,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nova Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpO-0n-5AJ">
-                                <rect key="frame" x="81" y="298" width="213" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E0-p1-m9g">
-                                <rect key="frame" x="94" y="477" width="186" height="40"/>
-                                <color key="backgroundColor" red="0.78039215689999997" green="0.1529411765" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Confirmar">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha Atual" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOZ-0u-9iC">
                                 <rect key="frame" x="81" y="165" width="212" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirme Nova Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Psm-0p-YKA">
-                                <rect key="frame" x="81" y="361" width="213" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E0-p1-m9g">
+                                <rect key="frame" x="81" y="317" width="186" height="40"/>
+                                <color key="backgroundColor" red="0.78039215689999997" green="0.1529411765" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Enviar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enviar:" destination="Tmp-N2-PmD" eventType="touchUpInside" id="dSn-mR-1Kd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="confirmaSenha" destination="Psm-0p-YKA" id="X7s-zt-E1V"/>
-                        <outlet property="novaSenha" destination="lpO-0n-5AJ" id="VCM-wk-DYi"/>
                         <outlet property="senhaAtual" destination="tOZ-0u-9iC" id="dzH-I4-D1S"/>
                     </connections>
                 </viewController>
@@ -632,11 +625,13 @@
             </objects>
             <point key="canvasLocation" x="1718.5" y="2439.5"/>
         </scene>
-        <!--Denúncia-->
+        <!--Navigation Controller-->
         <scene sceneID="0Rv-bH-zUo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FlN-R9-2k2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Denúncia" image="teste_snakeIcon" id="lHu-Jb-4xD"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_siren" id="lHu-Jb-4xD">
+                        <inset key="imageInsets" minX="15" minY="20" maxX="15" maxY="10"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="z7Y-Ot-xzL">
@@ -659,7 +654,9 @@
         <scene sceneID="aQ1-sJ-ng2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zdm-Uj-azg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icon_22" id="iCz-Uo-3gT"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_maps" id="iCz-Uo-3gT">
+                        <inset key="imageInsets" minX="15" minY="20" maxX="15" maxY="10"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="1HY-Me-rAo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -674,11 +671,13 @@
             </objects>
             <point key="canvasLocation" x="-727" y="2066"/>
         </scene>
-        <!--Info-->
+        <!--Navigation Controller-->
         <scene sceneID="Iye-Kf-ZRx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7cJ-jV-gfH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Info" image="teste_treeIcon" id="04k-O8-gu6"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_info" id="04k-O8-gu6">
+                        <inset key="imageInsets" minX="15" minY="20" maxX="15" maxY="10"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="smK-n7-EDb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -693,11 +692,13 @@
             </objects>
             <point key="canvasLocation" x="311.5" y="2065.5"/>
         </scene>
-        <!--Settings-->
+        <!--Navigation Controller-->
         <scene sceneID="ZT6-zT-PGM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zvk-Xi-nQY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="teste_marteloIcon" id="8qJ-d2-Ixl"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_settings" id="8qJ-d2-Ixl">
+                        <inset key="imageInsets" minX="15" minY="20" maxX="15" maxY="10"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="EyA-IR-9kd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -714,12 +715,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_22" width="22" height="22"/>
+        <image name="Borda-Foto" width="200" height="200"/>
+        <image name="icon_camera_selecionado" width="88" height="88"/>
+        <image name="icon_info" width="88" height="88"/>
+        <image name="icon_maps" width="88" height="88"/>
+        <image name="icon_settings" width="88" height="88"/>
+        <image name="icon_siren" width="88" height="88"/>
+        <image name="search2" width="310" height="310"/>
         <image name="tela_1" width="960" height="1647"/>
         <image name="tela_2" width="960" height="1647"/>
         <image name="tela_denuncia_patinha" width="960" height="1647"/>
-        <image name="teste_marteloIcon" width="16" height="28"/>
-        <image name="teste_snakeIcon" width="28" height="28"/>
-        <image name="teste_treeIcon" width="20" height="26"/>
     </resources>
 </document>
