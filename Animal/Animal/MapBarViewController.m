@@ -74,9 +74,12 @@ BOOL userLocationShown1;
     //PFGeoPoint *point = [PFGeoPoint geoPointWithLocation:self.currentLocation];
     PFQuery *query = [PFQuery queryWithClassName:@"Locais"];
     [query  findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+     
      {
+         NSLog(@"-----------%@",query);
          if (!error)
          {
+             
              // The find succeeded.
              NSLog(@"Successfully retrieved %lu", objects.count);
              // Do something with the found objects
@@ -90,7 +93,7 @@ BOOL userLocationShown1;
                  location.latitude = geoPoint.latitude;
                  location.longitude = geoPoint.longitude;
                  point.coordinate = location;
-                 point.title = object.objectId;
+                 point.title = object[@"tipoAgressao"];
                  //point.subtitle = object[@"description"];
                  [self.mapBarView addAnnotation:point];
                  
