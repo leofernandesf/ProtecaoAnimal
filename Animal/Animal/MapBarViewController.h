@@ -15,7 +15,7 @@
 #import <MapKit/MKFoundation.h>
 
 @interface MapBarViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate>
-
+ 
 @property (strong, nonatomic) IBOutlet MKMapView *mapBarView;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property(nonatomic, strong) CLLocationManager *coreLocation2;
