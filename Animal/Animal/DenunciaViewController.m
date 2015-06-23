@@ -26,7 +26,7 @@
      self.foto.image = self.image;
     
 // gera pontas arredondadas na imageView
-    self.foto.layer.cornerRadius = 20;
+    self.foto.layer.cornerRadius = 8;
     self.foto.clipsToBounds = YES;
     
     // teclado some quando clicar na tela
