@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -678,6 +678,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QdL-Dl-fzX" kind="show" id="fBe-aq-Vbq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" textLabel="ue0-cM-FvF" style="IBUITableViewCellStyleDefault" id="yHg-uW-Ojn">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -711,6 +714,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMd-KO-ZxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1264.5" y="2439.5"/>
+        </scene>
+        <!--Sobre-->
+        <scene sceneID="Hxa-fr-iXo">
+            <objects>
+                <viewController title="Sobre" id="QdL-Dl-fzX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dj8-To-EVQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OE8-p0-fJ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cpu-8E-C4k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_sobre" translatesAutoresizingMaskIntoConstraints="NO" id="uAr-mU-dVB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YC3-rX-wBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2130.5" y="2439.5"/>
         </scene>
         <!--Redefinir Senha-->
         <scene sceneID="Zky-GT-tqH">
@@ -856,5 +883,6 @@
         <image name="tela_2" width="960" height="1647"/>
         <image name="tela_botao" width="960" height="1647"/>
         <image name="tela_den" width="960" height="1647"/>
+        <image name="tela_sobre" width="750" height="1284"/>
     </resources>
 </document>

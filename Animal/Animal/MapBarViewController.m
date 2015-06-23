@@ -88,7 +88,7 @@ BOOL userLocationShown1;
              for (PFObject *object in objects)
              {
                  geoPoint = object[@"geoLocalization"];
-                                  
+                 
                  MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
                  location.latitude = geoPoint.latitude;
                  location.longitude = geoPoint.longitude;
