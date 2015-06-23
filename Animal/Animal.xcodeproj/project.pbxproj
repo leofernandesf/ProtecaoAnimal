@@ -27,6 +27,7 @@
 		A7160E4B1B27103C00CE2FE6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4A1B27103C00CE2FE6 /* libsqlite3.dylib */; };
 		A7160E4D1B27106100CE2FE6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4C1B27106100CE2FE6 /* Accounts.framework */; };
 		A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4E1B27106B00CE2FE6 /* Social.framework */; };
+		A78B812B1B38CDCA00243C86 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A78B812A1B38CDCA00243C86 /* Color.m */; };
 		CA3628941B3464D2009AF3D9 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3628931B3464D2009AF3D9 /* SettingsTableViewController.m */; };
 		CA611A861B29D0700047DA9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA611A851B29D0700047DA9B /* MapKit.framework */; };
 		CAB685431B287C1000F3914A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685411B287C1000F3914A /* Bolts.framework */; };
@@ -81,6 +82,8 @@
 		A7160E4C1B27106100CE2FE6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		A7160E4E1B27106B00CE2FE6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A7160E541B2710F600CE2FE6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A78B81291B38CDCA00243C86 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		A78B812A1B38CDCA00243C86 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		CA3628921B3464D2009AF3D9 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		CA3628931B3464D2009AF3D9 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		CA611A851B29D0700047DA9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -168,6 +171,7 @@
 		A7160E0C1B270EEF00CE2FE6 /* Animal */ = {
 			isa = PBXGroup;
 			children = (
+				A78B81281B38CDA900243C86 /* color */,
 				CD5E675B1B32FE060018D99F /* settings */,
 				CD72734D1B28810100821E52 /* informacoes */,
 				CD72734C1B2880E700821E52 /* denuncia */,
@@ -240,6 +244,15 @@
 				A7160E361B270FBF00CE2FE6 /* AudioToolbox.framework */,
 			);
 			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		A78B81281B38CDA900243C86 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				A78B81291B38CDCA00243C86 /* Color.h */,
+				A78B812A1B38CDCA00243C86 /* Color.m */,
+			);
+			name = color;
 			sourceTree = "<group>";
 		};
 		CD5E675B1B32FE060018D99F /* settings */ = {
@@ -389,6 +402,7 @@
 				CD5E67611B34D8430018D99F /* InfoViewController.m in Sources */,
 				CACA787C1B2F187E0028F90C /* Annotation.m in Sources */,
 				A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */,
+				A78B812B1B38CDCA00243C86 /* Color.m in Sources */,
 				A7160E161B270EEF00CE2FE6 /* Animal.xcdatamodeld in Sources */,
 				CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */,
 				CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */,

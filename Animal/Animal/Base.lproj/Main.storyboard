@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -151,11 +151,10 @@
                     <navigationItem key="navigationItem" id="AlW-re-DFg"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQu-v7-lfv">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="JQu-v7-lfv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.13333333333333333" green="0.16078431372549021" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="FlN-R9-2k2" kind="relationship" relationship="viewControllers" id="mTa-Gx-iGM"/>
@@ -168,7 +167,7 @@
             </objects>
             <point key="canvasLocation" x="-98.5" y="1205.5"/>
         </scene>
-        <!--Denuncia-->
+        <!--Registros-->
         <scene sceneID="jbk-5W-hv4">
             <objects>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="pgm-j3-oCc" customClass="MapBarViewController" sceneMemberID="viewController">
@@ -177,22 +176,16 @@
                         <viewControllerLayoutGuide type="bottom" id="51K-Jj-Cp3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tZY-m1-WbL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tzt-bf-ZGZ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </mapView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5X-qZ-VGf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Registros" id="a0v-aK-DTl"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Denuncia" id="l9R-O2-YER"/>
+                    <navigationItem key="navigationItem" title="Registros" id="l9R-O2-YER"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapBarView" destination="Tzt-bf-ZGZ" id="XkE-tI-WSk"/>
@@ -212,14 +205,14 @@
                         <viewControllerLayoutGuide type="bottom" id="No0-04-qxr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SlI-nI-5QC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_denuncia_patinha" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-bp-dX9">
-                                <rect key="frame" x="0.0" y="20" width="376" height="647"/>
+                                <rect key="frame" x="-1" y="-47" width="376" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-3I-L0j">
-                                <rect key="frame" x="86" y="558" width="203" height="39"/>
+                                <rect key="frame" x="87" y="491" width="203" height="39"/>
                                 <color key="backgroundColor" red="0.7803921568627451" green="0.15294117647058825" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Registrar Denúncia">
@@ -231,29 +224,29 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
-                                <rect key="frame" x="43" y="511" width="291" height="30"/>
+                                <rect key="frame" x="44" y="444" width="291" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="descricao" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-eG-Auk">
-                                <rect key="frame" x="38" y="326" width="296" height="169"/>
+                                <rect key="frame" x="39" y="259" width="296" height="169"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9u-ht-oPS">
-                                <rect key="frame" x="88" y="66" width="200" height="200"/>
+                                <rect key="frame" x="89" y="-1" width="200" height="200"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                 </accessibility>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TIpo de Agressão" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9I-vY-7Eh">
-                                <rect key="frame" x="43" y="273" width="291" height="30"/>
+                                <rect key="frame" x="44" y="206" width="291" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3t-Rb-2gB">
-                                <rect key="frame" x="45" y="64" width="285" height="175"/>
+                                <rect key="frame" x="46" y="8" width="285" height="175"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Tirar Foto">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -277,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7B-Rk-zxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-155.5" y="2901.5"/>
+            <point key="canvasLocation" x="-171.5" y="2901.5"/>
         </scene>
         <!--Selecione o Local-->
         <scene sceneID="J86-E7-QNF">
@@ -288,17 +281,17 @@
                         <viewControllerLayoutGuide type="bottom" id="Iyl-MR-4Zj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bPF-pj-wg1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JmQ-Z2-lfq">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <connections>
                                     <outlet property="delegate" destination="SQ2-IC-6bM" id="wly-L9-h0t"/>
                                 </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-hf-Kbv">
-                                <rect key="frame" x="275" y="564" width="72" height="30"/>
+                                <rect key="frame" x="275" y="514" width="72" height="30"/>
                                 <state key="normal" title="Meu Local">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -327,7 +320,7 @@
             </objects>
             <point key="canvasLocation" x="-155.5" y="3715.5"/>
         </scene>
-        <!--Configuracoes-->
+        <!--Informacoes-->
         <scene sceneID="Zs3-Lz-d3t">
             <objects>
                 <viewController id="qqC-Vs-QlF" sceneMemberID="viewController">
@@ -336,32 +329,26 @@
                         <viewControllerLayoutGuide type="bottom" id="5iY-Uj-ZQ2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dg1-NB-YfU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZL-6P-GdL">
-                                <rect key="frame" x="68" y="107" width="34" height="21"/>
+                                <rect key="frame" x="67" y="20" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-mJ-esi">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Informações" id="17V-Gc-EcY"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Configuracoes" id="5uM-0e-txI"/>
+                    <navigationItem key="navigationItem" title="Informacoes" id="5uM-0e-txI"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh7-fb-lLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="290.5" y="2901.5"/>
         </scene>
-        <!--Informacoes-->
+        <!--Configuracoes-->
         <scene sceneID="TAt-h3-8wo">
             <objects>
                 <viewController id="8Mu-PP-zYT" customClass="SettingsTableViewController" sceneMemberID="viewController">
@@ -370,7 +357,7 @@
                         <viewControllerLayoutGuide type="bottom" id="uqC-WK-wm6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="baH-cu-4af">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oo-gu-D3V">
@@ -383,7 +370,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="frI-mL-iCu">
-                                <rect key="frame" x="-3" y="64" width="381" height="122"/>
+                                <rect key="frame" x="-3" y="8" width="381" height="122"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="3hg-eG-FQ2" style="IBUITableViewCellStyleDefault" id="est-eO-J2H">
@@ -420,16 +407,10 @@
                                     <outlet property="delegate" destination="8Mu-PP-zYT" id="l3Y-Uy-sIy"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhw-W7-Cnr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Configurações" id="rE6-Zp-4fe"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Informacoes" id="vVV-uM-sJ9"/>
+                    <navigationItem key="navigationItem" title="Configuracoes" id="vVV-uM-sJ9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMd-KO-ZxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -442,7 +423,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FlN-R9-2k2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Denúncia" image="teste_snakeIcon" id="lHu-Jb-4xD"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z7Y-Ot-xzL">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="z7Y-Ot-xzL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -464,7 +446,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zdm-Uj-azg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="icon_22" id="iCz-Uo-3gT"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1HY-Me-rAo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="1HY-Me-rAo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -483,7 +465,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7cJ-jV-gfH" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Info" image="teste_treeIcon" id="04k-O8-gu6"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="smK-n7-EDb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="smK-n7-EDb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -502,7 +484,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zvk-Xi-nQY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="teste_marteloIcon" id="8qJ-d2-Ixl"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EyA-IR-9kd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="EyA-IR-9kd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
