@@ -318,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOd-cf-gVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-155.5" y="3715.5"/>
+            <point key="canvasLocation" x="-185.5" y="3715.5"/>
         </scene>
         <!--Informações-->
         <scene sceneID="Zs3-Lz-d3t">
@@ -596,7 +596,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nova Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpO-0n-5AJ">
-                                <rect key="frame" x="94" y="294" width="186" height="30"/>
+                                <rect key="frame" x="81" y="298" width="213" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
@@ -609,12 +609,12 @@
                                 </state>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha Atual" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOZ-0u-9iC">
-                                <rect key="frame" x="93" y="164" width="186" height="30"/>
+                                <rect key="frame" x="81" y="165" width="212" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repita " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Psm-0p-YKA">
-                                <rect key="frame" x="94" y="345" width="186" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirme Nova Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Psm-0p-YKA">
+                                <rect key="frame" x="81" y="361" width="213" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
@@ -622,6 +622,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="confirmaSenha" destination="Psm-0p-YKA" id="X7s-zt-E1V"/>
+                        <outlet property="novaSenha" destination="lpO-0n-5AJ" id="VCM-wk-DYi"/>
+                        <outlet property="senhaAtual" destination="tOZ-0u-9iC" id="dzH-I4-D1S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWb-Wc-UPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
