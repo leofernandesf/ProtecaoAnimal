@@ -254,10 +254,13 @@ BOOL userLocationShown;
     {
         CGPoint point = [sender locationInView:self.mapViewDenuncia];
         CLLocationCoordinate2D locCoord = [self.mapViewDenuncia convertPoint:point toCoordinateFromView:self.mapViewDenuncia];
-MKPointAnnotation *dropPin = [[MKPointAnnotation alloc] init];
-dropPin.coordinate = locCoord;
-[self.mapViewDenuncia addAnnotation:dropPin];
-self.pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longitude:locCoord.longitude];
+        self.dropPinAux = self.dropPin;
+        NSLog(@"teste %@",self.dropPinAux);
+        self.dropPin = [[MKPointAnnotation alloc] init];
+        self.dropPin.coordinate = locCoord;
+        [self.mapViewDenuncia addAnnotation:self.dropPin];
+        [self.mapViewDenuncia removeAnnotation:self.dropPinAux];
+        self.pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longitude:locCoord.longitude];
         
 }
 }
