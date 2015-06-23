@@ -677,7 +677,9 @@
         <scene sceneID="Iye-Kf-ZRx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7cJ-jV-gfH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icon_22-1" id="04k-O8-gu6"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_info80-" id="04k-O8-gu6">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="smK-n7-EDb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -696,8 +698,8 @@
         <scene sceneID="ZT6-zT-PGM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zvk-Xi-nQY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icon_settings" id="8qJ-d2-Ixl">
-                        <inset key="imageInsets" minX="4" minY="8" maxX="0.0" maxY="-4"/>
+                    <tabBarItem key="tabBarItem" title="" image="icon_settings_selecionado" id="8qJ-d2-Ixl">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="EyA-IR-9kd">
@@ -715,10 +717,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_22-1" width="11" height="11"/>
         <image name="icon_camera_selecionado" width="88" height="88"/>
+        <image name="icon_info80-" width="40" height="40"/>
         <image name="icon_maps" width="44" height="44"/>
-        <image name="icon_settings" width="44" height="44"/>
+        <image name="icon_settings_selecionado" width="40" height="40"/>
         <image name="icon_siren" width="44" height="44"/>
         <image name="search2" width="310" height="310"/>
         <image name="tela_1" width="960" height="1647"/>
