@@ -74,6 +74,7 @@
         <!--Cadastro View Controller-->
         <scene sceneID="OcT-9J-eAe">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Mj-1H-Bt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="YxR-1q-wPy" customClass="CadastroViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GcH-bK-SNm"/>
@@ -140,7 +141,6 @@
                         <outlet property="senha" destination="7Xy-te-0Fr" id="dpo-2h-ulb"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Mj-1H-Bt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="359.5" y="399.5"/>
         </scene>
