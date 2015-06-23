@@ -12,5 +12,8 @@
 @interface SettingsTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
+
+
+
 - (IBAction)sair:(id)sender;
 @end

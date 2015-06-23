@@ -117,8 +117,8 @@
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    UIImage *image = info[UIImagePickerControllerEditedImage];
-    self.foto.image = image;
+    self.image = info[UIImagePickerControllerEditedImage];
+    self.foto.image = self.image;
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -139,6 +139,7 @@
         denuncia.descricao = self.descricao.text;
         denuncia.referencia = self.referencia.text;
         denuncia.tipo = self.tipo.text;
+        denuncia.imagem = self.image;
     }
 }
 @end
