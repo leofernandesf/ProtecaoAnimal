@@ -649,7 +649,7 @@
         <scene sceneID="0Rv-bH-zUo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FlN-R9-2k2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="IconMap-selec" id="lHu-Jb-4xD">
+                    <tabBarItem key="tabBarItem" title="" image="IconDenunc-Select" id="lHu-Jb-4xD">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -675,7 +675,7 @@
         <scene sceneID="aQ1-sJ-ng2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zdm-Uj-azg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="IconDenunc-Select" id="iCz-Uo-3gT">
+                    <tabBarItem key="tabBarItem" title="" image="IconMap" id="iCz-Uo-3gT">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -740,7 +740,7 @@
     </scenes>
     <resources>
         <image name="IconDenunc-Select" width="40" height="40"/>
-        <image name="IconMap-selec" width="40" height="40"/>
+        <image name="IconMap" width="40" height="40"/>
         <image name="icon_camera_selecionado" width="88" height="88"/>
         <image name="icon_info80-" width="40" height="40"/>
         <image name="icon_settings_selecionado" width="40" height="40"/>
