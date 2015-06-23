@@ -103,7 +103,7 @@ BOOL userLocationShown1;
          }
      }];
 }
-//teste - mudando o pino
+//SETANDO OS PINOS CUSTOMIZADOS
 
 -(MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:
 (id <MKAnnotation>)annotation {
@@ -164,6 +164,22 @@ BOOL userLocationShown1;
 
 }
 
+- (IBAction)meuLocal:(id)sender {
+    
+    
+    
+    float spanX = 0.00725;
+    float spanY = 0.00725;
+    MKCoordinateRegion region;
+    region.center.latitude = self.mapBarView.userLocation.coordinate.latitude;
+    region.center.longitude = self.mapBarView.userLocation.coordinate.longitude;
+    region.span.latitudeDelta = spanX;
+    region.span.longitudeDelta = spanY;
+    
+    
+    
+    [self.mapBarView setRegion:region animated:YES];
+}
 
 
 
@@ -178,5 +194,6 @@ BOOL userLocationShown1;
 //    
 //    
 //}
+
 
 @end

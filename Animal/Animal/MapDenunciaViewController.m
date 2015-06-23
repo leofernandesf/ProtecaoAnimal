@@ -139,26 +139,11 @@ BOOL userLocationShown;
     }
 }
 
-//- (IBAction)testar:(id)sender {
-//    
-//    UIAlertView* finalCheck = [[UIAlertView alloc]
-//                               initWithTitle:@"Alerta"
-//                               message:@"Deseja manter a Localização atual?"
-//                               delegate:self
-//                               cancelButtonTitle:@"Sim"
-//                               otherButtonTitles:@"Não",nil];
-//    
-//    
-//    
-//    [finalCheck show];
-//    
-//    
-//
-//    
-//}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
 }
 
 
@@ -176,74 +161,6 @@ BOOL userLocationShown;
         NSLog(@"Entrou com zoom %d", userLocationShown);
 }
 
-
-// Mensagem de Alerta quando clicar no botao "testando" apenas para teste:
-
-
-
-
-//- (IBAction)salvaTeste:(id)sender  {
-//    self.location = (CLLocation *)self.mapViewDenuncia.userLocation;
-//    NSLog(@"testando %@",self.location);
-//    
-//    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
-//        if (!error) {
-//            NSLog(@"fez alguma coisa");
-//            [[PFUser currentUser] setObject: geoPoint forKey: @"location"];
-//            [[PFUser currentUser] saveInBackground];// do something with the new geoPoint
-//        }
-//    }];
-//    
-//    
-//    
-//    //    NSData *data = UIImageJPEGRepresentation(self.picture, 0.6);
-//    //
-//    //    PFFile *file = [PFFile fileWithName:@"myPicture.jpg" data:data];
-//    PFObject *locais = [PFObject objectWithClassName:@"Locais"];
-//    PFUser *user = [PFUser currentUser];
-//    PFGeoPoint *point = [PFGeoPoint geoPointWithLocation:self.location];
-//    NSLog(@"suposta mente pegou o local%@",point);
-//    
-//    //    photo[@"picture"] = file;
-//    //    photo[@"description"] = self.textFieldDescription.text;
-//    //    photo[@"isPrivate"] = @NO;
-//    locais[@"geoLocalization"] = point;
-//    locais[@"createdBy"] = user.username;
-//    
-//    [locais saveInBackgroundWithBlock:^(BOOL success, NSError *error) {
-//        if (!error) {
-//            NSLog(@"Upload done");
-//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Done"
-//                                                            message:@"Sent successfully"
-//                                                           delegate:nil
-//                                                  cancelButtonTitle:@"OK"
-//                                                  otherButtonTitles:nil];
-//            [alert show];
-////            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-////            MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
-////            [self presentViewController:viewController animated:YES completion:nil];
-//
-//        } else {
-//            NSLog(@"%@", error.userInfo);
-//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-//                                                            message:@"Could not be sent. Check your internet connection"
-//                                                           delegate:nil
-//                                                  cancelButtonTitle:@"OK"
-//                                                  otherButtonTitles:nil];
-//            [alert show];
-//        }
-//    }];
-//    
-////    [self dismissViewControllerAnimated:YES completion:nil];
-////    [self.navigationController popViewControllerAnimated: YES];
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
-//    [self presentViewController:viewController animated:YES completion:nil];
-//    
-//    }
-
-
-// fim pop up alerta ------------
 
 
 
@@ -263,6 +180,29 @@ BOOL userLocationShown;
         self.pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longitude:locCoord.longitude];
         
 }
+}
+
+//SETANDO OS PINOS CUSTOMIZADOS
+
+-(MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:
+(id <MKAnnotation>)annotation {
+    MKPinAnnotationView *pinView = nil;
+    if(annotation != _mapViewDenuncia.userLocation)
+    {
+        static NSString *defaultPinID = @"com.invasivecode.pin";
+        pinView = (MKPinAnnotationView *)[_mapViewDenuncia dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
+        if ( pinView == nil ) pinView = [[MKPinAnnotationView alloc]
+                                         initWithAnnotation:annotation reuseIdentifier:defaultPinID];
+        
+        //    pinView.pinColor = MKPinAnnotationColorRed;
+        pinView.canShowCallout = YES;
+        pinView.animatesDrop = NO;
+        pinView.image = [UIImage imageNamed:@"pino-3.png"];    //as suggested by Squatch
+    }
+    else {
+        [_mapViewDenuncia.userLocation setTitle:@"To Aqui :)"];
+    }
+    return pinView;
 }
 
 
@@ -330,6 +270,8 @@ BOOL userLocationShown;
     MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
     [self presentViewController:viewController animated:YES completion:nil];
 }
+
+// vai para o local do usuario
 - (IBAction)meuLocal:(id)sender {
 
     NSLog(@"dedei");
