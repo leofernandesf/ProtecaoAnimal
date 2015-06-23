@@ -1,18 +1,18 @@
 //
-//  InfoViewController.m
+//  OngsViewController.m
 //  Animal
 //
-//  Created by Pedro Luis Berbel dos Santos on 19/06/15.
+//  Created by Pedro Luis Berbel dos Santos on 23/06/15.
 //  Copyright (c) 2015 leonardo fernandes farias. All rights reserved.
 //
 
-#import "InfoViewController.h"
+#import "OngsViewController.h"
 
-@interface InfoViewController ()
+@interface OngsViewController ()
 
 @end
 
-@implementation InfoViewController
+@implementation OngsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +23,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
@@ -39,10 +38,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *identifier;
     if (indexPath.row == 0) {
-        identifier = @"cell2";
+        identifier = @"cell4";
     }
     else{
-        identifier = @"cell3";
+        identifier = @"cell5";
     }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     

@@ -319,15 +319,20 @@ self.pinLocation = [[CLLocation alloc] initWithLatitude:locCoord.latitude longit
 }
 - (IBAction)meuLocal:(id)sender {
 
+    NSLog(@"dedei");
     
-    self.mapViewDenuncia.showsUserLocation = YES;
-
-    MKUserLocation *userLocation;
-    userLocationShown = YES;
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 10000, 10000);;
-    self.mapViewDenuncia.showsUserLocation = YES;
-      [self.mapViewDenuncia setRegion:[self.mapViewDenuncia regionThatFits:region] animated:YES];
     
+    float spanX = 0.00725;
+    float spanY = 0.00725;
+    MKCoordinateRegion region;
+    region.center.latitude = self.mapViewDenuncia.userLocation.coordinate.latitude;
+    region.center.longitude = self.mapViewDenuncia.userLocation.coordinate.longitude;
+    region.span.latitudeDelta = spanX;
+    region.span.longitudeDelta = spanY;
+    
+    
+    
+    [self.mapViewDenuncia setRegion:region animated:YES];
 }
 
 

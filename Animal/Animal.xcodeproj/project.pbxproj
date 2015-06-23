@@ -41,6 +41,9 @@
 		CD5E675A1B31C58F0018D99F /* DenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E67591B31C58F0018D99F /* DenunciaViewController.m */; };
 		CD5E675E1B32FE310018D99F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E675D1B32FE310018D99F /* SettingsViewController.m */; };
 		CD5E67611B34D8430018D99F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E67601B34D8430018D99F /* InfoViewController.m */; };
+		CD5E67641B391B070018D99F /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E67631B391B070018D99F /* ChangePasswordViewController.m */; };
+		CD5E67671B3923A40018D99F /* OngsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E67661B3923A40018D99F /* OngsViewController.m */; };
+		CD5E676A1B3926F20018D99F /* SelectedOngViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E67691B3926F20018D99F /* SelectedOngViewController.m */; };
 		CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */; };
 		CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */; };
 /* End PBXBuildFile section */
@@ -104,6 +107,12 @@
 		CD5E675D1B32FE310018D99F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		CD5E675F1B34D8430018D99F /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		CD5E67601B34D8430018D99F /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		CD5E67621B391B070018D99F /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		CD5E67631B391B070018D99F /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		CD5E67651B3923A40018D99F /* OngsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OngsViewController.h; sourceTree = "<group>"; };
+		CD5E67661B3923A40018D99F /* OngsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OngsViewController.m; sourceTree = "<group>"; };
+		CD5E67681B3926F20018D99F /* SelectedOngViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedOngViewController.h; sourceTree = "<group>"; };
+		CD5E67691B3926F20018D99F /* SelectedOngViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedOngViewController.m; sourceTree = "<group>"; };
 		CD7273421B286C1B00821E52 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "/Downloads/parse-library-1/Bolts.framework"; sourceTree = "<absolute>"; };
 		CD7273431B286C1B00821E52 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "/Downloads/parse-library-1/Parse.framework"; sourceTree = "<absolute>"; };
 		CD7273B31B29BD4200821E52 /* MapDenunciaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDenunciaViewController.h; sourceTree = "<group>"; };
@@ -262,6 +271,8 @@
 				CD5E675D1B32FE310018D99F /* SettingsViewController.m */,
 				CA3628921B3464D2009AF3D9 /* SettingsTableViewController.h */,
 				CA3628931B3464D2009AF3D9 /* SettingsTableViewController.m */,
+				CD5E67621B391B070018D99F /* ChangePasswordViewController.h */,
+				CD5E67631B391B070018D99F /* ChangePasswordViewController.m */,
 			);
 			name = settings;
 			sourceTree = "<group>";
@@ -293,6 +304,10 @@
 			children = (
 				CD5E675F1B34D8430018D99F /* InfoViewController.h */,
 				CD5E67601B34D8430018D99F /* InfoViewController.m */,
+				CD5E67651B3923A40018D99F /* OngsViewController.h */,
+				CD5E67661B3923A40018D99F /* OngsViewController.m */,
+				CD5E67681B3926F20018D99F /* SelectedOngViewController.h */,
+				CD5E67691B3926F20018D99F /* SelectedOngViewController.m */,
 			);
 			name = informacoes;
 			sourceTree = "<group>";
@@ -399,9 +414,12 @@
 			files = (
 				A7160E131B270EEF00CE2FE6 /* AppDelegate.m in Sources */,
 				A7160E101B270EEF00CE2FE6 /* main.m in Sources */,
+				CD5E676A1B3926F20018D99F /* SelectedOngViewController.m in Sources */,
 				CD5E67611B34D8430018D99F /* InfoViewController.m in Sources */,
 				CACA787C1B2F187E0028F90C /* Annotation.m in Sources */,
 				A7160E191B270EEF00CE2FE6 /* ViewController.m in Sources */,
+				CD5E67671B3923A40018D99F /* OngsViewController.m in Sources */,
+				CD5E67641B391B070018D99F /* ChangePasswordViewController.m in Sources */,
 				A78B812B1B38CDCA00243C86 /* Color.m in Sources */,
 				A7160E161B270EEF00CE2FE6 /* Animal.xcdatamodeld in Sources */,
 				CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */,
