@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -217,23 +217,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_den" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-bp-dX9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_den-1" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-bp-dX9">
                                 <rect key="frame" x="-1" y="-47" width="376" height="647"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="descricao" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-eG-Auk">
-                                <rect key="frame" x="40" y="310" width="295" height="94"/>
+                                <rect key="frame" x="55" y="290" width="286" height="94"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9u-ht-oPS">
-                                <rect key="frame" x="95" y="17" width="181" height="181"/>
+                                <rect key="frame" x="106" y="2" width="181" height="181"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                 </accessibility>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
+                                <rect key="frame" x="55" y="425" width="286" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tipo de Agressão" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9I-vY-7Eh">
+                                <rect key="frame" x="55" y="226" width="286" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3t-Rb-2gB">
+                                <rect key="frame" x="181" y="187" width="30" height="30"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Tirar Foto" image="icon_camera_selecionado">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="foto:" destination="hpB-vc-oDh" eventType="touchUpInside" id="V0t-aB-GaS"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-3I-L0j">
-                                <rect key="frame" x="85" y="500" width="203" height="39"/>
+                                <rect key="frame" x="97" y="484" width="202" height="39"/>
                                 <color key="backgroundColor" red="0.7803921568627451" green="0.15294117647058825" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Registrar Denúncia">
@@ -242,26 +262,6 @@
                                 <connections>
                                     <action selector="registrar:" destination="hpB-vc-oDh" eventType="touchUpInside" id="4mu-6f-zcl"/>
                                     <segue destination="SQ2-IC-6bM" kind="show" identifier="registrardenuncia" id="wbl-fA-CfO"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
-                                <rect key="frame" x="44" y="439" width="291" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tipo de Agressão" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9I-vY-7Eh">
-                                <rect key="frame" x="44" y="240" width="291" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3t-Rb-2gB">
-                                <rect key="frame" x="170" y="202" width="30" height="30"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Tirar Foto" image="icon_camera_selecionado">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="foto:" destination="hpB-vc-oDh" eventType="touchUpInside" id="V0t-aB-GaS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -409,10 +409,10 @@
             </objects>
             <point key="canvasLocation" x="290.5" y="4007.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Texto Leis View Controller-->
         <scene sceneID="080-It-oEB">
             <objects>
-                <viewController id="ecS-Np-5Jn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="textoLeis" id="ecS-Np-5Jn" customClass="TextoLeisViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U9h-Uz-BNJ"/>
                         <viewControllerLayoutGuide type="bottom" id="qKy-OQ-NDb"/>
@@ -420,9 +420,20 @@
                     <view key="view" contentMode="scaleToFill" id="VN1-eM-n0f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Texto Lei x" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-28-S4c">
+                                <rect key="frame" x="0.0" y="113" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textoLeis" destination="4cl-28-S4c" id="97g-0t-Yaa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1N-cw-gAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -882,7 +893,7 @@
         <image name="tela_1" width="960" height="1647"/>
         <image name="tela_2" width="960" height="1647"/>
         <image name="tela_botao" width="960" height="1647"/>
-        <image name="tela_den" width="960" height="1647"/>
+        <image name="tela_den-1" width="960" height="1647"/>
         <image name="tela_sobre" width="750" height="1284"/>
     </resources>
 </document>

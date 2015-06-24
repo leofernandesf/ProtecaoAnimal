@@ -47,6 +47,7 @@
 		CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */; };
 		CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */; };
 		CDF448301B39FABE00D4ECCC /* LeisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */; };
+		CDF448331B3A17B600D4ECCC /* TextoLeisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF448321B3A17B600D4ECCC /* TextoLeisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,8 @@
 		CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapBarViewController.m; sourceTree = "<group>"; };
 		CDF4482E1B39FABE00D4ECCC /* LeisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeisViewController.h; sourceTree = "<group>"; };
 		CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeisViewController.m; sourceTree = "<group>"; };
+		CDF448311B3A17B600D4ECCC /* TextoLeisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextoLeisViewController.h; sourceTree = "<group>"; };
+		CDF448321B3A17B600D4ECCC /* TextoLeisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextoLeisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +324,8 @@
 			children = (
 				CDF4482E1B39FABE00D4ECCC /* LeisViewController.h */,
 				CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */,
+				CDF448311B3A17B600D4ECCC /* TextoLeisViewController.h */,
+				CDF448321B3A17B600D4ECCC /* TextoLeisViewController.m */,
 			);
 			name = Leis;
 			sourceTree = "<group>";
@@ -439,6 +444,7 @@
 				CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */,
 				CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */,
 				CD5E675E1B32FE310018D99F /* SettingsViewController.m in Sources */,
+				CDF448331B3A17B600D4ECCC /* TextoLeisViewController.m in Sources */,
 				CD5E675A1B31C58F0018D99F /* DenunciaViewController.m in Sources */,
 				CA3628941B3464D2009AF3D9 /* SettingsTableViewController.m in Sources */,
 				CAB685471B28825400F3914A /* CadastroViewController.m in Sources */,
