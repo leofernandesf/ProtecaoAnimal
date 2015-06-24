@@ -96,7 +96,7 @@
                                     <action selector="cadastrar:" destination="YxR-1q-wPy" eventType="touchUpInside" id="u4S-MW-dld"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ec9-F6-Q8d">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ec9-F6-Q8d">
                                 <rect key="frame" x="-1" y="20" width="376" height="647"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_2" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-eN-hsN">
@@ -443,10 +443,10 @@
             </objects>
             <point key="canvasLocation" x="290.5" y="4007.5"/>
         </scene>
-        <!--Texto Leis View Controller-->
+        <!--Descricao Leis View Controller-->
         <scene sceneID="080-It-oEB">
             <objects>
-                <viewController storyboardIdentifier="textoLeis" id="ecS-Np-5Jn" customClass="TextoLeisViewController" sceneMemberID="viewController">
+                <viewController id="ecS-Np-5Jn" customClass="DescricaoLeisViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U9h-Uz-BNJ"/>
                         <viewControllerLayoutGuide type="bottom" id="qKy-OQ-NDb"/>
@@ -455,8 +455,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Texto Lei x" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-28-S4c">
-                                <rect key="frame" x="0.0" y="113" width="375" height="554"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Jq-zX-PQJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -466,7 +466,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="textoLeis" destination="4cl-28-S4c" id="97g-0t-Yaa"/>
+                        <outlet property="lbDescricao" destination="3Jq-zX-PQJ" id="Gaf-jy-rSN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1N-cw-gAj" userLabel="First Responder" sceneMemberID="firstResponder"/>

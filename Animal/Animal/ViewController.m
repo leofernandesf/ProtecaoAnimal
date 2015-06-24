@@ -56,14 +56,14 @@
     [self.view addGestureRecognizer:tap];
     
     
-/*pra subir os campos quando o teclado aparece:
+//pra subir os campos quando o teclado aparece:
     self.nome.layer.borderColor=[[UIColor colorWithRed:1 green:1 blue:1 alpha:1]CGColor];
     self.nome.layer.borderWidth=0;
     self.nome.delegate = self;
     
     self.senha.layer.borderColor=[[UIColor colorWithRed:1 green:1 blue:1 alpha:1]CGColor];
     self.senha.layer.borderWidth=0;
-    self.senha.delegate = self; */
+    self.senha.delegate = self;
 //fim
     
     }
@@ -136,7 +136,7 @@
 }
 
 - (void) animate: (BOOL)up {
-    const int movementDistance = 80; // tweak as needed
+    const int movementDistance = 50; // tweak as needed
     const float movementDuration = 0.3f; // tweak as needed
     
     int movement = (up ? -movementDistance : movementDistance);
