@@ -186,6 +186,8 @@
 		A7160E0C1B270EEF00CE2FE6 /* Animal */ = {
 			isa = PBXGroup;
 			children = (
+				A78908C81B3B3EC4008906F4 /* cadastro */,
+				A78908C71B3B3EAD008906F4 /* login */,
 				A78B81281B38CDA900243C86 /* color */,
 				CD5E675B1B32FE060018D99F /* settings */,
 				CD72734D1B28810100821E52 /* informacoes */,
@@ -193,10 +195,6 @@
 				CD72734B1B2880D400821E52 /* mapa */,
 				A7160E111B270EEF00CE2FE6 /* AppDelegate.h */,
 				A7160E121B270EEF00CE2FE6 /* AppDelegate.m */,
-				A7160E171B270EEF00CE2FE6 /* ViewController.h */,
-				A7160E181B270EEF00CE2FE6 /* ViewController.m */,
-				CAB685451B28825400F3914A /* CadastroViewController.h */,
-				CAB685461B28825400F3914A /* CadastroViewController.m */,
 				A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */,
 				CAF134BF1B385C1C00071CA1 /* Main.strings */,
 				A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */,
@@ -259,6 +257,24 @@
 				A7160E361B270FBF00CE2FE6 /* AudioToolbox.framework */,
 			);
 			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		A78908C71B3B3EAD008906F4 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				A7160E171B270EEF00CE2FE6 /* ViewController.h */,
+				A7160E181B270EEF00CE2FE6 /* ViewController.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		A78908C81B3B3EC4008906F4 /* cadastro */ = {
+			isa = PBXGroup;
+			children = (
+				CAB685451B28825400F3914A /* CadastroViewController.h */,
+				CAB685461B28825400F3914A /* CadastroViewController.m */,
+			);
+			name = cadastro;
 			sourceTree = "<group>";
 		};
 		A78B81281B38CDA900243C86 /* color */ = {
