@@ -42,23 +42,13 @@
     self.senha.layer.borderWidth=0;
     self.senha.delegate = self;
     //fim
-    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
+//Esconde Status Bar (Barra do relógio)
+//- (BOOL)prefersStatusBarHidden {
+//    return YES;
+//}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (IBAction)cadastrar:(id)sender {
     PFUser *user = [PFUser user];
     user.username = _primeiroNome.text;
@@ -124,7 +114,7 @@
 }
 
 - (void) animate: (BOOL)up {
-    const int movementDistance = 140; // tweak as needed
+    const int movementDistance = 155; // tweak as needed
     const float movementDuration = 0.3f; // tweak as needed
     
     int movement = (up ? -movementDistance : movementDistance);

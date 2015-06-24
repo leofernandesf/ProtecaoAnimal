@@ -218,7 +218,7 @@ BOOL userLocationShown;
 
 - (IBAction)save:(id)sender {
     NSLog(@"clicou no botal do save");
-    NSLog(@"testando o localisacao dos pins setados %@",self.pinLocation);
+    NSLog(@"testando o localizacao dos pins setados %@",self.pinLocation);
     
     
     
