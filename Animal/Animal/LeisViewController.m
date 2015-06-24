@@ -60,13 +60,14 @@
     NSIndexPath *indexPath = [self.tableview indexPathForSelectedRow];
     DescricaoLeisViewController *destino = segue.destinationViewController;
     if (indexPath.row == 0) {
-        destino.descricao = @"secao 0";
+        
+        destino.descricao = @"* Dirija-se até a delegacia mais próxima ou compareça à promotoria de justiça do meio ambiente;\n\n* O ato de denunciar maus-tratos é legitimada pelo Art. 32, da lei Federal nº. 9.605, de 12.02.1998 (Lei de Crimes Ambientais) e pela Constituição Federal Brasileira, de 05 de outubro de 1998;\n\n* Outra recomendação importante é recorrer ao zoonoses que poderá eventualmente repassar as denúncias aos órgãos responsáveis.";
         
           }else
         if (indexPath.row == 1) {
-            destino.descricao = @"Secao 1";
+            destino.descricao = @"Art. 32. Praticar ato de abuso, maus-tratos, ferir ou mutilar animais silvestres, domésticos ou domesticados, nativos ou exóticos:\n\n\tPena - detenção, de três meses a um ano, e multa.\n\n\t\t1º. Incorre nas mesmas penas quem realiza experiência dolorosa ou cruel em animal vivo, ainda que para fins didáticos ou científicos, quando existirem recursos alternativos.\n\t\t2º. “A pena é aumentada de um sexto a um terço, se ocorre morte do animal.";
         }else{
-            destino.descricao = @"Secao 2";
+            destino.descricao = @"Art. 23. É competência comum da união, dos Estados, do Distrito Federal e dos Municípios:\n\n\tVI - proteger o meio ambiente e combater a poluição em qualquer de suas formas;\n\tVII - preservar as florestas, a fauna e a flora;\n\nArt. 225. Todos têm o direito ao meio ambiente ecologicamente equilibrado, bem de uso comum do povo e essencial à sadia qualidade de vida, impondo-se ao poder público e à coletividade o dever de defendê-lo e preservá-lo para os presentes e futuras gerações.\n\t  1.º Para assegurar a efetividade desse direito, incube ao poder público:\n\t\tVII - “proteger o Meio Ambiente adotando iniciativas como: proteger a fauna e a flora, vedadas, na forma da lei, as práticas que coloquem em risco sua função ecológica, provoque a extinção de espécies ou submetam os animais à crueldade.”\n\nA denúncia pode ser feita nas delegacias comuns ou nas especializadas em meio-ambiente. Também se pode denunciar diretamente no ministério Público ou no IBAMA.";
         }
 }
 
