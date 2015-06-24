@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Animal
 //
-//  Created by leonardo fernandes farias on 09/06/15.
+//  Created by Tiago Cahú on 09/06/15.
 //  Copyright (c) 2015 leonardo fernandes farias. All rights reserved.
 //
 

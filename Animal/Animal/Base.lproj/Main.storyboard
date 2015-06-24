@@ -371,7 +371,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell7" textLabel="yMP-dx-uBQ" style="IBUITableViewCellStyleDefault" id="r8j-ff-DZD">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="0" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell7" textLabel="yMP-dx-uBQ" style="IBUITableViewCellStyleDefault" id="r8j-ff-DZD">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r8j-ff-DZD" id="Vux-DH-Di8">
@@ -385,8 +385,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ecS-Np-5Jn" kind="show" id="jca-N2-l0h"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell8" textLabel="M4c-SJ-h2b" style="IBUITableViewCellStyleDefault" id="QTQ-de-nVH">
+                                    <tableViewCell tag="1" contentMode="scaleToFill" restorationIdentifier="1" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell8" textLabel="M4c-SJ-h2b" style="IBUITableViewCellStyleDefault" id="QTQ-de-nVH">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QTQ-de-nVH" id="Ay3-Ea-YHS">
@@ -400,8 +403,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ecS-Np-5Jn" kind="show" id="eMy-7Y-j4V"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell9" textLabel="Jv9-zx-152" style="IBUITableViewCellStyleDefault" id="vEf-tG-fyc">
+                                    <tableViewCell tag="2" contentMode="scaleToFill" restorationIdentifier="2" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell9" textLabel="Jv9-zx-152" style="IBUITableViewCellStyleDefault" id="vEf-tG-fyc">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vEf-tG-fyc" id="npg-bL-MV2">
@@ -415,6 +421,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ecS-Np-5Jn" kind="show" id="F94-dn-3PK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -426,6 +435,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableview" destination="NDB-2J-jt5" id="uZm-7x-KLH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1dv-57-iLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -440,7 +452,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qKy-OQ-NDb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VN1-eM-n0f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Texto Lei x" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-28-S4c">
@@ -459,7 +471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1N-cw-gAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692.5" y="4007.5"/>
+            <point key="canvasLocation" x="918.5" y="3997.5"/>
         </scene>
         <!--Informações-->
         <scene sceneID="Zs3-Lz-d3t">
@@ -918,4 +930,7 @@
         <image name="tela_den-1" width="960" height="1647"/>
         <image name="tela_sobre" width="750" height="1284"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jca-N2-l0h"/>
+    </inferredMetricsTieBreakers>
 </document>
