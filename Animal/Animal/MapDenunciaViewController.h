@@ -32,6 +32,9 @@
 @property (nonatomic) NSString *referencia;
 @property (nonatomic) UIImage *imagem;
 @property (nonatomic) NSString *descricao;
+@property (nonatomic) MKPointAnnotation *dropPin;
+@property (nonatomic) MKPointAnnotation *dropPinAux;
+
 - (IBAction)cancel:(id)sender;
 
 - (IBAction)save:(id)sender;

@@ -74,9 +74,12 @@ BOOL userLocationShown1;
     //PFGeoPoint *point = [PFGeoPoint geoPointWithLocation:self.currentLocation];
     PFQuery *query = [PFQuery queryWithClassName:@"Locais"];
     [query  findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+     
      {
+         NSLog(@"-----------%@",query);
          if (!error)
          {
+             
              // The find succeeded.
              NSLog(@"Successfully retrieved %lu", objects.count);
              // Do something with the found objects
@@ -90,7 +93,7 @@ BOOL userLocationShown1;
                  location.latitude = geoPoint.latitude;
                  location.longitude = geoPoint.longitude;
                  point.coordinate = location;
-                 point.title = object.objectId;
+                 point.title = object[@"tipoAgressao"];
                  //point.subtitle = object[@"description"];
                  [self.mapBarView addAnnotation:point];
                  
@@ -103,7 +106,7 @@ BOOL userLocationShown1;
          }
      }];
 }
-//teste - mudando o pino
+//SETANDO OS PINOS CUSTOMIZADOS
 
 -(MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:
 (id <MKAnnotation>)annotation {
@@ -164,6 +167,22 @@ BOOL userLocationShown1;
 
 }
 
+- (IBAction)meuLocal:(id)sender {
+    
+    
+    
+    float spanX = 0.00725;
+    float spanY = 0.00725;
+    MKCoordinateRegion region;
+    region.center.latitude = self.mapBarView.userLocation.coordinate.latitude;
+    region.center.longitude = self.mapBarView.userLocation.coordinate.longitude;
+    region.span.latitudeDelta = spanX;
+    region.span.longitudeDelta = spanY;
+    
+    
+    
+    [self.mapBarView setRegion:region animated:YES];
+}
 
 
 
@@ -178,5 +197,6 @@ BOOL userLocationShown1;
 //    
 //    
 //}
+
 
 @end

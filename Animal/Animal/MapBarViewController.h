@@ -20,6 +20,7 @@
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property(nonatomic, strong) CLLocationManager *coreLocation2;
 
+- (IBAction)meuLocal:(id)sender;
 
 
 @end
