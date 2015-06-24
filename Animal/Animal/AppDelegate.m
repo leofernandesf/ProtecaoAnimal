@@ -20,6 +20,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+
+       // [application setStatusBarStyle:UIStatusBarStyleDefault];
+      
     // Override point for customization after application launch.
     [Parse setApplicationId:@"dwX3mTUYTlgdPL8O0Rbv4MKqdMkK38VVp6ihwasG"
                   clientKey:@"G5tWQ83heOnjmUb0cTb32JDeSiDhEnMJrBa3FGud"];

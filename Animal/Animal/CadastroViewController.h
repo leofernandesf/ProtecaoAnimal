@@ -12,8 +12,12 @@
 
 @interface CadastroViewController : UIViewController <UITextFieldDelegate>
 
+//@property (weak, nonatomic) IBOutlet UITextField *primeiroNome;
+//
+//@property (weak, nonatomic) IBOutlet UITextField *segundoNome;
+//@property (weak, nonatomic) IBOutlet UITextField *email;
+//@property (weak, nonatomic) IBOutlet UITextField *senha;
 @property (weak, nonatomic) IBOutlet UITextField *primeiroNome;
-
 @property (weak, nonatomic) IBOutlet UITextField *segundoNome;
 @property (weak, nonatomic) IBOutlet UITextField *email;
 @property (weak, nonatomic) IBOutlet UITextField *senha;

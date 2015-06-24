@@ -13,7 +13,7 @@
 @property (strong, nonatomic) IBOutlet UITextView *lbDescricao;
 
 
-@property (strong, nonatomic) IBOutlet NSArray *Vetor;
+
 
 @end
 
@@ -23,9 +23,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _Vetor = @[@"A",@"B",@"C"];
+    
     
     _lbDescricao.text = self.descricao;
+    _lbDescricao.textAlignment = NSTextAlignmentJustified;
+    [_lbDescricao setFont:[UIFont boldSystemFontOfSize:20]];
+    
 }
 
 - (void)didReceiveMemoryWarning {

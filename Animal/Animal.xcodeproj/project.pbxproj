@@ -124,7 +124,7 @@
 		CD7273D51B2A2D2C00821E52 /* MapBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBarViewController.h; sourceTree = "<group>"; };
 		CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapBarViewController.m; sourceTree = "<group>"; };
 		CDF4482E1B39FABE00D4ECCC /* LeisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeisViewController.h; sourceTree = "<group>"; };
-		CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeisViewController.m; sourceTree = "<group>"; };
+		CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeisViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,8 +198,6 @@
 				CAB685451B28825400F3914A /* CadastroViewController.h */,
 				CAB685461B28825400F3914A /* CadastroViewController.m */,
 				A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */,
-				CA2D21E71B3ADD06009BF07F /* DescricaoLeisViewController.h */,
-				CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */,
 				CAF134BF1B385C1C00071CA1 /* Main.strings */,
 				A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */,
 				A7160E141B270EEF00CE2FE6 /* Animal.xcdatamodeld */,
@@ -326,6 +324,8 @@
 			children = (
 				CDF4482E1B39FABE00D4ECCC /* LeisViewController.h */,
 				CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */,
+				CA2D21E71B3ADD06009BF07F /* DescricaoLeisViewController.h */,
+				CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */,
 			);
 			name = Leis;
 			sourceTree = "<group>";
