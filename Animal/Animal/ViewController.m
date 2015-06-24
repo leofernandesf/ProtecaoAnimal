@@ -29,6 +29,9 @@
         [self presentViewController:viewController animated:NO completion:nil];
         
     }
+   
+   
+    
 }
 
 - (void)viewDidLoad {
@@ -69,6 +72,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+//Esconde Status Bar (Barra do relógio)
+//- (BOOL)prefersStatusBarHidden {
+//    return YES;
+//}
+
 
 - (IBAction)Login:(id)sender {
 //    [PFUser logInWithUsernameInBackground:_nome.text password:_senha.text
