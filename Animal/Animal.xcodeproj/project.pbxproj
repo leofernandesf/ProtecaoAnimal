@@ -28,6 +28,7 @@
 		A7160E4D1B27106100CE2FE6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4C1B27106100CE2FE6 /* Accounts.framework */; };
 		A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4E1B27106B00CE2FE6 /* Social.framework */; };
 		A78B812B1B38CDCA00243C86 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A78B812A1B38CDCA00243C86 /* Color.m */; };
+		CA2D21E91B3ADD06009BF07F /* DescricaoLeisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */; };
 		CA3628941B3464D2009AF3D9 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3628931B3464D2009AF3D9 /* SettingsTableViewController.m */; };
 		CA611A861B29D0700047DA9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA611A851B29D0700047DA9B /* MapKit.framework */; };
 		CAB685431B287C1000F3914A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685411B287C1000F3914A /* Bolts.framework */; };
@@ -88,6 +89,8 @@
 		A7160E541B2710F600CE2FE6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A78B81291B38CDCA00243C86 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		A78B812A1B38CDCA00243C86 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		CA2D21E71B3ADD06009BF07F /* DescricaoLeisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescricaoLeisViewController.h; sourceTree = "<group>"; };
+		CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescricaoLeisViewController.m; sourceTree = "<group>"; };
 		CA3628921B3464D2009AF3D9 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		CA3628931B3464D2009AF3D9 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		CA611A851B29D0700047DA9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -195,6 +198,8 @@
 				CAB685451B28825400F3914A /* CadastroViewController.h */,
 				CAB685461B28825400F3914A /* CadastroViewController.m */,
 				A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */,
+				CA2D21E71B3ADD06009BF07F /* DescricaoLeisViewController.h */,
+				CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */,
 				CAF134BF1B385C1C00071CA1 /* Main.strings */,
 				A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */,
 				A7160E141B270EEF00CE2FE6 /* Animal.xcdatamodeld */,
@@ -440,6 +445,7 @@
 				CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */,
 				CD5E675E1B32FE310018D99F /* SettingsViewController.m in Sources */,
 				CD5E675A1B31C58F0018D99F /* DenunciaViewController.m in Sources */,
+				CA2D21E91B3ADD06009BF07F /* DescricaoLeisViewController.m in Sources */,
 				CA3628941B3464D2009AF3D9 /* SettingsTableViewController.m in Sources */,
 				CAB685471B28825400F3914A /* CadastroViewController.m in Sources */,
 			);

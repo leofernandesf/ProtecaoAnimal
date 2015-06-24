@@ -7,8 +7,10 @@
 //
 
 #import "LeisViewController.h"
+#import "DescricaoLeisViewController.h"
 
-@interface LeisViewController ()
+@interface LeisViewController ()<UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableview;
 
 @end
 
@@ -23,6 +25,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+ 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
@@ -49,6 +54,20 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath *indexPath = [self.tableview indexPathForSelectedRow];
+    DescricaoLeisViewController *destino = segue.destinationViewController;
+    if (indexPath.row == 0) {
+        destino.descricao = @"secao 0";
+        
+          }else
+        if (indexPath.row == 1) {
+            destino.descricao = @"Secao 1";
+        }else{
+            destino.descricao = @"Secao 2";
+        }
 }
 
 @end
