@@ -20,6 +20,8 @@
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
+            <string>SofiaProLight</string>
+            <string>SofiaProLight</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -499,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1N-cw-gAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918.5" y="3997.5"/>
+            <point key="canvasLocation" x="753.5" y="4007.5"/>
         </scene>
         <!--Informações-->
         <scene sceneID="Zs3-Lz-d3t">
@@ -590,10 +592,10 @@
             </objects>
             <point key="canvasLocation" x="290.5" y="2901.5"/>
         </scene>
-        <!--View Controller-->
+        <!--DEMA-->
         <scene sceneID="Pgp-ZE-zYg">
             <objects>
-                <viewController id="ecf-Cr-3jl" sceneMemberID="viewController">
+                <viewController title="DEMA" id="ecf-Cr-3jl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kVM-6P-6Om"/>
                         <viewControllerLayoutGuide type="bottom" id="6Ay-pw-QmL"/>
@@ -602,23 +604,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DEMA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suc-6U-j8d">
-                                <rect key="frame" x="163" y="28" width="49" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eML-s9-jMs">
-                                <rect key="frame" x="0.0" y="101" width="375" height="403"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_fundo" translatesAutoresizingMaskIntoConstraints="NO" id="1Hu-p3-NV0">
+                                <rect key="frame" x="0.0" y="-29" width="376" height="647"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eML-s9-jMs">
+                                <rect key="frame" x="16" y="30" width="343" height="403"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">DEMA- Delegacia Especializada em Meio Ambiente foi criada em 1998 com a sanção da lei.9.605/98 que tem a finalidade de exercer as funções da polícia judiciária contra qualquer crime no âmbito estadual.                                                                         </string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefone: 2123-6729" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoV-yR-3bR">
-                                <rect key="frame" x="103" y="371" width="168" height="20"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <rect key="frame" x="103" y="270" width="168" height="20"/>
+                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -629,7 +628,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="848-ti-wg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745.5" y="2923.5"/>
+            <point key="canvasLocation" x="703.5" y="2901.5"/>
         </scene>
         <!--ONG's-->
         <scene sceneID="UfI-vF-MsA">
@@ -693,7 +692,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4x-x2-aib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704.5" y="3917.5"/>
+            <point key="canvasLocation" x="1194.5" y="3721.5"/>
         </scene>
         <!--Selected Ong View Controller-->
         <scene sceneID="wte-Xz-U2y">
@@ -756,7 +755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5b-ug-zfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1196.5" y="3231.5"/>
+            <point key="canvasLocation" x="1588.5" y="3721.5"/>
         </scene>
         <!--Configurações-->
         <scene sceneID="TAt-h3-8wo">
