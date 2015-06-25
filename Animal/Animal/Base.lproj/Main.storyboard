@@ -19,6 +19,7 @@
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
+            <string>SofiaProLight</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -602,13 +603,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eML-s9-jMs">
-                                <rect key="frame" x="0.0" y="87" width="375" height="397"/>
+                                <rect key="frame" x="0.0" y="101" width="375" height="403"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text"> A Delegacia Especializada em Meio Ambiente – DEMA, foi criada em 1998, com a sanção da Lei.9.605/98, para exercer as funções de Polícia Judiciária na apuração de   crimes ambientais ocorridos no âmbito do Estado do Pará, atuando na repressão de atos e condutas lesivas ao meio ambiente.
-Em 2001 a Delegacia foi transformada em Divisão Especializada em Meio Ambiente, ganhando sede própria e pessoal técnico com formação interdisciplinar na seara ambiental. Em dezembro de 2006, através do Decreto Estadual nº2690, ganha uma nova estrutura organizacional e passa a contar com quatro delegacias especializadas: Delegacia de Repressão a Crimes Contra Fauna e Flora; Delegacia de Repressão a Crimes Contra Ordenamento Urbano e Patrimônio Cultural; Delegacia de Repressão à Poluição e outros Crimes Ambientais e Delegacia de Conflitos Agrários.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <string key="text">DEMA- Delegacia Especializada em Meio Ambiente foi criada em 1998 com a sanção da lei.9.605/98 que tem a finalidade de exercer as funções da polícia judiciária contra qualquer crime no âmbito estadual.                                                                         </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefone: 2123-6729" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoV-yR-3bR">
+                                <rect key="frame" x="103" y="371" width="168" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
