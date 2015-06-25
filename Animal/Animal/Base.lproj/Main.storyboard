@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="SofiaProLight.otf">
-            <string>SofiaProLight</string>
-            <string>SofiaProLight</string>
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
@@ -544,6 +542,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ecf-Cr-3jl" kind="show" id="kUt-0V-QAZ"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell10" textLabel="58m-GR-dRV" style="IBUITableViewCellStyleDefault" id="2Hv-tR-FUK">
                                         <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
@@ -578,6 +579,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh7-fb-lLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="290.5" y="2901.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pgp-ZE-zYg">
+            <objects>
+                <viewController id="ecf-Cr-3jl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kVM-6P-6Om"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Ay-pw-QmL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lbx-VT-PDT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DEMA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suc-6U-j8d">
+                                <rect key="frame" x="163" y="28" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="eML-s9-jMs">
+                                <rect key="frame" x="0.0" y="87" width="375" height="397"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text"> A Delegacia Especializada em Meio Ambiente – DEMA, foi criada em 1998, com a sanção da Lei.9.605/98, para exercer as funções de Polícia Judiciária na apuração de   crimes ambientais ocorridos no âmbito do Estado do Pará, atuando na repressão de atos e condutas lesivas ao meio ambiente.
+Em 2001 a Delegacia foi transformada em Divisão Especializada em Meio Ambiente, ganhando sede própria e pessoal técnico com formação interdisciplinar na seara ambiental. Em dezembro de 2006, através do Decreto Estadual nº2690, ganha uma nova estrutura organizacional e passa a contar com quatro delegacias especializadas: Delegacia de Repressão a Crimes Contra Fauna e Flora; Delegacia de Repressão a Crimes Contra Ordenamento Urbano e Patrimônio Cultural; Delegacia de Repressão à Poluição e outros Crimes Ambientais e Delegacia de Conflitos Agrários.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="848-ti-wg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745.5" y="2923.5"/>
         </scene>
         <!--ONG's-->
         <scene sceneID="UfI-vF-MsA">
@@ -638,7 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4x-x2-aib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784.5" y="3231.5"/>
+            <point key="canvasLocation" x="704.5" y="3917.5"/>
         </scene>
         <!--Selected Ong View Controller-->
         <scene sceneID="wte-Xz-U2y">

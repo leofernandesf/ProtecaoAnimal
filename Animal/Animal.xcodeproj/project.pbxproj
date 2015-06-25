@@ -614,6 +614,7 @@
 				);
 				GCC_PREFIX_HEADER = Animal/PrefixHeader.pch;
 				INFOPLIST_FILE = Animal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -634,6 +635,7 @@
 				);
 				GCC_PREFIX_HEADER = Animal/PrefixHeader.pch;
 				INFOPLIST_FILE = Animal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
