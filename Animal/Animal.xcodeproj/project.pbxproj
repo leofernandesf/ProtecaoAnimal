@@ -30,6 +30,7 @@
 		A78908CC1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78908CB1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework */; };
 		A78B812B1B38CDCA00243C86 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A78B812A1B38CDCA00243C86 /* Color.m */; };
 		CA2D21E91B3ADD06009BF07F /* DescricaoLeisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */; };
+		CA2D21EB1B3C3E08009BF07F /* SofiaProLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CA2D21EA1B3C3E08009BF07F /* SofiaProLight.otf */; };
 		CA3628941B3464D2009AF3D9 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3628931B3464D2009AF3D9 /* SettingsTableViewController.m */; };
 		CA611A861B29D0700047DA9B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA611A851B29D0700047DA9B /* MapKit.framework */; };
 		CAB685431B287C1000F3914A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB685411B287C1000F3914A /* Bolts.framework */; };
@@ -49,7 +50,6 @@
 		CD7273B51B29BD4200821E52 /* MapDenunciaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273B41B29BD4200821E52 /* MapDenunciaViewController.m */; };
 		CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */; };
 		CDF448301B39FABE00D4ECCC /* LeisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */; };
-		CDF4483D1B3BD61300D4ECCC /* SofiaProLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CDF4483C1B3BD61300D4ECCC /* SofiaProLight.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +95,7 @@
 		A78B812A1B38CDCA00243C86 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		CA2D21E71B3ADD06009BF07F /* DescricaoLeisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescricaoLeisViewController.h; sourceTree = "<group>"; };
 		CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescricaoLeisViewController.m; sourceTree = "<group>"; };
+		CA2D21EA1B3C3E08009BF07F /* SofiaProLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SofiaProLight.otf; sourceTree = "<group>"; };
 		CA3628921B3464D2009AF3D9 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		CA3628931B3464D2009AF3D9 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		CA611A851B29D0700047DA9B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -129,7 +130,6 @@
 		CD7273D61B2A2D2C00821E52 /* MapBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapBarViewController.m; sourceTree = "<group>"; };
 		CDF4482E1B39FABE00D4ECCC /* LeisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeisViewController.h; sourceTree = "<group>"; };
 		CDF4482F1B39FABE00D4ECCC /* LeisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeisViewController.m; sourceTree = "<group>"; usesTabs = 0; };
-		CDF4483C1B3BD61300D4ECCC /* SofiaProLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SofiaProLight.otf; path = "../../../../../SharePlan/Animais [mini-challenge]/Design/Sofia Pro Light-Desktop/SofiaProLight.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,7 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				A78908CD1B3B8621008906F4 /* SofiaProLight.otf */,
-				CDF4483C1B3BD61300D4ECCC /* SofiaProLight.otf */,
+				CA2D21EA1B3C3E08009BF07F /* SofiaProLight.otf */,
 			);
 			name = fonts;
 			sourceTree = "<group>";
@@ -445,8 +445,8 @@
 			files = (
 				CAF134BD1B385C1C00071CA1 /* Main.strings in Resources */,
 				A7160E1C1B270EEF00CE2FE6 /* Main.storyboard in Resources */,
+				CA2D21EB1B3C3E08009BF07F /* SofiaProLight.otf in Resources */,
 				A7160E1E1B270EEF00CE2FE6 /* Images.xcassets in Resources */,
-				CDF4483D1B3BD61300D4ECCC /* SofiaProLight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +618,7 @@
 				);
 				GCC_PREFIX_HEADER = Animal/PrefixHeader.pch;
 				INFOPLIST_FILE = Animal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -638,6 +639,7 @@
 				);
 				GCC_PREFIX_HEADER = Animal/PrefixHeader.pch;
 				INFOPLIST_FILE = Animal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
