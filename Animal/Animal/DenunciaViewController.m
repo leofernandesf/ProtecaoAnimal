@@ -22,8 +22,8 @@
     [super viewDidLoad];
    BOOL userLocationShown = NO;
     NSLog(@"%d", userLocationShown);
-    
-     self.foto.image = self.image;
+   // self.descricao.text = @"";
+
     
 // gera pontas arredondadas na imageView
     self.foto.layer.cornerRadius = 4;
@@ -53,6 +53,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    NSLog(@"ariba muchacho");
 }
 
 //some teclado, verificar

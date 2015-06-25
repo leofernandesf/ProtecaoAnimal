@@ -23,16 +23,16 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb858289797553997</string>
+				<string>fb1174166825942031</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>858289797553997</string>
+	<string>1174166825942031</string>
 	<key>FacebookDisplayName</key>
-	<string>AnyMals</string>
+	<string>Pet Alert</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>

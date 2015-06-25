@@ -10,7 +10,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
-
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 
 @interface AppDelegate ()
 
@@ -28,7 +28,7 @@
     // Override point for customization after application launch.
     [Parse setApplicationId:@"dwX3mTUYTlgdPL8O0Rbv4MKqdMkK38VVp6ihwasG"
                   clientKey:@"G5tWQ83heOnjmUb0cTb32JDeSiDhEnMJrBa3FGud"];
-    
+    [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
     
     // seta a cor de fundo da NavigationBar
 
@@ -41,23 +41,24 @@
     [[UITabBar appearance] setBarTintColor:[Color azulMarinho]];
     [[UITabBar appearance] setTintColor:[Color amarelo]];
     
-    
+    [FBSDKLoginButton class];
     
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions], YES;
-    //return YES;
+    
+    
+    return YES;
     
 }
 
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation {
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                                           openURL:url
                                                 sourceApplication:sourceApplication
                                                        annotation:annotation];
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -62,6 +62,7 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="loginButton" destination="DI6-rf-k2G" id="K1b-tc-qOe"/>
                         <outlet property="nome" destination="Iqv-6I-RPf" id="alf-3s-XBz"/>
                         <outlet property="senha" destination="QM7-wa-Dpx" id="dhg-ST-okR"/>
                         <outlet property="textFieldPassword" destination="QM7-wa-Dpx" id="FS3-mO-YKk"/>
@@ -191,7 +192,7 @@
         <!--Registros-->
         <scene sceneID="jbk-5W-hv4">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="pgm-j3-oCc" customClass="MapBarViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registros" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pgm-j3-oCc" customClass="MapBarViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dlt-5f-HW7"/>
                         <viewControllerLayoutGuide type="bottom" id="51K-Jj-Cp3"/>
@@ -253,15 +254,14 @@
                                     <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                                 </accessibility>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
-                                <rect key="frame" x="54" y="442" width="286" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ponto de Referência " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsR-7s-K6W">
+                                <rect key="frame" x="53" y="440" width="286" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tipo de Agressão" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9I-vY-7Eh">
-                                <rect key="frame" x="55" y="244" width="286" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tipo de Agressão" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VIU-Yl-dsU">
+                                <rect key="frame" x="53" y="243" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3t-Rb-2gB">
@@ -295,7 +295,7 @@
                         <outlet property="descricao" destination="qV6-eG-Auk" id="5hL-LR-nXs"/>
                         <outlet property="foto" destination="n9u-ht-oPS" id="2li-Wa-SGi"/>
                         <outlet property="referencia" destination="gsR-7s-K6W" id="Pk8-XL-qcQ"/>
-                        <outlet property="tipo" destination="k9I-vY-7Eh" id="Bxg-Ie-hii"/>
+                        <outlet property="tipo" destination="VIU-Yl-dsU" id="Ffo-Qf-qxA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7B-Rk-zxI" userLabel="First Responder" sceneMemberID="firstResponder"/>

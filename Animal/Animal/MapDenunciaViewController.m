@@ -48,7 +48,6 @@ BOOL userLocationShown;
     ;
     
     NSLog(@"descricao %@", self.descricao);
-    NSLog(@"tipo %@",self.imagem);
     NSLog(@"tipo %@",self.tipo);
     NSLog(@"referencia %@",self.referencia);
     
