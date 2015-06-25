@@ -11,6 +11,7 @@
 
 
 @interface SettingsTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UINavigationItem *configuracoes;
 
 
 
