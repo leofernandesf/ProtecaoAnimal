@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "MapBarViewController.h"
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *nome;
 @property (strong, nonatomic) IBOutlet UITextField *senha;
+@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
  
 
 //@property (strong, nonatomic) IBOutlet UITextField *senha;

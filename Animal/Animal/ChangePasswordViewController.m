@@ -37,15 +37,58 @@
 */
 
 - (IBAction)enviar:(id)sender {
-
     PFUser *user = [PFUser currentUser];
-    NSLog(@"usuario atual: %@", user[@"username"]);
-    if([PFUser logInWithUsername:user[@"username"] password:self.senhaAtual.text]){
-        NSLog(@"foi");
-        [PFUser requestPasswordResetForEmailInBackground:user[@"email"]];
-        NSLog(@"um email foi mandado para o email: %@", user[@"email"]);
-    }else{
-        NSLog(@"nao");
+    
+    NSLog(@"%@",user[@"password"]);
+    user[@"password"] = self.senhaAtual.text;
+    NSLog(@"pode ter ido");
+    NSLog(@"%@",user[@"password"]);
+    
+    if ([self.senhaAtual.text isEqualToString:self.conrfirmaSenha.text]) {
+        
+        NSLog(@"vou salvar aqui");
+        user[@"password"] = self.senhaAtual.text;
+        [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            
+            if (!error){
+                
+                UIAlertView* alertview = [[UIAlertView alloc]
+                                           initWithTitle:@"Senha Alterada"
+                                           message:@"Deseja manter a Localização atual?"
+                                           delegate:nil
+                                           cancelButtonTitle:@"OK"
+                                           otherButtonTitles:nil];
+                
+                [alertview show];
+
+            } else {
+                
+                UIAlertView *alertView = [[UIAlertView alloc]
+                                          initWithTitle:@"Sorry!"
+                                          message:[error.userInfo objectForKey:@"error"]
+                                          delegate:nil cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+                
+                [alertView show];
+                NSLog(@"Nao salvou");
+                self.senhaAtual.text = @"";
+                self.conrfirmaSenha.text = @"";
+            }
+        }];
+        
+    } else {
+        
+        
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Aa senhas nao sao iguais!"
+                                  message:@"informe novamente"
+                                  delegate:nil cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        
+        [alertView show];
+        self.senhaAtual.text = @"";
+        self.conrfirmaSenha.text = @"";
+        
     }
     
 }

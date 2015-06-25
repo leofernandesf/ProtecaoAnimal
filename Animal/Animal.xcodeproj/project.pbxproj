@@ -27,6 +27,7 @@
 		A7160E4B1B27103C00CE2FE6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4A1B27103C00CE2FE6 /* libsqlite3.dylib */; };
 		A7160E4D1B27106100CE2FE6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4C1B27106100CE2FE6 /* Accounts.framework */; };
 		A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4E1B27106B00CE2FE6 /* Social.framework */; };
+		A78908CC1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78908CB1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework */; };
 		A78B812B1B38CDCA00243C86 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A78B812A1B38CDCA00243C86 /* Color.m */; };
 		CA2D21E91B3ADD06009BF07F /* DescricaoLeisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */; };
 		CA3628941B3464D2009AF3D9 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3628931B3464D2009AF3D9 /* SettingsTableViewController.m */; };
@@ -87,6 +88,8 @@
 		A7160E4C1B27106100CE2FE6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		A7160E4E1B27106B00CE2FE6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A7160E541B2710F600CE2FE6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A78908CB1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "../../../Downloads/parse-library-1.7.4/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
+		A78908CD1B3B8621008906F4 /* SofiaProLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SofiaProLight.otf; path = "../../../SharePlan/Animais [mini-challenge]/Design/Sofia Pro Light-Desktop/SofiaProLight.otf"; sourceTree = "<group>"; };
 		A78B81291B38CDCA00243C86 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		A78B812A1B38CDCA00243C86 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		CA2D21E71B3ADD06009BF07F /* DescricaoLeisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescricaoLeisViewController.h; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 				A7160E451B27101400CE2FE6 /* StoreKit.framework in Frameworks */,
 				A7160E431B27100800CE2FE6 /* Security.framework in Frameworks */,
 				A7160E411B270FFC00CE2FE6 /* QuartzCore.framework in Frameworks */,
+				A78908CC1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				A7160E3F1B270FEF00CE2FE6 /* MobileCoreServices.framework in Frameworks */,
 				A7160E3D1B270FE200CE2FE6 /* CoreLocation.framework in Frameworks */,
 				A7160E3B1B270FD700CE2FE6 /* CoreGraphics.framework in Frameworks */,
@@ -167,6 +171,7 @@
 		A7160E011B270EEF00CE2FE6 = {
 			isa = PBXGroup;
 			children = (
+				CDF448391B3B78AD00D4ECCC /* fonts */,
 				A77D3F381B306A9900E8C37F /* FrameWorks */,
 				A7160E0C1B270EEF00CE2FE6 /* Animal */,
 				A7160E291B270EEF00CE2FE6 /* AnimalTests */,
@@ -186,6 +191,8 @@
 		A7160E0C1B270EEF00CE2FE6 /* Animal */ = {
 			isa = PBXGroup;
 			children = (
+				A78908C81B3B3EC4008906F4 /* cadastro */,
+				A78908C71B3B3EAD008906F4 /* login */,
 				A78B81281B38CDA900243C86 /* color */,
 				CD5E675B1B32FE060018D99F /* settings */,
 				CD72734D1B28810100821E52 /* informacoes */,
@@ -193,10 +200,6 @@
 				CD72734B1B2880D400821E52 /* mapa */,
 				A7160E111B270EEF00CE2FE6 /* AppDelegate.h */,
 				A7160E121B270EEF00CE2FE6 /* AppDelegate.m */,
-				A7160E171B270EEF00CE2FE6 /* ViewController.h */,
-				A7160E181B270EEF00CE2FE6 /* ViewController.m */,
-				CAB685451B28825400F3914A /* CadastroViewController.h */,
-				CAB685461B28825400F3914A /* CadastroViewController.m */,
 				A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */,
 				CAF134BF1B385C1C00071CA1 /* Main.strings */,
 				A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */,
@@ -236,6 +239,7 @@
 		A77D3F381B306A9900E8C37F /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				A78908CB1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework */,
 				CAD435F31B2B0C2100249D98 /* FBSDKShareKit.framework */,
 				CAD435F11B2B0C1200249D98 /* FBSDKLoginKit.framework */,
 				CAD435EF1B2B0C0000249D98 /* FBSDKCoreKit.framework */,
@@ -259,6 +263,24 @@
 				A7160E361B270FBF00CE2FE6 /* AudioToolbox.framework */,
 			);
 			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		A78908C71B3B3EAD008906F4 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				A7160E171B270EEF00CE2FE6 /* ViewController.h */,
+				A7160E181B270EEF00CE2FE6 /* ViewController.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		A78908C81B3B3EC4008906F4 /* cadastro */ = {
+			isa = PBXGroup;
+			children = (
+				CAB685451B28825400F3914A /* CadastroViewController.h */,
+				CAB685461B28825400F3914A /* CadastroViewController.m */,
+			);
+			name = cadastro;
 			sourceTree = "<group>";
 		};
 		A78B81281B38CDA900243C86 /* color */ = {
@@ -328,6 +350,14 @@
 				CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */,
 			);
 			name = Leis;
+			sourceTree = "<group>";
+		};
+		CDF448391B3B78AD00D4ECCC /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A78908CD1B3B8621008906F4 /* SofiaProLight.otf */,
+			);
+			name = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

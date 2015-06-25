@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import "MapBarViewController.h"
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
 
 @interface ViewController ()
 
@@ -19,8 +17,20 @@
 @end
 
 @implementation ViewController
+
 - (void)viewDidAppear:(BOOL)animated
 {
+    
+//    if ([FBSDKAccessToken currentAccessToken]) {
+//        NSLog(@"o usuario esta logado1");
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//        MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+//        [self presentViewController:viewController animated:NO completion:nil];
+//        
+//    } else {
+//        NSLog(@"O usuario nao esta logado1");
+//    }
+
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         // do stuff with the user
@@ -37,9 +47,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    //FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    NSLog(@"acjnasjcnsajncjasncas ---- %@",self.loginButton);
     
+    // In your viewDidLoad method:
+    self.loginButton.readPermissions = @[@"public_profile", @"email"];
     
+
     
 //    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
 //    testObject[@"foo"] = @"bar";
