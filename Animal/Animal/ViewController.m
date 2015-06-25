@@ -85,7 +85,7 @@
 //                                            // Do stuff after successful login.
 //                                            NSLog(@"Entrou abestado");
 //                                        } else {
-//                                            NSLog(@"Nao Entrou abestado");
+//                                            NSLog(@"Nao Entrou abestado");   
 //                                            
 //                                            // The login failed. Check error to see why.
 //                                        }
