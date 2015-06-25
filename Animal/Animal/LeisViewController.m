@@ -52,7 +52,9 @@
         identifier = @"cell9";
     }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    
+    //altera fonte e tamanho texto da tabela. 
+    [[cell textLabel] setFont:[UIFont fontWithName:@"SofiaProLight" size: 15]];
+
     return cell;
 }
 

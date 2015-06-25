@@ -27,6 +27,10 @@
 			</array>
 		</dict>
 	</array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>SofiaProLight.otf</string>
+    </array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
