@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="SofiaProLight.otf">
@@ -400,27 +400,9 @@
                                 <rect key="frame" x="0.0" y="-29" width="376" height="647"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NDB-2J-jt5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="0" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell7" textLabel="yMP-dx-uBQ" style="IBUITableViewCellStyleDefault" id="r8j-ff-DZD">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r8j-ff-DZD" id="Vux-DH-Di8">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Leis de Amparo Animal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yMP-dx-uBQ">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="ecS-Np-5Jn" kind="show" id="jca-N2-l0h"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell tag="1" contentMode="scaleToFill" restorationIdentifier="1" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell8" textLabel="M4c-SJ-h2b" style="IBUITableViewCellStyleDefault" id="QTQ-de-nVH">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -672,7 +654,7 @@
                                 <rect key="frame" x="0.0" y="-29" width="376" height="647"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="e72-nh-hZZ">
-                                <rect key="frame" x="0.0" y="8" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell4" textLabel="1Rl-oH-2Za" style="IBUITableViewCellStyleDefault" id="enW-DK-GqZ">
@@ -843,7 +825,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DT4-xR-p9m" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="82" y="496" width="211" height="50"/>
+                                <rect key="frame" x="85" y="496" width="211" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -876,34 +858,34 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_fundo_sobre" translatesAutoresizingMaskIntoConstraints="NO" id="uAr-mU-dVB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Equipe Responsável " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VYs-o6-3WE">
-                                <rect key="frame" x="67" y="85" width="240" height="38"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Equipe Responsável " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYs-o6-3WE">
+                                <rect key="frame" x="67" y="80" width="240" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Desenvolvedores" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-ce-QXm">
-                                <rect key="frame" x="67" y="134" width="240" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Desenvolvedores" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-ce-QXm">
+                                <rect key="frame" x="67" y="138" width="240" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Leonardo Fernandes Pedro Luis Berbel Tiago Cahú" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyG-xh-MVa">
+                                <rect key="frame" x="89" y="173" width="197" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Leonardo Fernandes Pedro Luis Berbel Tiago Cahú" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uyG-xh-MVa">
-                                <rect key="frame" x="96" y="170" width="183" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Design" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99Z-jc-P39">
+                                <rect key="frame" x="67" y="283" width="240" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Design" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="99Z-jc-P39">
-                                <rect key="frame" x="67" y="279" width="240" height="33"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Isabelle Teixeira Karime Cruz" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-4H-wfy">
+                                <rect key="frame" x="108" y="324" width="158" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Isabelle Teixeira Karime Cruz" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-4H-wfy">
-                                <rect key="frame" x="112" y="315" width="151" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1070,6 +1052,6 @@
         <image name="tela_logout" width="1600" height="2745"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CGg-Kj-pZY"/>
+        <segue reference="eMy-7Y-j4V"/>
     </inferredMetricsTieBreakers>
 </document>
