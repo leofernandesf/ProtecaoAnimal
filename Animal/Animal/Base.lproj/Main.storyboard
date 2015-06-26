@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="SofiaProLight.otf">
+            <string>SofiaProLight</string>
+            <string>SofiaProLight</string>
+            <string>SofiaProLight</string>
+            <string>SofiaProLight</string>
+            <string>SofiaProLight</string>
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
@@ -1072,6 +1077,6 @@
         <image name="tela_logout" width="1600" height="2745"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CGg-Kj-pZY"/>
+        <segue reference="eMy-7Y-j4V"/>
     </inferredMetricsTieBreakers>
 </document>
