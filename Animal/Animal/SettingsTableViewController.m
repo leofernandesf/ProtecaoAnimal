@@ -8,7 +8,7 @@
 
 #import "SettingsTableViewController.h"
 
-@interface SettingsTableViewController ()
+@interface SettingsTableViewController () <FBSDKLoginButtonDelegate>
 
 @end
 
@@ -20,7 +20,19 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-  //  self.configuracoes.se
+    self.loginButton.delegate = self;
+    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"o usuario esta logado na tela de configuracoes");
+        self.loginButton.hidden = NO;
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//        MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+//        [self presentViewController:viewController animated:NO completion:nil];
+        
+    } else {
+        NSLog(@"O usuario nao esta logado na tela de configuracoes");
+        self.loginButton.hidden = YES;
+    }
     
 }
 
@@ -58,7 +70,9 @@
     return cell;
 }
 
-
+-(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error{
+    NSLog(@"esta logado na tela de configuracoes");
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -111,6 +125,11 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
     [self presentViewController:viewController animated:YES completion:nil];
+}
+
+-(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
+{
+    NSLog(@"o usuario deslogou");
 }
 
 @end
