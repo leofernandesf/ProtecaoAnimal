@@ -28,7 +28,7 @@
     _lbDescricao.text = self.descricao;
     _lbDescricao.textAlignment = NSTextAlignmentJustified;
   //  [_lbDescricao setFont:[UIFont boldSystemFontOfSize:20]];
-    [_lbDescricao setFont:[UIFont fontWithName:@"SofiaProLight" size: 15]];
+    [_lbDescricao setFont:[UIFont fontWithName:@"SofiaProLight" size: 20]];
     
 }
 
