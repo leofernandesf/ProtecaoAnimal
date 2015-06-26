@@ -9,7 +9,8 @@
 #import "ViewController.h"
 
 
-@interface ViewController ()
+
+@interface ViewController () <FBSDKLoginButtonDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textFieldUsername;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;
@@ -21,15 +22,16 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     
-//    if ([FBSDKAccessToken currentAccessToken]) {
-//        NSLog(@"o usuario esta logado1");
-//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//        MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
-//        [self presentViewController:viewController animated:NO completion:nil];
-//        
-//    } else {
-//        NSLog(@"O usuario nao esta logado1");
-//    }
+    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"o usuario esta logado1");
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+        [self presentViewController:viewController animated:NO completion:nil];
+        
+    } else {
+        NSLog(@"O usuario nao esta logado1");
+    }
 
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
@@ -47,10 +49,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     //FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    NSLog(@"acjnasjcnsajncjasncas ---- %@",self.loginButton);
+    //NSLog(@"acjnasjcnsajncjasncas ---- %@",self.loginButton);
     
     // In your viewDidLoad method:
+    self.loginButton.delegate = self;
     self.loginButton.readPermissions = @[@"public_profile", @"email"];
     
 
@@ -81,6 +85,18 @@
 //fim
     
     }
+
+- (void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error{
+    NSLog(@"ariba muchacho filha da puta");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+    [self presentViewController:viewController animated:NO completion:nil];
+}
+
+-(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
+{
+    NSLog(@"o usuario deslogou");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

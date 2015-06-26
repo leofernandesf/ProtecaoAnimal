@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 #import <Foundation/Foundation.h>
 #import "Color.h"
+#import "MapBarViewController.h"
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
