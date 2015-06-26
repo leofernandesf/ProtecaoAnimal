@@ -20,7 +20,13 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    // gera pontas arredondadas na imageView
+    self.sobreNos.layer.cornerRadius = 4;
+    self.sobreNos.clipsToBounds = YES;
     
+    // gera pontas arredondadas na imageView
+    self.fotoPerfil.layer.cornerRadius = 4;
+    self.fotoPerfil.clipsToBounds = YES;
     
 }
 //    self.loginButton.delegate = self;

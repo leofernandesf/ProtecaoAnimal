@@ -7,8 +7,11 @@
 //
 
 #import "OngsViewController.h"
+#import "SelectedOngViewController.h"
+
 
 @interface OngsViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableview;
 
 @end
 
@@ -47,6 +50,17 @@
     //altera fonte e tamanho texto da tabela.
     [[cell textLabel] setFont:[UIFont fontWithName:@"SofiaProLight" size: 15]];
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath *indexPath = [self.tableview indexPathForSelectedRow];
+    SelectedOngViewController *destino = segue.destinationViewController;
+    
+    if (indexPath.row == 0) {
+        destino.descricaoOng = @"\n\n Descrição ONG 1";
+    }else{
+        destino.descricaoOng = @"\n\n Descrição ONG 2";
+    }
 }
 
 @end

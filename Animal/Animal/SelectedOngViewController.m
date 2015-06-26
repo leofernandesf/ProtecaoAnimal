@@ -7,8 +7,10 @@
 //
 
 #import "SelectedOngViewController.h"
+#import "OngsViewController.h"
 
 @interface SelectedOngViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *lbDescricao;
 
 @end
 
@@ -16,7 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    
+    
+    // text View: descrição
+    _lbDescricao.text = self.descricaoOng;
+    _lbDescricao.textAlignment = NSTextAlignmentJustified;
+    //  [_lbDescricao setFont:[UIFont boldSystemFontOfSize:20]];
+    [_lbDescricao setFont:[UIFont fontWithName:@"SofiaProLight" size: 20]];
 }
 
 - (void)didReceiveMemoryWarning {

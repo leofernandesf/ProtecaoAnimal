@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *telefoneOng;
 @property (strong, nonatomic) IBOutlet UILabel *siteOng;
 @property (strong, nonatomic) IBOutlet UILabel *enderecoOng;
-@property (strong, nonatomic) IBOutlet UITextView *descricaoOng;
+
+@property (nonatomic) NSString *descricaoOng;
 
 @end
