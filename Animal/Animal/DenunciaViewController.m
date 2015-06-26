@@ -102,13 +102,16 @@
 }
 //fim manipulacao tela x teclado
 - (IBAction)foto:(id)sender {
+    
+    
+    //por um if aqui: se pegar foto from camera or album 
     UIImagePickerController *picker = [[UIImagePickerController alloc]init];
     picker.delegate = self;
     picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     [self presentViewController:picker animated:YES completion:nil];
     
-    //inserir data no momento em que tirar a foto! !!
+    
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
