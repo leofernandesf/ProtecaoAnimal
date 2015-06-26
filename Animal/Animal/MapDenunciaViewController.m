@@ -45,13 +45,13 @@ BOOL userLocationShown;
     
     [finalCheck show];
     
-    ;
+    
     
     NSLog(@"descricao %@", self.descricao);
     NSLog(@"tipo %@",self.tipo);
     NSLog(@"referencia %@",self.referencia);
+    NSLog(@"foto %@",self.imagem);
     
- 
     
     
 //    UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
