@@ -130,6 +130,9 @@
 -(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
 {
     NSLog(@"o usuario deslogou");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end
