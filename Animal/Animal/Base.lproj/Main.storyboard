@@ -858,31 +858,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_fundo" translatesAutoresizingMaskIntoConstraints="NO" id="uAr-mU-dVB">
                                 <rect key="frame" x="0.0" y="-29" width="375" height="647"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Equipe Responsável " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYs-o6-3WE">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Equipe Responsável " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYs-o6-3WE">
                                 <rect key="frame" x="67" y="80" width="240" height="38"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Desenvolvedores" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-ce-QXm">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Desenvolvedores" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-ce-QXm">
                                 <rect key="frame" x="67" y="138" width="240" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Leonardo Fernandes Pedro Luis Berbel Tiago Cahú" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyG-xh-MVa">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Leonardo Fernandes Pedro Luis Berbel Tiago Cahú" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyG-xh-MVa">
                                 <rect key="frame" x="89" y="173" width="197" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Design" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99Z-jc-P39">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Design" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99Z-jc-P39">
                                 <rect key="frame" x="67" y="283" width="240" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Isabelle Teixeira Karime Cruz" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-4H-wfy">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Isabelle Teixeira Karime Cruz" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-4H-wfy">
                                 <rect key="frame" x="108" y="324" width="158" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="20"/>
