@@ -116,4 +116,40 @@
     
 }
 
+//- (void)dismissKeyboard {
+//    [self.senhaAtual resignFirstResponder];
+//    [self.descricao resignFirstResponder];
+//    [self.referencia resignFirstResponder];
+//    
+//}
+////pra subir os campos quando o teclado aparece:
+//- (void)textViewDidBeginEditing:(UITextView *)textView{
+//    [self animate:YES];
+//}
+//
+//-(void)textViewDidEndEditing:(UITextView *)textView{
+//    [self animate:NO];
+//}
+//
+//- (void)textFieldDidBeginEditing:(UITextField *)textField {
+//    [self animate:YES];
+//}
+//
+//- (void)textFieldDidEndEditing:(UITextField *)textField {
+//    [self animate:NO];
+//}
+//
+//- (void) animate: (BOOL)up {
+//    const int movementDistance = 195; // tweak as needed
+//    const float movementDuration = 0.3f; // tweak as needed
+//    
+//    int movement = (up ? -movementDistance : movementDistance);
+//    [UIView beginAnimations: @"anim" context: nil];
+//    [UIView setAnimationBeginsFromCurrentState: YES];
+//    [UIView setAnimationDuration: movementDuration];
+//    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+//    [UIView commitAnimations];
+//}
+//fim manipulacao tela x teclado
+
 @end

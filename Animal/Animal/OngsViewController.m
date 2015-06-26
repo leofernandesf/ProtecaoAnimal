@@ -55,7 +55,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSIndexPath *indexPath = [self.tableview indexPathForSelectedRow];
     SelectedOngViewController *destino = segue.destinationViewController;
-    
+    //define o que vai aparecer na tela... 
     if (indexPath.row == 0) {
         destino.descricaoOng = @"\n\n Descrição ONG 1";
         destino.nomeOng = @"ONG 1";

@@ -11,7 +11,7 @@
 
 @interface SelectedOngViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *lbDescricao;
-@property (weak, nonatomic) IBOutlet UIImageView *lbFoto;
+@property (weak, nonatomic) IBOutlet UIImage *lbFoto;
 @property (weak, nonatomic) IBOutlet UILabel *lbEndereco;
 @property (weak, nonatomic) IBOutlet UILabel *lbSite;
 @property (weak, nonatomic) IBOutlet UILabel *lbTelefone;
@@ -45,8 +45,11 @@
     // text View: descrição
     _lbDescricao.text = self.descricaoOng;
     _lbDescricao.textAlignment = NSTextAlignmentJustified;
-    //  [_lbDescricao setFont:[UIFont boldSystemFontOfSize:20]];
     [_lbDescricao setFont:[UIFont fontWithName:@"SofiaProLight" size: 20]];
+    
+    //foto
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
