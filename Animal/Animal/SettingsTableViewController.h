@@ -16,6 +16,7 @@
 
 
 
+@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 
 - (IBAction)sair:(id)sender;
 @end
