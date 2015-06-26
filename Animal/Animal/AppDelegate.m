@@ -40,7 +40,17 @@
     [[UINavigationBar appearance] setBarTintColor:[Color azulMarinho]];
     [[UITabBar appearance] setBarTintColor:[Color azulMarinho]];
     [[UITabBar appearance] setTintColor:[Color amarelo]];
+
     
+    
+    //change the title NavigationBar:
+    
+//[[UINavigationBar appearance] setTitleTextAttributes:[UIFont fontWithName:@"Helvetica-Light" size:4]];
+     
+    
+    // end of that
+    
+    //[[cell textLabel] setFont:[UIFont fontWithName:@"SofiaProLight" size: 15]];
     [FBSDKLoginButton class];
     
 //    return [[FBSDKApplicationDelegate sharedInstance] application:application

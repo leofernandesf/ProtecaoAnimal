@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 
+
 @interface SettingsTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UINavigationItem *configuracoes;
 
 
 

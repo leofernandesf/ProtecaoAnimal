@@ -7,8 +7,10 @@
 //
 
 #import "InfoViewController.h"
+#import "DescricaoLeisViewController.h"
 
 @interface InfoViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -32,7 +34,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 3;
+    return 4;
 }
 
 
@@ -44,12 +46,26 @@
     else if (indexPath.row == 1) {
         identifier = @"cell3";
     }
-    else{
+    else if (indexPath.row == 2){
         identifier = @"cell10";
     }
+    else if (indexPath.row == 3){
+        identifier = @"cell11";
+    }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    
+    //altera fonte e tamanho texto da tabela.
+    [[cell textLabel] setFont:[UIFont fontWithName:@"SofiaProLight" size: 15]];
     return cell;
 }
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    DescricaoLeisViewController *destino = segue.destinationViewController;
+    if (indexPath.row == 3) {
+        
+        destino.descricao = @"\n\n* Dirija-se até a delegacia mais próxima ou compareça à promotoria de justiça do meio ambiente;\n\n* O ato de denunciar maus-tratos é legitimada pelo Art. 32, da lei Federal nº. 9.605, de 12.02.1998 (Lei de Crimes Ambientais) e pela Constituição Federal Brasileira, de 05 de outubro de 1998;\n\n* Outra recomendação importante é recorrer ao zoonoses que poderá eventualmente repassar as denúncias aos órgãos responsáveis.";
+        
+    }}
 
 @end
