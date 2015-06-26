@@ -19,22 +19,45 @@
     // Do any additional setup after loading the view.
     PFUser *user = [PFUser currentUser];
     NSLog(@"senha do usuaro atual: %@", user[@"password"]);
+    
+    
+    
+    self.loginButton.delegate = self;
+    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"o usuario esta logado na tela de configuracoes");
+        self.loginButton.hidden = NO;
+} else {
+    NSLog(@"O usuario nao esta logado na tela de configuracoes");
+    self.loginButton.hidden = YES;
+}
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error{
+    NSLog(@"esta logado na tela de configuracoes");
 }
-*/
+    // implementaçao do LogOut
+    - (IBAction)sair:(id)sender {
+        [PFUser logOut];
+        PFUser *currentUser = [PFUser currentUser];
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
+        [self presentViewController:viewController animated:YES completion:nil];
+    }
+    
+    -(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
+    {
+        NSLog(@"o usuario deslogou");
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
+        [self presentViewController:viewController animated:YES completion:nil];
+    }
 
 - (IBAction)enviar:(id)sender {
     PFUser *user = [PFUser currentUser];
@@ -92,4 +115,5 @@
     }
     
 }
+
 @end
