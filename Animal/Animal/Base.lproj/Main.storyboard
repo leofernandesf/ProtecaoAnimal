@@ -836,7 +836,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DT4-xR-p9m" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="85" y="496" width="211" height="50"/>
+                                <rect key="frame" x="83" y="493" width="211" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
