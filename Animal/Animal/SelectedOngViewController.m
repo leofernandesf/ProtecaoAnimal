@@ -11,7 +11,7 @@
 
 @interface SelectedOngViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *lbDescricao;
-@property (weak, nonatomic) IBOutlet UIImage *lbFoto;
+@property (weak, nonatomic) IBOutlet UIImageView *lbFoto;
 @property (weak, nonatomic) IBOutlet UILabel *lbEndereco;
 @property (weak, nonatomic) IBOutlet UILabel *lbSite;
 @property (weak, nonatomic) IBOutlet UILabel *lbTelefone;
@@ -48,7 +48,7 @@
     [_lbDescricao setFont:[UIFont fontWithName:@"SofiaProLight" size: 20]];
     
     //foto
-    
+    //_lbFoto.image = self.fotoOng;
     
 }
 

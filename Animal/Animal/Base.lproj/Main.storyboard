@@ -508,7 +508,7 @@
                                 <rect key="frame" x="0.0" y="-29" width="376" height="647"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yDh-uL-Gyj">
-                                <rect key="frame" x="-3" y="0.0" width="381" height="248"/>
+                                <rect key="frame" x="-3" y="0.0" width="381" height="245"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" textLabel="LL1-ef-AiZ" style="IBUITableViewCellStyleDefault" id="oB3-i0-Dvx">
@@ -620,7 +620,7 @@
         <!--DEMA-->
         <scene sceneID="Pgp-ZE-zYg">
             <objects>
-                <viewController title="DEMA" id="ecf-Cr-3jl" sceneMemberID="viewController">
+                <viewController title="DEMA" id="ecf-Cr-3jl" customClass="InfoOrgaosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kVM-6P-6Om"/>
                         <viewControllerLayoutGuide type="bottom" id="6Ay-pw-QmL"/>
@@ -961,22 +961,22 @@
                                     <action selector="sair:" destination="Tmp-N2-PmD" eventType="touchUpInside" id="Xa1-Vy-YRQ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0C-wY-i2O" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="85" y="495" width="206" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E0-p1-m9g">
-                                <rect key="frame" x="259" y="60" width="100" height="74"/>
+                                <rect key="frame" x="227" y="0.0" width="148" height="34"/>
                                 <color key="backgroundColor" red="0.78039215689999997" green="0.1529411765" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Confirmar">
+                                <state key="normal" title="Confirmar edicao">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="enviar:" destination="Tmp-N2-PmD" eventType="touchUpInside" id="dSn-mR-1Kd"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0C-wY-i2O" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="85" y="495" width="206" height="44"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

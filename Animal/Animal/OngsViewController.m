@@ -65,9 +65,9 @@
         destino.fotoOng = @"pino-3";
     }else{
         destino.descricaoOng = @"\n\n Descrição ONG 2";
-        destino.nomeOng = @"ONG 2";
+        destino.nomeOng = @"ONG 2 ariba muchacho";
         destino.telefoneOng = @"ONG 2";
-        destino.siteOng = @"ONG 2";
+        destino.siteOng = @"ONG 2 ariba muchacho2";
         destino.enderecoOng = @"ONG 2";
         destino.fotoOng = @"pino-3.png";
     }
