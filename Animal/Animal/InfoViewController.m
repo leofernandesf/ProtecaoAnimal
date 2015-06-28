@@ -64,7 +64,7 @@
     DescricaoLeisViewController *destino = segue.destinationViewController;
     if (indexPath.row == 3) {
         
-        destino.descricao = @"\n\n* Dirija-se até a delegacia mais próxima ou compareça à promotoria de justiça do meio ambiente;\n\n* O ato de denunciar maus-tratos é legitimada pelo Art. 32, da lei Federal nº. 9.605, de 12.02.1998 (Lei de Crimes Ambientais) e pela Constituição Federal Brasileira, de 05 de outubro de 1998;\n\n* Outra recomendação importante é recorrer ao zoonoses que poderá eventualmente repassar as denúncias aos órgãos responsáveis.";
+        destino.descricao = @"\n\n    Ao presenciar um ato de violência contra um animal\n\n* Dirija-se até a delegacia mais próxima ou compareça à promotoria de justiça do meio ambiente;\n\n* O ato de denunciar maus-tratos é legitimada pelo Art. 32, da lei Federal nº. 9.605, de 12.02.1998 (Lei de Crimes Ambientais) e pela Constituição Federal Brasileira, de 05 de outubro de 1998;\n\n* Outra recomendação importante é recorrer ao zoonoses que poderá eventualmente repassar as denúncias aos órgãos responsáveis.";
         
     }}
 

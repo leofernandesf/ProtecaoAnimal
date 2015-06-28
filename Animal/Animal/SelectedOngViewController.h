@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SelectedOngViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIImageView *fotoOng;
-@property (strong, nonatomic) IBOutlet UILabel *nomeOng;
-@property (strong, nonatomic) IBOutlet UILabel *telefoneOng;
-@property (strong, nonatomic) IBOutlet UILabel *siteOng;
-@property (strong, nonatomic) IBOutlet UILabel *enderecoOng;
-@property (strong, nonatomic) IBOutlet UITextView *descricaoOng;
+@property (nonatomic) NSString *nomeOng;
+@property (nonatomic) NSString *telefoneOng;
+@property (nonatomic) NSString *siteOng;
+@property (nonatomic) NSString *enderecoOng;
+@property (nonatomic) NSString *fotoOng;
+@property (nonatomic) NSString *descricaoOng;
 
 @end

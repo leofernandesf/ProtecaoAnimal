@@ -8,7 +8,7 @@
 
 #import "SettingsTableViewController.h"
 
-@interface SettingsTableViewController () <FBSDKLoginButtonDelegate>
+@interface SettingsTableViewController ()// <FBSDKLoginButtonDelegate>
 
 @end
 
@@ -20,59 +20,66 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.loginButton.delegate = self;
+    // gera pontas arredondadas na imageView
+    self.sobreNos.layer.cornerRadius = 4;
+    self.sobreNos.clipsToBounds = YES;
     
-    if ([FBSDKAccessToken currentAccessToken]) {
-        NSLog(@"o usuario esta logado na tela de configuracoes");
-        self.loginButton.hidden = NO;
-//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//        MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
-//        [self presentViewController:viewController animated:NO completion:nil];
-        
-    } else {
-        NSLog(@"O usuario nao esta logado na tela de configuracoes");
-        self.loginButton.hidden = YES;
-    }
+    // gera pontas arredondadas na imageView
+    self.fotoPerfil.layer.cornerRadius = 4;
+    self.fotoPerfil.clipsToBounds = YES;
     
 }
+//    self.loginButton.delegate = self;
+//    
+//    if ([FBSDKAccessToken currentAccessToken]) {
+//        NSLog(@"o usuario esta logado na tela de configuracoes");
+//        self.loginButton.hidden = NO;
 
+//        
+//    } else {
+//        NSLog(@"O usuario nao esta logado na tela de configuracoes");
+//        self.loginButton.hidden = YES;
+//    }
+//    
+//}
+//
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return 2;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *identifier;
-    if (indexPath.row == 0) {
-        identifier = @"cell";
-    }
-    else{
-        identifier = @"cell1";
-    }
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    //muda fonte e tamanho do texto da table
-    [[cell textLabel] setFont:[UIFont fontWithName:@"SofiaProLight" size: 15]];
-    
-
-    return cell;
-}
-
--(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error{
-    NSLog(@"esta logado na tela de configuracoes");
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//
+//    return 1;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//
+//    return 2;
+//}
+//
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSString *identifier;
+//    if (indexPath.row == 0) {
+//        identifier = @"cell";
+//    }
+//    else{
+//        identifier = @"cell1";
+//    }
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+//    //muda fonte e tamanho do texto da table
+//    [[cell textLabel] setFont:[UIFont fontWithName:@"SofiaProLight" size: 15]];
+//    
+//
+//    return cell;
+//}
+//
+//-(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error{
+//    NSLog(@"esta logado na tela de configuracoes");
+//}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -118,21 +125,21 @@
 */
 
 // implementaçao do LogOut
-- (IBAction)sair:(id)sender {
-    [PFUser logOut];
-    PFUser *currentUser = [PFUser currentUser];
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
-    [self presentViewController:viewController animated:YES completion:nil];
-}
-
--(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
-{
-    NSLog(@"o usuario deslogou");
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
-    [self presentViewController:viewController animated:YES completion:nil];
-}
+//- (IBAction)sair:(id)sender {
+//    [PFUser logOut];
+//    PFUser *currentUser = [PFUser currentUser];
+//    
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
+//    [self presentViewController:viewController animated:YES completion:nil];
+//}
+//
+//-(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
+//{
+//    NSLog(@"o usuario deslogou");
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    ViewController *viewController = (ViewController *)[storyboard instantiateViewControllerWithIdentifier:@"login"];
+//    [self presentViewController:viewController animated:YES completion:nil];
+//}
 
 @end
