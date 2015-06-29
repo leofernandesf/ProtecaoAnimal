@@ -35,6 +35,8 @@
     _lbEndereco.textAlignment = NSTextAlignmentJustified;
     
     
+       
+    
     [_lbNome setFont:[UIFont fontWithName:@"SofiaProLight" size: 25]];
     //texto telefone, endereco, site
      [_lbTelefone setFont:[UIFont fontWithName:@"SofiaProLight" size: 20]];
