@@ -132,7 +132,7 @@
 }
 //Esconde Status Bar (Barra do relógio)
 //- (BOOL)prefersStatusBarHidden {
-//    return YES;
+//    return YES;  
 //}
 
 

@@ -12,3 +12,4 @@
 @synthesize  coordinate, title, subtitle;
 
 @end
+  
