@@ -23,6 +23,7 @@
    BOOL userLocationShown = NO;
     NSLog(@"%d", userLocationShown);
    // self.descricao.text = @"";
+    
 
     
 // gera pontas arredondadas na imageView
@@ -48,6 +49,8 @@
     self.referencia.layer.borderWidth=0;
     self.referencia.delegate = self;
     //fim
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,7 +90,7 @@
 }
 
 - (void) animate: (BOOL)up {
-    const int movementDistance = 150; // tweak as needed
+    const int movementDistance = 195; // tweak as needed
     const float movementDuration = 0.3f; // tweak as needed
     
     int movement = (up ? -movementDistance : movementDistance);
@@ -126,10 +129,42 @@
 // fim recurso camera
 - (IBAction)registrar:(id)sender {
    
+    if (self.foto.image != nil && ![self.tipo.text  isEqual: @""] && ![self.referencia.text  isEqual: @""] && ![self.descricao.text  isEqual: @""]) {
+        //        if (![self.tipo.text  isEqual: @""] ) {
+        //            NSLog(@"tipo que entrou no if - %@",self.tipo.text);
+        //        } else {
+        //            NSLog(@"tipo que entrou no else - %@", self.tipo.text);
+        //        }
+        [self performSegueWithIdentifier:@"registrardenuncia" sender:self];
+        //        NSLog(@"tipo - %@", self.tipo.text);
+        //        NSLog(@"descricao - %@", self.descricao.text);
+        //        NSLog(@"referencia - %@", self.referencia.text);
+//        MapDenunciaViewController *denuncia = segue.destinationViewController;
+//        denuncia.descricao = self.descricao.text;
+//        denuncia.referencia = self.referencia.text;
+//        denuncia.tipo = self.tipo.text;
+//        denuncia.imagem = self.image;
+    } else {
+        
+//        NSString *mensagem = [NSString stringWithFormat:@"http://maps.apple.com/maps?daddr=%f,%f",_lat,_longi];
+        NSLog(@"noa foi");
+        UIAlertView* finalCheck = [[UIAlertView alloc]
+                                   initWithTitle:@"Campo(s) em branco"
+                                   message:@"preencha todos os campos"
+                                   delegate:self
+                                   cancelButtonTitle:@"OK"
+                                   otherButtonTitles:nil];
+        
+        [finalCheck show];
+        
+        
+    }
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"registrardenuncia"]) {
+
         MapDenunciaViewController *denuncia = segue.destinationViewController;
         denuncia.descricao = self.descricao.text;
         denuncia.referencia = self.referencia.text;

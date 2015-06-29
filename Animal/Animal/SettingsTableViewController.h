@@ -10,13 +10,15 @@
 #import "ViewController.h"
 
 
-@interface SettingsTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface SettingsTableViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UINavigationItem *configuracoes;
 
+@property (weak, nonatomic) IBOutlet UIImageView *sobreNos;
+
+@property (weak, nonatomic) IBOutlet UIImageView *fotoPerfil;
 
 
-
-@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
-
-- (IBAction)sair:(id)sender;
+//@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
+//
+//- (IBAction)sair:(id)sender;
 @end

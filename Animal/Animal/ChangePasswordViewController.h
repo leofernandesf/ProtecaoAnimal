@@ -7,12 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @interface ChangePasswordViewController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *senhaAtual;
 
 @property (weak, nonatomic) IBOutlet UITextField *conrfirmaSenha;
-
+//botao de alterar os dados
 - (IBAction)enviar:(id)sender;
+
+
+//botoes para logOut
+//@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
+//
+//- (IBAction)sair:(id)sender;
+
+
+@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
+- (IBAction)sair:(id)sender;
 
 @end
