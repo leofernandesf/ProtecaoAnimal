@@ -13,9 +13,16 @@
 @property (strong, nonatomic) IBOutlet UITextField *senhaAtual;
 
 @property (weak, nonatomic) IBOutlet UITextField *conrfirmaSenha;
+
+@property (weak, nonatomic) IBOutlet UITextField *redefinirEmail;
+
+@property (weak, nonatomic) IBOutlet UITextField *confirmaEmail;
+
+
 //botao de alterar os dados
 - (IBAction)enviar:(id)sender;
 
+- (IBAction)enviarEmail:(id)sender;
 
 //botoes para logOut
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;

@@ -18,10 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     PFUser *user = [PFUser currentUser];
-    NSLog(@"senha do usuaro atual: %@", user[@"password"]);
+NSLog(@"senha do usuaro atual: %@", user[@"password"]);
     
+NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
     
-    
+//botoes de logOut
     self.loginButton.delegate = self;
     
     if ([FBSDKAccessToken currentAccessToken]) {
@@ -77,7 +78,7 @@
                 
                 UIAlertView* alertview = [[UIAlertView alloc]
                                            initWithTitle:@"Senha Alterada"
-                                           message:@"Deseja manter a Localização atual?"
+                                           message:@""
                                            delegate:nil
                                            cancelButtonTitle:@"OK"
                                            otherButtonTitles:nil];
@@ -115,6 +116,65 @@
     }
     
 }
+
+- (IBAction)enviarEmail:(id)sender {
+
+        PFUser *user = [PFUser currentUser];
+        
+        NSLog(@"%@",user[@"email"]);
+        user[@"email"] = self.redefinirEmail.text;
+        NSLog(@"pode ter ido");
+        NSLog(@"%@",user[@"email"]);
+        
+        if ([self.redefinirEmail.text isEqualToString:self.confirmaEmail.text]) {
+            
+            NSLog(@"vou salvar aqui");
+            user[@"password"] = self.redefinirEmail.text;
+            [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                
+                if (!error){
+                    
+                    UIAlertView* alertview = [[UIAlertView alloc]
+                                              initWithTitle:@"e-Mail Alterado"
+                                              message:@""
+                                              delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+                    
+                    [alertview show];
+                    
+                } else {
+                    
+                    UIAlertView *alertView = [[UIAlertView alloc]
+                                              initWithTitle:@"Desculpe, Ocorreu um Erro"
+                                              message:[error.userInfo objectForKey:@""]
+                                              delegate:nil cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+                    
+                    [alertView show];
+                    NSLog(@"Nao salvou");
+                    self.redefinirEmail.text = @"";
+                    self.confirmaEmail.text = @"";
+                }
+            }];
+            
+        } else {
+            
+            
+            UIAlertView *alertView = [[UIAlertView alloc]
+                                      initWithTitle:@"Os e-Mails nao sao iguais!"
+                                      message:@"informe novamente"
+                                      delegate:nil cancelButtonTitle:@"OK"
+                                      otherButtonTitles:nil];
+            
+            [alertView show];
+            self.redefinirEmail.text = @"";
+            self.confirmaEmail.text = @"";
+            
+        }
+        
+    }
+
 
 //- (void)dismissKeyboard {
 //    [self.senhaAtual resignFirstResponder];
