@@ -87,16 +87,10 @@
     }
 
 - (void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error{
-    if ([FBSDKAccessToken currentAccessToken]) {
-        NSLog(@"ariba muchacho");
-            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
-            [self presentViewController:viewController animated:NO completion:nil];
-    } else {
-        NSLog(@"error ----------> %@",error);
-    }
-    
-
+    NSLog(@"ariba muchacho filha da puta");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+    [self presentViewController:viewController animated:NO completion:nil];
 }
 
 -(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
