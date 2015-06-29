@@ -818,15 +818,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_dados" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-PY-cZ4">
                                 <rect key="frame" x="-1" y="-25" width="376" height="647"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Person2" translatesAutoresizingMaskIntoConstraints="NO" id="nQr-O0-dwu">
-                                <rect key="frame" x="98" y="308" width="180" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teste_perfil_dark" translatesAutoresizingMaskIntoConstraints="NO" id="nQr-O0-dwu">
+                                <rect key="frame" x="97" y="312" width="180" height="181"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bepidImage" translatesAutoresizingMaskIntoConstraints="NO" id="LQi-I7-a1D">
-                                <rect key="frame" x="98" y="72" width="180" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teste_perfil_dark" translatesAutoresizingMaskIntoConstraints="NO" id="LQi-I7-a1D">
+                                <rect key="frame" x="97" y="76" width="180" height="181"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-ZG-ahn">
-                                <rect key="frame" x="97" y="76" width="180" height="180"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="97" y="77" width="180" height="180"/>
+                                <state key="normal" title="sobre nos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -879,8 +879,8 @@
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Desenvolvedores" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-ce-QXm">
-                                <rect key="frame" x="67" y="138" width="240" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Desenvolvimento" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0e-ce-QXm">
+                                <rect key="frame" x="67" y="138" width="240" height="39"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -921,32 +921,14 @@
                         <viewControllerLayoutGuide type="bottom" id="XHU-kk-LpF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1fd-gd-3MI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_perfil_2" translatesAutoresizingMaskIntoConstraints="NO" id="73p-KZ-oT6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_alterar_dados" translatesAutoresizingMaskIntoConstraints="NO" id="73p-KZ-oT6">
                                 <rect key="frame" x="0.0" y="-29" width="376" height="647"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nova Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOZ-0u-9iC">
-                                <rect key="frame" x="42" y="441" width="292" height="30"/>
-                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DHo-Zp-G98">
-                                <rect key="frame" x="42" y="267" width="292" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VW1-QQ-nbY">
-                                <rect key="frame" x="42" y="179" width="292" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aZ-fS-8aC">
-                                <rect key="frame" x="140" y="38" width="96" height="96"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6F-re-KSg">
-                                <rect key="frame" x="42" y="354" width="292" height="30"/>
+                                <rect key="frame" x="42" y="240" width="292" height="30"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
@@ -977,26 +959,24 @@
                                     <action selector="enviar:" destination="Tmp-N2-PmD" eventType="touchUpInside" id="dSn-mR-1Kd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgY-ai-B2P">
-                                <rect key="frame" x="255" y="104" width="104" height="30"/>
-                                <color key="backgroundColor" red="0.78039215689999997" green="0.1529411765" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Alterar e-Mail">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="enviarEmail:" destination="Tmp-N2-PmD" eventType="touchUpInside" id="3D3-jN-F6c"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nova Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOZ-0u-9iC">
+                                <rect key="frame" x="41" y="327" width="292" height="30"/>
+                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_default" translatesAutoresizingMaskIntoConstraints="NO" id="6aZ-fS-8aC">
+                                <rect key="frame" x="127" y="33" width="121" height="122"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <keyCommands/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="confirmaEmail" destination="DHo-Zp-G98" id="Bvw-68-6um"/>
                         <outlet property="conrfirmaSenha" destination="M6F-re-KSg" id="Bpx-hd-5aX"/>
                         <outlet property="loginButton" destination="P0C-wY-i2O" id="w6c-Ii-HNl"/>
-                        <outlet property="redefinirEmail" destination="VW1-QQ-nbY" id="Hd7-Xb-uzu"/>
                         <outlet property="senhaAtual" destination="tOZ-0u-9iC" id="dzH-I4-D1S"/>
                     </connections>
                 </viewController>
@@ -1143,18 +1123,18 @@
     <resources>
         <image name="IconDenunc-Select" width="40" height="40"/>
         <image name="IconMap" width="40" height="40"/>
-        <image name="Person2" width="48" height="48"/>
-        <image name="bepidImage" width="600" height="360"/>
         <image name="icon_camera_selecionado" width="88" height="88"/>
+        <image name="icon_default" width="365" height="340"/>
         <image name="icon_info80-" width="40" height="40"/>
         <image name="icon_settings_selecionado" width="40" height="40"/>
         <image name="search2" width="310" height="310"/>
         <image name="tela_1" width="960" height="1647"/>
         <image name="tela_2" width="960" height="1647"/>
+        <image name="tela_alterar_dados" width="960" height="1647"/>
         <image name="tela_dados" width="960" height="1647"/>
         <image name="tela_den2" width="960" height="1647"/>
         <image name="tela_fundo" width="320" height="549"/>
-        <image name="tela_perfil_2" width="960" height="1647"/>
+        <image name="teste_perfil_dark" width="518" height="516"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="mos-GU-B4F"/>

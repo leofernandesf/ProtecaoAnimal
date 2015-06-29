@@ -32,6 +32,11 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
     NSLog(@"O usuario nao esta logado na tela de configuracoes");
     self.loginButton.hidden = YES;
 }
+   
+//    UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithTitle:@"DONE" style:UIBarButtonItemStyleDone target:self action:@selector(addAction:)]autoContentAccessingProxy];
+//    
+//    self.navigationItem.rightBarButtonItem = addButton;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -116,66 +121,66 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
     }
     
 }
+////Adicionar posteriormente na atualização: alterar e-mail
+//- (IBAction)enviarEmail:(id)sender {
+//
+//        PFUser *user = [PFUser currentUser];
+//        
+//        NSLog(@"%@",user[@"email"]);
+//        user[@"email"] = self.redefinirEmail.text;
+//        NSLog(@"pode ter ido");
+//        NSLog(@"%@",user[@"email"]);
+//        
+//        if ([self.redefinirEmail.text isEqualToString:self.confirmaEmail.text]) {
+//            
+//            NSLog(@"vou salvar aqui");
+//            user[@"password"] = self.redefinirEmail.text;
+//            [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//                
+//                if (!error){
+//                    
+//                    UIAlertView* alertview = [[UIAlertView alloc]
+//                                              initWithTitle:@"e-Mail Alterado"
+//                                              message:@""
+//                                              delegate:nil
+//                                              cancelButtonTitle:@"OK"
+//                                              otherButtonTitles:nil];
+//                    
+//                    [alertview show];
+//                    
+//                } else {
+//                    
+//                    UIAlertView *alertView = [[UIAlertView alloc]
+//                                              initWithTitle:@"Dados Insuficientes"
+//                                              message:[error.userInfo objectForKey:@"Informe novamente"]
+//                                              delegate:nil cancelButtonTitle:@"OK"
+//                                              otherButtonTitles:nil];
+//                    
+//                    [alertView show];
+//                    NSLog(@"Nao salvou");
+//                    self.redefinirEmail.text = @"";
+//                    self.confirmaEmail.text = @"";
+//                }
+//            }];
+//            
+//        } else {
+//            
+//            
+//            UIAlertView *alertView = [[UIAlertView alloc]
+//                                      initWithTitle:@"Os e-Mails nao sao iguais!"
+//                                      message:@"informe novamente"
+//                                      delegate:nil cancelButtonTitle:@"OK"
+//                                      otherButtonTitles:nil];
+//            
+//            [alertView show];
+//            self.redefinirEmail.text = @"";
+//            self.confirmaEmail.text = @"";
+//            
+//        }
 
-- (IBAction)enviarEmail:(id)sender {
+ //   }
 
-        PFUser *user = [PFUser currentUser];
-        
-        NSLog(@"%@",user[@"email"]);
-        user[@"email"] = self.redefinirEmail.text;
-        NSLog(@"pode ter ido");
-        NSLog(@"%@",user[@"email"]);
-        
-        if ([self.redefinirEmail.text isEqualToString:self.confirmaEmail.text]) {
-            
-            NSLog(@"vou salvar aqui");
-            user[@"password"] = self.redefinirEmail.text;
-            [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-                
-                if (!error){
-                    
-                    UIAlertView* alertview = [[UIAlertView alloc]
-                                              initWithTitle:@"e-Mail Alterado"
-                                              message:@""
-                                              delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-                    
-                    [alertview show];
-                    
-                } else {
-                    
-                    UIAlertView *alertView = [[UIAlertView alloc]
-                                              initWithTitle:@"Dados Insuficientes"
-                                              message:[error.userInfo objectForKey:@"Informe novamente"]
-                                              delegate:nil cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-                    
-                    [alertView show];
-                    NSLog(@"Nao salvou");
-                    self.redefinirEmail.text = @"";
-                    self.confirmaEmail.text = @"";
-                }
-            }];
-            
-        } else {
-            
-            
-            UIAlertView *alertView = [[UIAlertView alloc]
-                                      initWithTitle:@"Os e-Mails nao sao iguais!"
-                                      message:@"informe novamente"
-                                      delegate:nil cancelButtonTitle:@"OK"
-                                      otherButtonTitles:nil];
-            
-            [alertView show];
-            self.redefinirEmail.text = @"";
-            self.confirmaEmail.text = @"";
-            
-        }
-        
-    }
-
-
+// funções para baixar teclado. 
 //- (void)dismissKeyboard {
 //    [self.senhaAtual resignFirstResponder];
 //    [self.descricao resignFirstResponder];
