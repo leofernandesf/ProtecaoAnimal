@@ -94,6 +94,7 @@ BOOL userLocationShown1;
                  location.longitude = geoPoint.longitude;
                  point.coordinate = location;
                  point.title = object[@"tipoAgressao"];
+                 point.subtitle = object.objectId;
                  //point.subtitle = object[@"description"];
                  [self.mapBarView addAnnotation:point];
                  
@@ -117,11 +118,16 @@ BOOL userLocationShown1;
         pinView = (MKPinAnnotationView *)[mapBarView dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
         if ( pinView == nil ) pinView = [[MKPinAnnotationView alloc]
                                          initWithAnnotation:annotation reuseIdentifier:defaultPinID];
+       
         
     //    pinView.pinColor = MKPinAnnotationColorRed;
-        pinView.canShowCallout = YES;
+        UIButton *advertButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+                pinView.canShowCallout = YES;
+        [advertButton addTarget:self action:@selector(button:) forControlEvents:UIControlEventTouchUpInside];
         pinView.animatesDrop = NO;
-        pinView.image = [UIImage imageNamed:@"pino-3.png"];    //as suggested by Squatch
+        pinView.image = [UIImage imageNamed:@"pino-3.png"];
+        pinView.rightCalloutAccessoryView = advertButton;
+        //as suggested by Squatch
     }
     else {
         [mapBarView.userLocation setTitle:@"To Aqui :)"];
@@ -129,6 +135,18 @@ BOOL userLocationShown1;
     return pinView;
 }
 
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+    self.valor = [view.annotation subtitle];
+}
+
+- (void)button:(id)sender
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    informacoesViewController *s = [storyboard instantiateViewControllerWithIdentifier:@"informacoes"];
+    s.idFoto = self.valor;
+    [self presentViewController:s animated:YES completion:nil];
+}
 
 //fim teste
 
