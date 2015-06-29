@@ -1056,7 +1056,7 @@
         <!--Navigation Controller-->
         <scene sceneID="aQ1-sJ-ng2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zdm-Uj-azg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="registros1" automaticallyAdjustsScrollViewInsets="NO" id="zdm-Uj-azg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="IconMap" id="iCz-Uo-3gT">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>

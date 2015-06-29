@@ -61,7 +61,7 @@
 - (IBAction)voltar:(id)sender {
 
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"registros"];
+    UITabBarController *viewController = (UITabBarController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
     [self presentViewController:viewController animated:YES completion:nil];
 }
 @end
