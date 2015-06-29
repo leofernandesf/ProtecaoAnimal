@@ -88,8 +88,8 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
             } else {
                 
                 UIAlertView *alertView = [[UIAlertView alloc]
-                                          initWithTitle:@"Sorry!"
-                                          message:[error.userInfo objectForKey:@"error"]
+                                          initWithTitle:@"Dados insuficientes"
+                                          message:[error.userInfo objectForKey:@"Informe corretamente"]
                                           delegate:nil cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
                 
@@ -104,8 +104,8 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
         
         
         UIAlertView *alertView = [[UIAlertView alloc]
-                                  initWithTitle:@"Aa senhas nao sao iguais!"
-                                  message:@"informe novamente"
+                                  initWithTitle:@"Campos diferentes"
+                                  message:@"Informe novamente"
                                   delegate:nil cancelButtonTitle:@"OK"
                                   otherButtonTitles:nil];
         
@@ -146,8 +146,8 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
                 } else {
                     
                     UIAlertView *alertView = [[UIAlertView alloc]
-                                              initWithTitle:@"Desculpe, Ocorreu um Erro"
-                                              message:[error.userInfo objectForKey:@""]
+                                              initWithTitle:@"Dados Insuficientes"
+                                              message:[error.userInfo objectForKey:@"Informe novamente"]
                                               delegate:nil cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
                     
