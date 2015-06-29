@@ -18,11 +18,6 @@
 
 
 //botoes para logOut
-//@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
-//
-//- (IBAction)sair:(id)sender;
-
-
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 - (IBAction)sair:(id)sender;
 
