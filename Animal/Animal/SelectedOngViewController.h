@@ -13,7 +13,8 @@
 @property (nonatomic) NSString *telefoneOng;
 @property (nonatomic) NSString *siteOng;
 @property (nonatomic) NSString *enderecoOng;
-@property (nonatomic) NSString *fotoOng;
+//@property (nonatomic) NSString *fotoOng;
 @property (nonatomic) NSString *descricaoOng;
+@property (nonatomic) UIImageView *fotoTeste;
 
 @end
