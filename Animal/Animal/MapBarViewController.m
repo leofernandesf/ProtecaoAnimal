@@ -21,7 +21,7 @@
 
 //wimbledon
 #define WIMB_LATITUDE 51.434783;
-#define WIMB_LONGITUDE -0.213428;
+#define WIMB_LONGITUDE -0.213428;   
 
 //Span
 #define THE_SPAN 0.01f;
