@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 
 
 @interface ViewController () <FBSDKLoginButtonDelegate>
@@ -57,12 +57,15 @@
     self.loginButton.delegate = self;
     self.loginButton.readPermissions = @[@"public_profile", @"email"];
     
-
-    
-//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-//    testObject[@"foo"] = @"bar";
-//    [testObject saveInBackground];
-    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
+         startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection,
+                                      id result, NSError *error) {
+             if (!error) {
+                 NSLog(@"fetched user:%@", result);
+             }
+         }];
+    }
     
     
 //        // Do any additional setup after loading the view, typically from a nib.
@@ -89,9 +92,28 @@
 - (void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error{
     if ([FBSDKAccessToken currentAccessToken]) {
         NSLog(@"ariba muchacho");
-            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
-            [self presentViewController:viewController animated:NO completion:nil];
+        [PFFacebookUtils logInInBackgroundWithAccessToken:[FBSDKAccessToken currentAccessToken]  block:^(PFUser *user, NSError *error) {
+            if (!user) {
+                NSLog(@"Uh oh. The user cancelled the Facebook login.");
+            } else {
+                
+             if (user.isNew) {
+                NSLog(@"User signed up and logged in through Facebook!");
+            } else {
+                NSLog(@"User logged in through Facebook!");
+            }
+            }
+        }];
+//                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//                MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+//                [self presentViewController:viewController animated:NO completion:nil];
+//                
+//            }
+//        }];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        MapBarViewController *viewController = (MapBarViewController *)[storyboard instantiateViewControllerWithIdentifier:@"MapaGlobal"];
+        [self presentViewController:viewController animated:NO completion:nil];
+        
     } else {
         NSLog(@"error ----------> %@",error);
     }

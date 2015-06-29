@@ -21,9 +21,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    BOOL userLocationShown = NO;
-    NSLog(@"%d", userLocationShown);
+    NSLog(@"localizacao %d", userLocationShown);
    // self.descricao.text = @"";
+    PFUser *user1 = [PFUser currentUser];
     
+    NSLog(@"usuario atual - - - - - %@",user1[@"username"] );
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
+         startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection,
+                                      id result, NSError *error) {
+             if (!error) {
+                 NSLog(@"fetched user na tela de denuncia:%@", result[@"name"]);
+                 
+             }
+         }];
+    }
 
     
 // gera pontas arredondadas na imageView
@@ -56,7 +68,7 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    NSLog(@"ariba muchacho");
+    NSLog(@"ariba muchacho 2");
 }
 
 //some teclado, verificar

@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "MapDenunciaViewController.h"
-
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface DenunciaViewController : UIViewController <UITextViewDelegate,UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic) IBOutlet UITextField *tipo;
