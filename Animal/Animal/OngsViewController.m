@@ -57,18 +57,18 @@
     SelectedOngViewController *destino = segue.destinationViewController;
     //define o que vai aparecer na tela... 
     if (indexPath.row == 0) {
-        destino.descricaoOng = @"\n\n Descrição ONG 1";
-        destino.nomeOng = @"ONG 1";
-        destino.telefoneOng = @"ONG 1";
-        destino.siteOng = @"ONG 1";
-        destino.enderecoOng = @"ONG 1";
-       // destino.fotoOng = @"pino-3";
+        destino.descricaoOng = @"\n\n Descrição ONG 1 \n\n Aqui serão expostas as características de cada organização, cada organização poderá criar um perfil organizacional que será implementado posteriormente, sendo assim poderão editar os dados que serão expostos ao publico que fizer uso do PetAlert®. \n\n Aqui serão expostas as características de cada organização, cada organização poderá criar um perfil organizacional que será implementado posteriormente, sendo assim poderão editar os dados que serão expostos ao publico que fizer uso do PetAlert®.\n\n Aqui serão expostas as características de cada organização, cada organização poderá criar um perfil organizacional que será implementado posteriormente, sendo assim poderão editar os dados que serão expostos ao publico que fizer uso do PetAlert®.\n\n Aqui serão expostas as características de cada organização, cada organização poderá criar um perfil organizacional que será implementado posteriormente, sendo assim poderão editar os dados que serão expostos ao publico que fizer uso do PetAlert®.";
+        destino.nomeOng = @"Nome ONG 1";
+        destino.telefoneOng = @"(00)9999-9999";
+        destino.siteOng = @"www.ong1.org";
+        destino.enderecoOng = @"Rua 1, 234 - Bairro, Cidade";
+        // destino.fotoOng = @"pino-3";
     }else{
         destino.descricaoOng = @"\n\n Descrição ONG 2";
-        destino.nomeOng = @"ONG 2 ariba muchacho";
-        destino.telefoneOng = @"ONG 2";
-        destino.siteOng = @"ONG 2 ariba muchacho2";
-        destino.enderecoOng = @"ONG 2";
+        destino.nomeOng = @"Nome ONG 2";
+        destino.telefoneOng = @"(00)2222-2222";
+        destino.siteOng = @"www.ong2.org";
+        destino.enderecoOng = @"Rua 1, 234 - Bairro, Cidade";
      //   destino.fotoOng = @"pino-3.png";
     }
 }
