@@ -90,8 +90,6 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
 
 
 - (IBAction)save:(id)sender {
-    NSLog(@"botao SAVE");
-    
     PFUser *user = [PFUser currentUser];
     
     NSLog(@"%@",user[@"password"]);
@@ -145,6 +143,7 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
         self.conrfirmaSenha.text = @"";
         
     }
+
 
     
 }
