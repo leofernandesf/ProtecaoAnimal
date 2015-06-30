@@ -34,10 +34,10 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
 }
    
     
-    // teste botao edit
-    UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithTitle:@"DONE" style:UIBarButtonItemStyleDone target:self action:@selector(addAction:)]autoContentAccessingProxy];
-    
-    self.navigationItem.rightBarButtonItem = addButton;
+//    // teste botao edit
+//    UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithTitle:@"DONE" style:UIBarButtonItemStyleDone target:self action:@selector(addAction:)]autoContentAccessingProxy];
+//    
+//    self.navigationItem.rightBarButtonItem = addButton;
     
 //TECLADO \/
     // teclado some quando clicar na tela
@@ -90,6 +90,7 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
 
 
 - (IBAction)save:(id)sender {
+    NSLog(@"botao SAVE");
     
     PFUser *user = [PFUser currentUser];
     
@@ -159,6 +160,8 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
         [self presentViewController:picker animated:YES completion:nil];
     
 }
+
+
 
 //some teclado, verificar
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{

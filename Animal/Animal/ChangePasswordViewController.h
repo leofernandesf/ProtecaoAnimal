@@ -15,9 +15,11 @@
 @property (strong, nonatomic) IBOutlet UITextField *senhaAtual;
 @property (weak, nonatomic) IBOutlet UITextField *conrfirmaSenha;
 
+@property (weak, nonatomic) IBOutlet UINavigationItem *navBar;
 - (IBAction)fotoEdit:(id)sender;
 
 - (IBAction)save:(id)sender;
+
 
 //botoes para logOut
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
