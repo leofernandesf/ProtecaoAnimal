@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 
-@interface ChangePasswordViewController : UIViewController <UITextFieldDelegate>
+@interface ChangePasswordViewController : UIViewController <UITextFieldDelegate, UITabBarControllerDelegate>
 
 //Alteração da senha:
 @property (strong, nonatomic) IBOutlet UITextField *senhaAtual;
