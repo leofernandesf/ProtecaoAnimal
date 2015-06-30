@@ -151,13 +151,31 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
 
 - (IBAction)fotoEdit:(id)sender {
     
-        
-        //por um if aqui: se pegar foto from camera or album
+    
+    UIAlertController * alert=[UIAlertController alertControllerWithTitle:@"" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction* camera = [UIAlertAction actionWithTitle:@"Câmera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
         UIImagePickerController *picker = [[UIImagePickerController alloc]init];
         picker.delegate = self;
         picker.allowsEditing = YES;
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         [self presentViewController:picker animated:YES completion:nil];
+    }];
+    
+    UIAlertAction* teste = [UIAlertAction actionWithTitle:@"Galeria" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+        //[self metodoDaCamera];
+    }];
+    
+    
+    
+// alerta
+    UIAlertAction* cancelar = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action)
+                               {
+                               }];
+    [alert addAction:camera];
+    [alert addAction:teste];
+    [alert addAction:cancelar];
+    [self presentViewController:alert animated:YES completion:nil];
     
 }
 
