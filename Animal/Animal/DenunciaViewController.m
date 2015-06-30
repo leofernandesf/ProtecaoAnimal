@@ -11,7 +11,7 @@
 //manipular a imagem
 #import <QuartzCore/QuartzCore.h>
 
-@interface DenunciaViewController ()
+@interface DenunciaViewController ()<UIActionSheetDelegate, UIAlertViewDelegate>
 
 @end
 
@@ -114,17 +114,59 @@
 }
 //fim manipulacao tela x teclado
 - (IBAction)foto:(id)sender {
+
+    UIAlertController * alert=[UIAlertController alertControllerWithTitle:@"Título" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction* camera = [UIAlertAction actionWithTitle:@"Câmera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+            UIImagePickerController *picker = [[UIImagePickerController alloc]init];
+            picker.delegate = self;
+            picker.allowsEditing = YES;
+            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            [self presentViewController:picker animated:YES completion:nil];
+    }];
+    
+    UIAlertAction* teste = [UIAlertAction actionWithTitle:@"Photos" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+        //[self metodoDaCamera];
+    }];
+
+
     
     
-    //por um if aqui: se pegar foto from camera or album 
-    UIImagePickerController *picker = [[UIImagePickerController alloc]init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    [self presentViewController:picker animated:YES completion:nil];
-    
+    UIAlertAction* cancelar = [UIAlertAction actionWithTitle:@"Cancelar" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action)
+    {
+    }];
+    [alert addAction:camera];
+    [alert addAction:teste];
+    [alert addAction:cancelar];
+    [self presentViewController:alert animated:YES completion:nil];
     
 }
+    
+//    //por um if aqui: se pegar foto from camera or album 
+//    UIImagePickerController *picker = [[UIImagePickerController alloc]init];
+//    picker.delegate = self;
+//    picker.allowsEditing = YES;
+//    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+//    [self presentViewController:picker animated:YES completion:nil];
+//    
+    
+//}
+
+//-(void)ActionPhoto {
+//    
+//    UIAlertController *teste = [UIAlertController]
+//    UIAlertController *alert = [UIAlertControlleralertWithTitle:@"Titulo"message:nilpreferredStyle:UIAlertControllerStyleSheet];
+//    
+//    UIAlertAction *camera = [UIAlertActionactionWithTitle:@"Camera"Style:UIAlertActionStyleDefault handler:^(UIAlertAction *action)
+//                             {
+//                                 [self foto];
+//                                 
+//                             }];
+//    
+//}
+
+
+
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     self.image = info[UIImagePickerControllerEditedImage];
@@ -173,6 +215,9 @@
     }
     
 }
+
+
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"registrardenuncia"]) {
