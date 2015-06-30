@@ -13,6 +13,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MKFoundation.h>
+#import "informacoesViewController.h"
 
 @interface MapBarViewController : UIViewController <UIApplicationDelegate, MKMapViewDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate>
 

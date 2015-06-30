@@ -27,6 +27,7 @@
 		A7160E4B1B27103C00CE2FE6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4A1B27103C00CE2FE6 /* libsqlite3.dylib */; };
 		A7160E4D1B27106100CE2FE6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4C1B27106100CE2FE6 /* Accounts.framework */; };
 		A7160E4F1B27106B00CE2FE6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7160E4E1B27106B00CE2FE6 /* Social.framework */; };
+		A783B53B1B41C05000018486 /* informacoesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A783B53A1B41C05000018486 /* informacoesViewController.m */; };
 		A78908CC1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78908CB1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework */; };
 		A78B812B1B38CDCA00243C86 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A78B812A1B38CDCA00243C86 /* Color.m */; };
 		CA2D21E91B3ADD06009BF07F /* DescricaoLeisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2D21E81B3ADD06009BF07F /* DescricaoLeisViewController.m */; };
@@ -90,6 +91,8 @@
 		A7160E4C1B27106100CE2FE6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		A7160E4E1B27106B00CE2FE6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		A7160E541B2710F600CE2FE6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A783B5391B41C05000018486 /* informacoesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = informacoesViewController.h; sourceTree = "<group>"; };
+		A783B53A1B41C05000018486 /* informacoesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = informacoesViewController.m; sourceTree = "<group>"; };
 		A78908CB1B3B76A8008906F4 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "../../../Downloads/parse-library-1.7.4/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
 		A78908CD1B3B8621008906F4 /* SofiaProLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SofiaProLight.otf; path = "../../../SharePlan/Animais [mini-challenge]/Design/Sofia Pro Light-Desktop/SofiaProLight.otf"; sourceTree = "<group>"; };
 		A78B81291B38CDCA00243C86 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 				A7160E111B270EEF00CE2FE6 /* AppDelegate.h */,
 				A7160E121B270EEF00CE2FE6 /* AppDelegate.m */,
 				A7160E1A1B270EEF00CE2FE6 /* Main.storyboard */,
+				A783B5391B41C05000018486 /* informacoesViewController.h */,
+				A783B53A1B41C05000018486 /* informacoesViewController.m */,
 				CAF134BF1B385C1C00071CA1 /* Main.strings */,
 				A7160E1D1B270EEF00CE2FE6 /* Images.xcassets */,
 				A7160E141B270EEF00CE2FE6 /* Animal.xcdatamodeld */,
@@ -500,6 +505,7 @@
 				CD7273D71B2A2D2C00821E52 /* MapBarViewController.m in Sources */,
 				CD5E675E1B32FE310018D99F /* SettingsViewController.m in Sources */,
 				CD5E675A1B31C58F0018D99F /* DenunciaViewController.m in Sources */,
+				A783B53B1B41C05000018486 /* informacoesViewController.m in Sources */,
 				CA2D21E91B3ADD06009BF07F /* DescricaoLeisViewController.m in Sources */,
 				CA3628941B3464D2009AF3D9 /* SettingsTableViewController.m in Sources */,
 				CAB685471B28825400F3914A /* CadastroViewController.m in Sources */,
