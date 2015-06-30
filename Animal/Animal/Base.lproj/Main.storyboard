@@ -33,6 +33,7 @@
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
+            <string>SofiaProLight</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -276,8 +277,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tela_den2" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-bp-dX9">
                                 <rect key="frame" x="0.0" y="-29" width="376" height="647"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" text="descricao" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-eG-Auk">
-                                <rect key="frame" x="44" y="312" width="286" height="94"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-eG-Auk">
+                                <rect key="frame" x="44" y="327" width="286" height="79"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
@@ -325,6 +326,11 @@
                                     <action selector="registrar:" destination="hpB-vc-oDh" eventType="touchUpInside" id="4mu-6f-zcl"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Descrição:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-uT-yTj">
+                                <rect key="frame" x="47" y="306" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
