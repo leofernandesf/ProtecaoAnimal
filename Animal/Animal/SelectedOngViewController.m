@@ -52,6 +52,9 @@
     //foto
     //_lbFoto.image = self.fotoOng;
     
+    // gera pontas arredondadas na imageView
+    self.lbFoto.layer.cornerRadius = 4;
+    self.lbFoto.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {
