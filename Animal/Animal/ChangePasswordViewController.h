@@ -14,8 +14,9 @@
 //Alteração da senha:
 @property (strong, nonatomic) IBOutlet UITextField *senhaAtual;
 @property (weak, nonatomic) IBOutlet UITextField *conrfirmaSenha;
-- (IBAction)enviar:(id)sender;
 
+
+- (IBAction)save:(id)sender;
 
 //botoes para logOut
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
