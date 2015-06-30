@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *senhaAtual;
 @property (weak, nonatomic) IBOutlet UITextField *conrfirmaSenha;
 
+- (IBAction)fotoEdit:(id)sender;
 
 - (IBAction)save:(id)sender;
 
