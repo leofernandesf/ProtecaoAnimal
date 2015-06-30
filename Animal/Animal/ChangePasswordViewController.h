@@ -21,7 +21,7 @@
 - (IBAction)save:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIImageView *fotoPerfil;
-
+@property (nonatomic, retain) UIImage * image2;
 //botoes para logOut
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 - (IBAction)sair:(id)sender;

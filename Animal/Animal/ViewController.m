@@ -158,6 +158,7 @@
         NSLog(@"%@", [PFUser currentUser]);
         return YES;
     }else if ([identifier isEqualToString:@"cadastrar"]){
+        NSLog(@"clicou na botao de cadastrar");
         return YES;
     }
     return NO;

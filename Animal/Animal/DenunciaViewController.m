@@ -115,7 +115,7 @@
 //fim manipulacao tela x teclado
 - (IBAction)foto:(id)sender {
 
-    UIAlertController * alert=[UIAlertController alertControllerWithTitle:@"Título" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertController * alert=[UIAlertController alertControllerWithTitle:@"Adicionar Foto" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
     UIAlertAction* camera = [UIAlertAction actionWithTitle:@"Câmera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
             UIImagePickerController *picker = [[UIImagePickerController alloc]init];
@@ -125,8 +125,13 @@
             [self presentViewController:picker animated:YES completion:nil];
     }];
     
-    UIAlertAction* teste = [UIAlertAction actionWithTitle:@"Photos" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
-        //[self metodoDaCamera];
+    UIAlertAction* teste = [UIAlertAction actionWithTitle:@"Ir para Fotos" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
+        [self presentViewController:picker animated:YES completion:NULL];
     }];
 
 

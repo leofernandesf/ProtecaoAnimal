@@ -168,7 +168,7 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
 - (IBAction)fotoEdit:(id)sender {
     
     
-    UIAlertController * alert=[UIAlertController alertControllerWithTitle:@"" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertController * alert=[UIAlertController alertControllerWithTitle:@"Alterar Foto" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     
     UIAlertAction* camera = [UIAlertAction actionWithTitle:@"Câmera" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
         UIImagePickerController *picker = [[UIImagePickerController alloc]init];
@@ -178,8 +178,13 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
         [self presentViewController:picker animated:YES completion:nil];
     }];
     
-    UIAlertAction* teste = [UIAlertAction actionWithTitle:@"Galeria" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
-        //[self metodoDaCamera];
+    UIAlertAction* teste = [UIAlertAction actionWithTitle:@"Ir para Fotos" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
+        [self presentViewController:picker animated:YES completion:NULL];
     }];
     
     
@@ -193,6 +198,18 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
     [alert addAction:cancelar];
     [self presentViewController:alert animated:YES completion:nil];
     
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    self.image2 = info[UIImagePickerControllerEditedImage];
+    self.fotoPerfil.image = self.image2;
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 

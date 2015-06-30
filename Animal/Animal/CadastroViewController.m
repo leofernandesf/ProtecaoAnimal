@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"entoru na tela de cadastro");
     // Do any additional setup after loading the view.
     
     
