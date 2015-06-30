@@ -28,8 +28,6 @@
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
             <string>SofiaProLight</string>
-            <string>SofiaProLight</string>
-            <string>SofiaProLight</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -984,6 +982,13 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Alterar Dados" id="ArZ-Ge-OoG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="DeT-8W-pHa">
+                            <connections>
+                                <action selector="save:" destination="Tmp-N2-PmD" id="iv2-TX-ix6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <keyCommands/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -1150,7 +1155,7 @@
         <image name="teste_perfil_dark" width="518" height="516"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="CGg-Kj-pZY"/>
         <segue reference="mos-GU-B4F"/>
-        <segue reference="eMy-7Y-j4V"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -69,7 +69,10 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
         [self presentViewController:viewController animated:YES completion:nil];
     }
 
-- (IBAction)enviar:(id)sender {
+
+
+- (IBAction)save:(id)sender {
+    
     PFUser *user = [PFUser currentUser];
     
     NSLog(@"%@",user[@"password"]);
@@ -86,14 +89,14 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
             if (!error){
                 
                 UIAlertView* alertview = [[UIAlertView alloc]
-                                           initWithTitle:@"Senha Alterada"
-                                           message:@""
-                                           delegate:nil
-                                           cancelButtonTitle:@"OK"
-                                           otherButtonTitles:nil];
+                                          initWithTitle:@"Senha Alterada"
+                                          message:@""
+                                          delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
                 
                 [alertview show];
-
+                
             } else {
                 
                 UIAlertView *alertView = [[UIAlertView alloc]
@@ -123,6 +126,7 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
         self.conrfirmaSenha.text = @"";
         
     }
+
     
 }
 

@@ -81,12 +81,15 @@ BOOL userLocationShown1;
          {
              
              // The find succeeded.
-             NSLog(@"Successfully retrieved %lu", objects.count);
+             NSLog(@"Successfully retrieved %lu", (unsigned long)objects.count);
              // Do something with the found objects
              PFGeoPoint *geoPoint;
              CLLocationCoordinate2D location;
+             int x;
              for (PFObject *object in objects)
              {
+                 
+                 x++;
                  geoPoint = object[@"geoLocalization"];
                  
                  MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
@@ -98,7 +101,9 @@ BOOL userLocationShown1;
                  //point.subtitle = object[@"description"];
                  [self.mapBarView addAnnotation:point];
                  
+                 
              }
+             NSLog(@"valor do for %d",x);
          }
          else
          {
