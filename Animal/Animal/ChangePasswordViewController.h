@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *conrfirmaSenha;
 - (IBAction)enviar:(id)sender;
 
+- (IBAction)fotoEdit:(id)sender;
 
 //botoes para logOut
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;

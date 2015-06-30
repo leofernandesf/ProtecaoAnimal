@@ -33,9 +33,11 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
     self.loginButton.hidden = YES;
 }
    
-//    UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithTitle:@"DONE" style:UIBarButtonItemStyleDone target:self action:@selector(addAction:)]autoContentAccessingProxy];
-//    
-//    self.navigationItem.rightBarButtonItem = addButton;
+    
+    // teste botao edit
+    UIBarButtonItem *addButton = [[[UIBarButtonItem alloc] initWithTitle:@"DONE" style:UIBarButtonItemStyleDone target:self action:@selector(addAction:)]autoContentAccessingProxy];
+    
+    self.navigationItem.rightBarButtonItem = addButton;
     
 }
 
@@ -123,7 +125,23 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
     }
     
 }
+
+- (IBAction)fotoEdit:(id)sender {
+    
+        
+        //por um if aqui: se pegar foto from camera or album
+        UIImagePickerController *picker = [[UIImagePickerController alloc]init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        [self presentViewController:picker animated:YES completion:nil];
+        
+        
+    
+}
+
 ////Adicionar posteriormente na atualização: alterar e-mail
+
 //- (IBAction)enviarEmail:(id)sender {
 //
 //        PFUser *user = [PFUser currentUser];
