@@ -148,6 +148,8 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
     
 }
 
+
+
 - (IBAction)fotoEdit:(id)sender {
     
         
