@@ -39,7 +39,25 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
     
     self.navigationItem.rightBarButtonItem = addButton;
     
-}
+//TECLADO \/
+    // teclado some quando clicar na tela
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    tap.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tap];
+    
+    //pra subir os campos quando o teclado aparece:
+    self.senhaAtual.layer.borderColor=[[UIColor colorWithRed:1 green:1 blue:1 alpha:1]CGColor];
+    self.senhaAtual.layer.borderWidth=0;
+    self.senhaAtual.delegate = self;
+    
+    self.conrfirmaSenha.layer.borderColor=[[UIColor colorWithRed:1 green:1 blue:1 alpha:1]CGColor];
+    self.conrfirmaSenha.layer.borderWidth=0;
+    self.conrfirmaSenha.delegate = self;
+    //fim
+    
+    
+    
+} //fim viewDidLoad
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -139,11 +157,51 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
         picker.allowsEditing = YES;
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         [self presentViewController:picker animated:YES completion:nil];
-        
-        
     
 }
 
+//some teclado, verificar
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
+- (void)dismissKeyboard {
+    [self.senhaAtual resignFirstResponder];
+    [self.conrfirmaSenha resignFirstResponder];
+   
+    
+}
+//pra subir os campos quando o teclado aparece:
+- (void)textViewDidBeginEditing:(UITextView *)textView{
+    [self animate:YES];
+}
+
+-(void)textViewDidEndEditing:(UITextView *)textView{
+    [self animate:NO];
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [self animate:YES];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self animate:NO];
+}
+
+- (void) animate: (BOOL)up {
+    const int movementDistance = 0; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+    
+    int movement = (up ? -movementDistance : movementDistance);
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+    [UIView commitAnimations];
+}
+//fim manipulacao tela x teclado
 ////Adicionar posteriormente na atualização: alterar e-mail
 
 //- (IBAction)enviarEmail:(id)sender {
