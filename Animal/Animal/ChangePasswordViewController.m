@@ -28,6 +28,16 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
     if ([FBSDKAccessToken currentAccessToken]) {
         NSLog(@"o usuario esta logado na tela de configuracoes");
         self.loginButton.hidden = NO;
+        [self.senhaAtual setEnabled:NO];
+        [self.conrfirmaSenha setEnabled:NO];
+        UIAlertView* alertview = [[UIAlertView alloc]
+                                  initWithTitle:@"Logado Pelo FaceBook"
+                                  message:@"Voce nao pode alterar sua senha"
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        
+        [alertview show];
 } else {
     NSLog(@"O usuario nao esta logado na tela de configuracoes");
     self.loginButton.hidden = YES;
@@ -90,7 +100,9 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
 
 
 - (IBAction)save:(id)sender {
-    NSLog(@"botao SAVE");
+    if ([FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"o usuario esta tentando alterar a senha logado com o face");
+    } else {
     
     PFUser *user = [PFUser currentUser];
     
@@ -118,18 +130,18 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
                 
             } else {
                 
-                UIAlertView *alertView = [[UIAlertView alloc]
-                                          initWithTitle:@"Dados insuficientes"
-                                          message:[error.userInfo objectForKey:@"Informe corretamente"]
-                                          delegate:nil cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
+                    UIAlertView *alertView = [[UIAlertView alloc]
+                                              initWithTitle:@"Dados insuficientes"
+                                              message:[error.userInfo objectForKey:@"Informe corretamente"]
+                                              delegate:nil cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
                 
-                [alertView show];
-                NSLog(@"Nao salvou");
-                self.senhaAtual.text = @"";
-                self.conrfirmaSenha.text = @"";
-            }
-        }];
+                    [alertView show];
+                    NSLog(@"Nao salvou");
+                    self.senhaAtual.text = @"";
+                    self.conrfirmaSenha.text = @"";
+                }
+            }];
         
     } else {
         
@@ -145,9 +157,13 @@ NSLog(@"\n\nEmail do usuaro atual: %@", user[@"email"]);
         self.conrfirmaSenha.text = @"";
         
     }
+    }
+
 
     
 }
+
+
 
 - (IBAction)fotoEdit:(id)sender {
     
