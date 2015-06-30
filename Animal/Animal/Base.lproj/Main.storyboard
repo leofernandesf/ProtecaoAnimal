@@ -976,7 +976,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="odw-Mu-atu">
+                    <navigationItem key="navigationItem" title="Alterar Dados" id="odw-Mu-atu">
                         <barButtonItem key="rightBarButtonItem" title="Salvar" id="gUb-Nb-RKx">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -989,6 +989,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="conrfirmaSenha" destination="M6F-re-KSg" id="Bpx-hd-5aX"/>
+                        <outlet property="fotoPerfil" destination="6aZ-fS-8aC" id="AvI-tH-XjR"/>
                         <outlet property="loginButton" destination="P0C-wY-i2O" id="w6c-Ii-HNl"/>
                         <outlet property="senhaAtual" destination="tOZ-0u-9iC" id="dzH-I4-D1S"/>
                     </connections>
