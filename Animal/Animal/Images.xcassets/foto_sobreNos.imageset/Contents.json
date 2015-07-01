@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "foto_sobreNos.jpeg"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "logo_58_@2x.png"
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
